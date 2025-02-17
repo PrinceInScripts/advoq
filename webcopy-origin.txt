@@ -1,0 +1,1000 @@
+Uri: https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap
+File Name: D:\copy\influtics.temptics.com\css2
+Content Type: text/css
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnNqk4j1ebLhAm8SrXTc2dphjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnNqk4j1ebLhAm8SrXTc2dphjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnNqk4j1ebLhAm8SrXTc2dthjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnNqk4j1ebLhAm8SrXTc2dthjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnNqk4j1ebLhAm8SrXTc69thjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnNqk4j1ebLhAm8SrXTc69thjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnNqk4j1ebLhAm8SrXTcB9xhjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnNqk4j1ebLhAm8SrXTcB9xhjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnNqk4j1ebLhAm8SrXTccNxhjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnNqk4j1ebLhAm8SrXTccNxhjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnNqk4j1ebLhAm8SrXTch9thjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnNqk4j1ebLhAm8SrXTch9thjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnNqk4j1ebLhAm8SrXTcPtxhjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnNqk4j1ebLhAm8SrXTcPtxhjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnNqk4j1ebLhAm8SrXTcWdthjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnNqk4j1ebLhAm8SrXTcWdthjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnNqk4j1ebLhAm8SrXTcWdxhjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnNqk4j1ebLhAm8SrXTcWdxhjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnOak4j1ebLhAm8SrXTc2dphjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnOak4j1ebLhAm8SrXTc2dphjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnOak4j1ebLhAm8SrXTc2dthjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnOak4j1ebLhAm8SrXTc2dthjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnOak4j1ebLhAm8SrXTc69thjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnOak4j1ebLhAm8SrXTc69thjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnOak4j1ebLhAm8SrXTcB9xhjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnOak4j1ebLhAm8SrXTcB9xhjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnOak4j1ebLhAm8SrXTccNxhjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnOak4j1ebLhAm8SrXTccNxhjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnOak4j1ebLhAm8SrXTch9thjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnOak4j1ebLhAm8SrXTch9thjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnOak4j1ebLhAm8SrXTcPtxhjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnOak4j1ebLhAm8SrXTcPtxhjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnOak4j1ebLhAm8SrXTcWdthjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnOak4j1ebLhAm8SrXTcWdthjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnOak4j1ebLhAm8SrXTcWdxhjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnOak4j1ebLhAm8SrXTcWdxhjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnOCk4j1ebLhAm8SrXTc2dphjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnOCk4j1ebLhAm8SrXTc2dphjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnOCk4j1ebLhAm8SrXTc2dthjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnOCk4j1ebLhAm8SrXTc2dthjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnOCk4j1ebLhAm8SrXTc69thjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnOCk4j1ebLhAm8SrXTc69thjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnOCk4j1ebLhAm8SrXTcB9xhjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnOCk4j1ebLhAm8SrXTcB9xhjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnOCk4j1ebLhAm8SrXTccNxhjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnOCk4j1ebLhAm8SrXTccNxhjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnOCk4j1ebLhAm8SrXTch9thjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnOCk4j1ebLhAm8SrXTch9thjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnOCk4j1ebLhAm8SrXTcPtxhjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnOCk4j1ebLhAm8SrXTcPtxhjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnOCk4j1ebLhAm8SrXTcWdthjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnOCk4j1ebLhAm8SrXTcWdthjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnOCk4j1ebLhAm8SrXTcWdxhjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnOCk4j1ebLhAm8SrXTcWdxhjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnOKk4j1ebLhAm8SrXTc2dphjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnOKk4j1ebLhAm8SrXTc2dphjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnOKk4j1ebLhAm8SrXTc2dthjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnOKk4j1ebLhAm8SrXTc2dthjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnOKk4j1ebLhAm8SrXTc69thjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnOKk4j1ebLhAm8SrXTc69thjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnOKk4j1ebLhAm8SrXTcB9xhjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnOKk4j1ebLhAm8SrXTcB9xhjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnOKk4j1ebLhAm8SrXTccNxhjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnOKk4j1ebLhAm8SrXTccNxhjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnOKk4j1ebLhAm8SrXTch9thjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnOKk4j1ebLhAm8SrXTch9thjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnOKk4j1ebLhAm8SrXTcPtxhjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnOKk4j1ebLhAm8SrXTcPtxhjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnOKk4j1ebLhAm8SrXTcWdthjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnOKk4j1ebLhAm8SrXTcWdthjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnOKk4j1ebLhAm8SrXTcWdxhjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnOKk4j1ebLhAm8SrXTcWdxhjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnOqk4j1ebLhAm8SrXTc2dphjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnOqk4j1ebLhAm8SrXTc2dphjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnOqk4j1ebLhAm8SrXTc2dthjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnOqk4j1ebLhAm8SrXTc2dthjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnOqk4j1ebLhAm8SrXTc69thjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnOqk4j1ebLhAm8SrXTc69thjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnOqk4j1ebLhAm8SrXTcB9xhjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnOqk4j1ebLhAm8SrXTcB9xhjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnOqk4j1ebLhAm8SrXTccNxhjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnOqk4j1ebLhAm8SrXTccNxhjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnOqk4j1ebLhAm8SrXTch9thjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnOqk4j1ebLhAm8SrXTch9thjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnOqk4j1ebLhAm8SrXTcPtxhjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnOqk4j1ebLhAm8SrXTcPtxhjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnOqk4j1ebLhAm8SrXTcWdthjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnOqk4j1ebLhAm8SrXTcWdthjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnOqk4j1ebLhAm8SrXTcWdxhjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnOqk4j1ebLhAm8SrXTcWdxhjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnPKk4j1ebLhAm8SrXTc2dphjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnPKk4j1ebLhAm8SrXTc2dphjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnPKk4j1ebLhAm8SrXTc2dthjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnPKk4j1ebLhAm8SrXTc2dthjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnPKk4j1ebLhAm8SrXTc69thjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnPKk4j1ebLhAm8SrXTc69thjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnPKk4j1ebLhAm8SrXTcB9xhjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnPKk4j1ebLhAm8SrXTcB9xhjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnPKk4j1ebLhAm8SrXTccNxhjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnPKk4j1ebLhAm8SrXTccNxhjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnPKk4j1ebLhAm8SrXTch9thjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnPKk4j1ebLhAm8SrXTch9thjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnPKk4j1ebLhAm8SrXTcPtxhjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnPKk4j1ebLhAm8SrXTcPtxhjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnPKk4j1ebLhAm8SrXTcWdthjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnPKk4j1ebLhAm8SrXTcWdthjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnPKk4j1ebLhAm8SrXTcWdxhjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnPKk4j1ebLhAm8SrXTcWdxhjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnPqk4j1ebLhAm8SrXTc2dphjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnPqk4j1ebLhAm8SrXTc2dphjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnPqk4j1ebLhAm8SrXTc2dthjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnPqk4j1ebLhAm8SrXTc2dthjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnPqk4j1ebLhAm8SrXTc69thjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnPqk4j1ebLhAm8SrXTc69thjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnPqk4j1ebLhAm8SrXTcB9xhjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnPqk4j1ebLhAm8SrXTcB9xhjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnPqk4j1ebLhAm8SrXTccNxhjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnPqk4j1ebLhAm8SrXTccNxhjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnPqk4j1ebLhAm8SrXTch9thjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnPqk4j1ebLhAm8SrXTch9thjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnPqk4j1ebLhAm8SrXTcPtxhjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnPqk4j1ebLhAm8SrXTcPtxhjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnPqk4j1ebLhAm8SrXTcWdthjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnPqk4j1ebLhAm8SrXTcWdthjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCM3FwrK3iLTcvneQg7Ca725JhhKnPqk4j1ebLhAm8SrXTcWdxhjQ.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCM3FwrK3iLTcvneQg7Ca725JhhKnPqk4j1ebLhAm8SrXTcWdxhjQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp506jIw2boKoduKmMEVuBWYMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp506jIw2boKoduKmMEVuBWYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp506jIw2boKoduKmMEVuDyfMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp506jIw2boKoduKmMEVuDyfMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp506jIw2boKoduKmMEVuDyYMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp506jIw2boKoduKmMEVuDyYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp506jIw2boKoduKmMEVuFuYMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp506jIw2boKoduKmMEVuFuYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp506jIw2boKoduKmMEVuGKYMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp506jIw2boKoduKmMEVuGKYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp506jIw2boKoduKmMEVuI6fMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp506jIw2boKoduKmMEVuI6fMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp506jIw2boKoduKmMEVuLyeMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp506jIw2boKoduKmMEVuLyeMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp506jIw2boKoduKmMEVuLyfMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp506jIw2boKoduKmMEVuLyfMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp506jIw2boKoduKmMEVuOKfMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp506jIw2boKoduKmMEVuOKfMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50ijIw2boKoduKmMEVuBWYMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50ijIw2boKoduKmMEVuBWYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50ijIw2boKoduKmMEVuDyfMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50ijIw2boKoduKmMEVuDyfMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50ijIw2boKoduKmMEVuDyYMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50ijIw2boKoduKmMEVuDyYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50ijIw2boKoduKmMEVuFuYMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50ijIw2boKoduKmMEVuFuYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50ijIw2boKoduKmMEVuGKYMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50ijIw2boKoduKmMEVuGKYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50ijIw2boKoduKmMEVuI6fMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50ijIw2boKoduKmMEVuI6fMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50ijIw2boKoduKmMEVuLyeMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50ijIw2boKoduKmMEVuLyeMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50ijIw2boKoduKmMEVuLyfMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50ijIw2boKoduKmMEVuLyfMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50ijIw2boKoduKmMEVuOKfMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50ijIw2boKoduKmMEVuOKfMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50ojIw2boKoduKmMEVuBWYMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50ojIw2boKoduKmMEVuBWYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50ojIw2boKoduKmMEVuDyfMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50ojIw2boKoduKmMEVuDyfMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50ojIw2boKoduKmMEVuDyYMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50ojIw2boKoduKmMEVuDyYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50ojIw2boKoduKmMEVuFuYMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50ojIw2boKoduKmMEVuFuYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50ojIw2boKoduKmMEVuGKYMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50ojIw2boKoduKmMEVuGKYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50ojIw2boKoduKmMEVuI6fMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50ojIw2boKoduKmMEVuI6fMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50ojIw2boKoduKmMEVuLyeMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50ojIw2boKoduKmMEVuLyeMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50ojIw2boKoduKmMEVuLyfMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50ojIw2boKoduKmMEVuLyfMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50ojIw2boKoduKmMEVuOKfMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50ojIw2boKoduKmMEVuOKfMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50qjIw2boKoduKmMEVuBWYMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50qjIw2boKoduKmMEVuBWYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50qjIw2boKoduKmMEVuDyfMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50qjIw2boKoduKmMEVuDyfMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50qjIw2boKoduKmMEVuDyYMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50qjIw2boKoduKmMEVuDyYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50qjIw2boKoduKmMEVuFuYMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50qjIw2boKoduKmMEVuFuYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50qjIw2boKoduKmMEVuGKYMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50qjIw2boKoduKmMEVuGKYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50qjIw2boKoduKmMEVuI6fMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50qjIw2boKoduKmMEVuI6fMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50qjIw2boKoduKmMEVuLyeMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50qjIw2boKoduKmMEVuLyeMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50qjIw2boKoduKmMEVuLyfMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50qjIw2boKoduKmMEVuLyfMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50qjIw2boKoduKmMEVuOKfMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50qjIw2boKoduKmMEVuOKfMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuBWYMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuBWYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuDyfMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuDyfMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuDyYMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuDyYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuFuYMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuFuYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuI6fMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuI6fMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyeMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyeMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuOKfMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuOKfMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50ujIw2boKoduKmMEVuBWYMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50ujIw2boKoduKmMEVuBWYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50ujIw2boKoduKmMEVuDyfMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50ujIw2boKoduKmMEVuDyfMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50ujIw2boKoduKmMEVuDyYMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50ujIw2boKoduKmMEVuDyYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50ujIw2boKoduKmMEVuFuYMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50ujIw2boKoduKmMEVuFuYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50ujIw2boKoduKmMEVuGKYMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50ujIw2boKoduKmMEVuGKYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50ujIw2boKoduKmMEVuI6fMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50ujIw2boKoduKmMEVuI6fMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50ujIw2boKoduKmMEVuLyeMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50ujIw2boKoduKmMEVuLyeMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50ujIw2boKoduKmMEVuLyfMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50ujIw2boKoduKmMEVuLyfMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50ujIw2boKoduKmMEVuOKfMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50ujIw2boKoduKmMEVuOKfMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50yjIw2boKoduKmMEVuBWYMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50yjIw2boKoduKmMEVuBWYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50yjIw2boKoduKmMEVuDyfMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50yjIw2boKoduKmMEVuDyfMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50yjIw2boKoduKmMEVuDyYMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50yjIw2boKoduKmMEVuDyYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50yjIw2boKoduKmMEVuFuYMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50yjIw2boKoduKmMEVuFuYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50yjIw2boKoduKmMEVuGKYMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50yjIw2boKoduKmMEVuGKYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50yjIw2boKoduKmMEVuI6fMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50yjIw2boKoduKmMEVuI6fMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50yjIw2boKoduKmMEVuLyeMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50yjIw2boKoduKmMEVuLyeMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50yjIw2boKoduKmMEVuLyfMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50yjIw2boKoduKmMEVuLyfMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50yjIw2boKoduKmMEVuOKfMZg.ttf
+File Name: D:\copy\influtics.temptics.com\s\inter\v18\UcCO3FwrK3iLTeHuS_nVMrMxCp50yjIw2boKoduKmMEVuOKfMZg.ttf
+Content Type: font/ttf
+
+Uri: https://influtics.temptics.com/
+File Name: D:\copy\influtics.temptics.com\index.htm
+Content Type: text/html
+
+Uri: https://influtics.temptics.com/about.html
+File Name: D:\copy\influtics.temptics.com\about.html
+Content Type: text/html
+
+Uri: https://influtics.temptics.com/assets/css/style.css
+File Name: D:\copy\influtics.temptics.com\assets\css\style.css
+Content Type: text/css
+
+Uri: https://influtics.temptics.com/assets/font/flaticon_jio_-_influencer.css
+File Name: D:\copy\influtics.temptics.com\assets\font\flaticon_jio_-_influencer.css
+Content Type: text/css
+
+Uri: https://influtics.temptics.com/assets/font/flaticon_jio_-_influencer.eot?167a5fc508643dbc0781c04bf597ee76
+File Name: D:\copy\influtics.temptics.com\assets\font\flaticon_jio_-_influencer.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://influtics.temptics.com/assets/font/flaticon_jio_-_influencer.svg?167a5fc508643dbc0781c04bf597ee76
+File Name: D:\copy\influtics.temptics.com\assets\font\flaticon_jio_-_influencer.svg
+Content Type: image/svg+xml
+
+Uri: https://influtics.temptics.com/assets/font/flaticon_jio_-_influencer.ttf?167a5fc508643dbc0781c04bf597ee76
+File Name: D:\copy\influtics.temptics.com\assets\font\flaticon_jio_-_influencer.ttf
+Content Type: font/ttf
+
+Uri: https://influtics.temptics.com/assets/font/flaticon_jio_-_influencer.woff2?167a5fc508643dbc0781c04bf597ee76
+File Name: D:\copy\influtics.temptics.com\assets\font\flaticon_jio_-_influencer.woff2
+Content Type: font/woff2
+
+Uri: https://influtics.temptics.com/assets/font/flaticon_jio_-_influencer.woff?167a5fc508643dbc0781c04bf597ee76
+File Name: D:\copy\influtics.temptics.com\assets\font\flaticon_jio_-_influencer.woff
+Content Type: font/woff
+
+Uri: https://influtics.temptics.com/assets/img/banner-2-bg.jpg
+File Name: D:\copy\influtics.temptics.com\assets\img\banner-2-bg.jpg
+Content Type: image/jpeg
+
+Uri: https://influtics.temptics.com/assets/img/banner-2-img.png
+File Name: D:\copy\influtics.temptics.com\assets\img\banner-2-img.png
+Content Type: image/png
+
+Uri: https://influtics.temptics.com/assets/img/banner-follower-count.svg
+File Name: D:\copy\influtics.temptics.com\assets\img\banner-follower-count.svg
+Content Type: image/svg+xml
+
+Uri: https://influtics.temptics.com/assets/img/banner-txt-vector-1.svg
+File Name: D:\copy\influtics.temptics.com\assets\img\banner-txt-vector-1.svg
+Content Type: image/svg+xml
+
+Uri: https://influtics.temptics.com/assets/img/banner-txt-vector-2.svg
+File Name: D:\copy\influtics.temptics.com\assets\img\banner-txt-vector-2.svg
+Content Type: image/svg+xml
+
+Uri: https://influtics.temptics.com/assets/img/blog-1.jpg
+File Name: D:\copy\influtics.temptics.com\assets\img\blog-1.jpg
+Content Type: image/jpeg
+
+Uri: https://influtics.temptics.com/assets/img/blog-2.jpg
+File Name: D:\copy\influtics.temptics.com\assets\img\blog-2.jpg
+Content Type: image/jpeg
+
+Uri: https://influtics.temptics.com/assets/img/blog-3.jpg
+File Name: D:\copy\influtics.temptics.com\assets\img\blog-3.jpg
+Content Type: image/jpeg
+
+Uri: https://influtics.temptics.com/assets/img/blog-4.jpg
+File Name: D:\copy\influtics.temptics.com\assets\img\blog-4.jpg
+Content Type: image/jpeg
+
+Uri: https://influtics.temptics.com/assets/img/breadcrumb-bg.jpg
+File Name: D:\copy\influtics.temptics.com\assets\img\breadcrumb-bg.jpg
+Content Type: image/jpeg
+
+Uri: https://influtics.temptics.com/assets/img/card-img.png
+File Name: D:\copy\influtics.temptics.com\assets\img\card-img.png
+Content Type: image/png
+
+Uri: https://influtics.temptics.com/assets/img/checkmark-badge.svg
+File Name: D:\copy\influtics.temptics.com\assets\img\checkmark-badge.svg
+Content Type: image/svg+xml
+
+Uri: https://influtics.temptics.com/assets/img/checkmark.svg
+File Name: D:\copy\influtics.temptics.com\assets\img\checkmark.svg
+Content Type: image/svg+xml
+
+Uri: https://influtics.temptics.com/assets/img/contact-bg.jpg
+File Name: D:\copy\influtics.temptics.com\assets\img\contact-bg.jpg
+Content Type: image/jpeg
+
+Uri: https://influtics.temptics.com/assets/img/contact-form-icon.svg
+File Name: D:\copy\influtics.temptics.com\assets\img\contact-form-icon.svg
+Content Type: image/svg+xml
+
+Uri: https://influtics.temptics.com/assets/img/contact-img.png
+File Name: D:\copy\influtics.temptics.com\assets\img\contact-img.png
+Content Type: image/png
+
+Uri: https://influtics.temptics.com/assets/img/features-bg.jpg
+File Name: D:\copy\influtics.temptics.com\assets\img\features-bg.jpg
+Content Type: image/jpeg
+
+Uri: https://influtics.temptics.com/assets/img/footer-img-1.jpg
+File Name: D:\copy\influtics.temptics.com\assets\img\footer-img-1.jpg
+Content Type: image/jpeg
+
+Uri: https://influtics.temptics.com/assets/img/footer-img-2.jpg
+File Name: D:\copy\influtics.temptics.com\assets\img\footer-img-2.jpg
+Content Type: image/jpeg
+
+Uri: https://influtics.temptics.com/assets/img/footer-img-3.jpg
+File Name: D:\copy\influtics.temptics.com\assets\img\footer-img-3.jpg
+Content Type: image/jpeg
+
+Uri: https://influtics.temptics.com/assets/img/footer-img-4.jpg
+File Name: D:\copy\influtics.temptics.com\assets\img\footer-img-4.jpg
+Content Type: image/jpeg
+
+Uri: https://influtics.temptics.com/assets/img/inner-about-img.png
+File Name: D:\copy\influtics.temptics.com\assets\img\inner-about-img.png
+Content Type: image/png
+
+Uri: https://influtics.temptics.com/assets/img/inner-about-left-bg.png
+File Name: D:\copy\influtics.temptics.com\assets\img\inner-about-left-bg.png
+Content Type: image/png
+
+Uri: https://influtics.temptics.com/assets/img/inner-contact-img-vector.svg
+File Name: D:\copy\influtics.temptics.com\assets\img\inner-contact-img-vector.svg
+Content Type: image/svg+xml
+
+Uri: https://influtics.temptics.com/assets/img/inner-contact-img.png
+File Name: D:\copy\influtics.temptics.com\assets\img\inner-contact-img.png
+Content Type: image/png
+
+Uri: https://influtics.temptics.com/assets/img/intro-img.jpg
+File Name: D:\copy\influtics.temptics.com\assets\img\intro-img.jpg
+Content Type: image/jpeg
+
+Uri: https://influtics.temptics.com/assets/img/intro-live-bg.png
+File Name: D:\copy\influtics.temptics.com\assets\img\intro-live-bg.png
+Content Type: image/png
+
+Uri: https://influtics.temptics.com/assets/img/intro-vector.svg
+File Name: D:\copy\influtics.temptics.com\assets\img\intro-vector.svg
+Content Type: image/svg+xml
+
+Uri: https://influtics.temptics.com/assets/img/jo-article-1.jpg
+File Name: D:\copy\influtics.temptics.com\assets\img\jo-article-1.jpg
+Content Type: image/jpeg
+
+Uri: https://influtics.temptics.com/assets/img/jo-article-2.jpg
+File Name: D:\copy\influtics.temptics.com\assets\img\jo-article-2.jpg
+Content Type: image/jpeg
+
+Uri: https://influtics.temptics.com/assets/img/jo-article-3.jpg
+File Name: D:\copy\influtics.temptics.com\assets\img\jo-article-3.jpg
+Content Type: image/jpeg
+
+Uri: https://influtics.temptics.com/assets/img/jo-banner-vector-1.svg
+File Name: D:\copy\influtics.temptics.com\assets\img\jo-banner-vector-1.svg
+Content Type: image/svg+xml
+
+Uri: https://influtics.temptics.com/assets/img/jo-banner-vector-2.svg
+File Name: D:\copy\influtics.temptics.com\assets\img\jo-banner-vector-2.svg
+Content Type: image/svg+xml
+
+Uri: https://influtics.temptics.com/assets/img/jo-video-1.jpg
+File Name: D:\copy\influtics.temptics.com\assets\img\jo-video-1.jpg
+Content Type: image/jpeg
+
+Uri: https://influtics.temptics.com/assets/img/jo-video-2.jpg
+File Name: D:\copy\influtics.temptics.com\assets\img\jo-video-2.jpg
+Content Type: image/jpeg
+
+Uri: https://influtics.temptics.com/assets/img/jo-video-3.jpg
+File Name: D:\copy\influtics.temptics.com\assets\img\jo-video-3.jpg
+Content Type: image/jpeg
+
+Uri: https://influtics.temptics.com/assets/img/jo-video-4.jpg
+File Name: D:\copy\influtics.temptics.com\assets\img\jo-video-4.jpg
+Content Type: image/jpeg
+
+Uri: https://influtics.temptics.com/assets/img/jo-video-5.jpg
+File Name: D:\copy\influtics.temptics.com\assets\img\jo-video-5.jpg
+Content Type: image/jpeg
+
+Uri: https://influtics.temptics.com/assets/img/jo-video-6.jpg
+File Name: D:\copy\influtics.temptics.com\assets\img\jo-video-6.jpg
+Content Type: image/jpeg
+
+Uri: https://influtics.temptics.com/assets/img/login-bg.jpg
+File Name: D:\copy\influtics.temptics.com\assets\img\login-bg.jpg
+Content Type: image/jpeg
+
+Uri: https://influtics.temptics.com/assets/img/logo-white.svg
+File Name: D:\copy\influtics.temptics.com\assets\img\logo-white.svg
+Content Type: image/svg+xml
+
+Uri: https://influtics.temptics.com/assets/img/logo.svg
+File Name: D:\copy\influtics.temptics.com\assets\img\logo.svg
+Content Type: image/svg+xml
+
+Uri: https://influtics.temptics.com/assets/img/love.svg
+File Name: D:\copy\influtics.temptics.com\assets\img\love.svg
+Content Type: image/svg+xml
+
+Uri: https://influtics.temptics.com/assets/img/partner-1.png
+File Name: D:\copy\influtics.temptics.com\assets\img\partner-1.png
+Content Type: image/png
+
+Uri: https://influtics.temptics.com/assets/img/partner-2.png
+File Name: D:\copy\influtics.temptics.com\assets\img\partner-2.png
+Content Type: image/png
+
+Uri: https://influtics.temptics.com/assets/img/partner-3.png
+File Name: D:\copy\influtics.temptics.com\assets\img\partner-3.png
+Content Type: image/png
+
+Uri: https://influtics.temptics.com/assets/img/partner-4.png
+File Name: D:\copy\influtics.temptics.com\assets\img\partner-4.png
+Content Type: image/png
+
+Uri: https://influtics.temptics.com/assets/img/paypal-img.png
+File Name: D:\copy\influtics.temptics.com\assets\img\paypal-img.png
+Content Type: image/png
+
+Uri: https://influtics.temptics.com/assets/img/pricing-plan-bg.svg
+File Name: D:\copy\influtics.temptics.com\assets\img\pricing-plan-bg.svg
+Content Type: image/svg+xml
+
+Uri: https://influtics.temptics.com/assets/img/pricing-plan-icon.svg
+File Name: D:\copy\influtics.temptics.com\assets\img\pricing-plan-icon.svg
+Content Type: image/svg+xml
+
+Uri: https://influtics.temptics.com/assets/img/pricing-plan-vector.svg
+File Name: D:\copy\influtics.temptics.com\assets\img\pricing-plan-vector.svg
+Content Type: image/svg+xml
+
+Uri: https://influtics.temptics.com/assets/img/quotation-icon-2.svg
+File Name: D:\copy\influtics.temptics.com\assets\img\quotation-icon-2.svg
+Content Type: image/svg+xml
+
+Uri: https://influtics.temptics.com/assets/img/quotation-icon.svg
+File Name: D:\copy\influtics.temptics.com\assets\img\quotation-icon.svg
+Content Type: image/svg+xml
+
+Uri: https://influtics.temptics.com/assets/img/reel-thumb-1.jpg
+File Name: D:\copy\influtics.temptics.com\assets\img\reel-thumb-1.jpg
+Content Type: image/jpeg
+
+Uri: https://influtics.temptics.com/assets/img/reel-thumb-2.jpg
+File Name: D:\copy\influtics.temptics.com\assets\img\reel-thumb-2.jpg
+Content Type: image/jpeg
+
+Uri: https://influtics.temptics.com/assets/img/reel-thumb-3.jpg
+File Name: D:\copy\influtics.temptics.com\assets\img\reel-thumb-3.jpg
+Content Type: image/jpeg
+
+Uri: https://influtics.temptics.com/assets/img/reel-thumb-4.jpg
+File Name: D:\copy\influtics.temptics.com\assets\img\reel-thumb-4.jpg
+Content Type: image/jpeg
+
+Uri: https://influtics.temptics.com/assets/img/reel-thumb-5.jpg
+File Name: D:\copy\influtics.temptics.com\assets\img\reel-thumb-5.jpg
+Content Type: image/jpeg
+
+Uri: https://influtics.temptics.com/assets/img/service-1.jpg
+File Name: D:\copy\influtics.temptics.com\assets\img\service-1.jpg
+Content Type: image/jpeg
+
+Uri: https://influtics.temptics.com/assets/img/service-2.jpg
+File Name: D:\copy\influtics.temptics.com\assets\img\service-2.jpg
+Content Type: image/jpeg
+
+Uri: https://influtics.temptics.com/assets/img/service-3.jpg
+File Name: D:\copy\influtics.temptics.com\assets\img\service-3.jpg
+Content Type: image/jpeg
+
+Uri: https://influtics.temptics.com/assets/img/service-details-img-1.jpg
+File Name: D:\copy\influtics.temptics.com\assets\img\service-details-img-1.jpg
+Content Type: image/jpeg
+
+Uri: https://influtics.temptics.com/assets/img/service-details-img-2.jpg
+File Name: D:\copy\influtics.temptics.com\assets\img\service-details-img-2.jpg
+Content Type: image/jpeg
+
+Uri: https://influtics.temptics.com/assets/img/service-details-img.jpg
+File Name: D:\copy\influtics.temptics.com\assets\img\service-details-img.jpg
+Content Type: image/jpeg
+
+Uri: https://influtics.temptics.com/assets/img/service-details-sidebar-cta-bg.jpg
+File Name: D:\copy\influtics.temptics.com\assets\img\service-details-sidebar-cta-bg.jpg
+Content Type: image/jpeg
+
+Uri: https://influtics.temptics.com/assets/img/service.jpg
+File Name: D:\copy\influtics.temptics.com\assets\img\service.jpg
+Content Type: image/jpeg
+
+Uri: https://influtics.temptics.com/assets/img/signature.jpg
+File Name: D:\copy\influtics.temptics.com\assets\img\signature.jpg
+Content Type: image/jpeg
+
+Uri: https://influtics.temptics.com/assets/img/social-icon-1.png
+File Name: D:\copy\influtics.temptics.com\assets\img\social-icon-1.png
+Content Type: image/png
+
+Uri: https://influtics.temptics.com/assets/img/social-icon-2.png
+File Name: D:\copy\influtics.temptics.com\assets\img\social-icon-2.png
+Content Type: image/png
+
+Uri: https://influtics.temptics.com/assets/img/social-icon-3.png
+File Name: D:\copy\influtics.temptics.com\assets\img\social-icon-3.png
+Content Type: image/png
+
+Uri: https://influtics.temptics.com/assets/img/social-icon-4.png
+File Name: D:\copy\influtics.temptics.com\assets\img\social-icon-4.png
+Content Type: image/png
+
+Uri: https://influtics.temptics.com/assets/img/umcoming-live-1.jpg
+File Name: D:\copy\influtics.temptics.com\assets\img\umcoming-live-1.jpg
+Content Type: image/jpeg
+
+Uri: https://influtics.temptics.com/assets/img/umcoming-live-2.jpg
+File Name: D:\copy\influtics.temptics.com\assets\img\umcoming-live-2.jpg
+Content Type: image/jpeg
+
+Uri: https://influtics.temptics.com/assets/img/user-5.png
+File Name: D:\copy\influtics.temptics.com\assets\img\user-5.png
+Content Type: image/png
+
+Uri: https://influtics.temptics.com/assets/img/user-6.png
+File Name: D:\copy\influtics.temptics.com\assets\img\user-6.png
+Content Type: image/png
+
+Uri: https://influtics.temptics.com/assets/img/user-dp-2.png
+File Name: D:\copy\influtics.temptics.com\assets\img\user-dp-2.png
+Content Type: image/png
+
+Uri: https://influtics.temptics.com/assets/img/video-big-1.png
+File Name: D:\copy\influtics.temptics.com\assets\img\video-big-1.png
+Content Type: image/png
+
+Uri: https://influtics.temptics.com/assets/img/video-big-2.png
+File Name: D:\copy\influtics.temptics.com\assets\img\video-big-2.png
+Content Type: image/png
+
+Uri: https://influtics.temptics.com/assets/img/video-big-3.png
+File Name: D:\copy\influtics.temptics.com\assets\img\video-big-3.png
+Content Type: image/png
+
+Uri: https://influtics.temptics.com/assets/img/video-details-img.jpg
+File Name: D:\copy\influtics.temptics.com\assets\img\video-details-img.jpg
+Content Type: image/jpeg
+
+Uri: https://influtics.temptics.com/assets/js/accordion.js
+File Name: D:\copy\influtics.temptics.com\assets\js\accordion.js
+Content Type: application/javascript
+
+Uri: https://influtics.temptics.com/assets/js/main.js
+File Name: D:\copy\influtics.temptics.com\assets\js\main.js
+Content Type: application/javascript
+
+Uri: https://influtics.temptics.com/assets/js/tab.js
+File Name: D:\copy\influtics.temptics.com\assets\js\tab.js
+Content Type: application/javascript
+
+Uri: https://influtics.temptics.com/assets/vendor/bootstrap/bootstrap.bundle.min.js
+File Name: D:\copy\influtics.temptics.com\assets\vendor\bootstrap\bootstrap.bundle.min.js
+Content Type: application/javascript
+
+Uri: https://influtics.temptics.com/assets/vendor/bootstrap/bootstrap.min.css
+File Name: D:\copy\influtics.temptics.com\assets\vendor\bootstrap\bootstrap.min.css
+Content Type: text/css
+
+Uri: https://influtics.temptics.com/assets/vendor/fs-lightbox/fslightbox.js
+File Name: D:\copy\influtics.temptics.com\assets\vendor\fs-lightbox\fslightbox.js
+Content Type: application/javascript
+
+Uri: https://influtics.temptics.com/assets/vendor/no-ui-slider/nouislider.min.css
+File Name: D:\copy\influtics.temptics.com\assets\vendor\no-ui-slider\nouislider.min.css
+Content Type: text/css
+
+Uri: https://influtics.temptics.com/assets/vendor/no-ui-slider/nouislider.min.js
+File Name: D:\copy\influtics.temptics.com\assets\vendor\no-ui-slider\nouislider.min.js
+Content Type: application/javascript
+
+Uri: https://influtics.temptics.com/assets/vendor/plyr/plyr.css
+File Name: D:\copy\influtics.temptics.com\assets\vendor\plyr\plyr.css
+Content Type: text/css
+
+Uri: https://influtics.temptics.com/assets/vendor/plyr/plyr.polyfilled.js
+File Name: D:\copy\influtics.temptics.com\assets\vendor\plyr\plyr.polyfilled.js
+Content Type: application/javascript
+
+Uri: https://influtics.temptics.com/assets/vendor/slim-select/slimselect.css
+File Name: D:\copy\influtics.temptics.com\assets\vendor\slim-select\slimselect.css
+Content Type: text/css
+
+Uri: https://influtics.temptics.com/assets/vendor/slim-select/slimselect.min.js
+File Name: D:\copy\influtics.temptics.com\assets\vendor\slim-select\slimselect.min.js
+Content Type: application/javascript
+
+Uri: https://influtics.temptics.com/assets/vendor/splide/splide-extension-auto-scroll.min.js
+File Name: D:\copy\influtics.temptics.com\assets\vendor\splide\splide-extension-auto-scroll.min.js
+Content Type: application/javascript
+
+Uri: https://influtics.temptics.com/assets/vendor/splide/splide.min.css
+File Name: D:\copy\influtics.temptics.com\assets\vendor\splide\splide.min.css
+Content Type: text/css
+
+Uri: https://influtics.temptics.com/assets/vendor/splide/splide.min.js
+File Name: D:\copy\influtics.temptics.com\assets\vendor\splide\splide.min.js
+Content Type: application/javascript
+
+Uri: https://influtics.temptics.com/assets/vendor/swiper/swiper-bundle.min.css
+File Name: D:\copy\influtics.temptics.com\assets\vendor\swiper\swiper-bundle.min.css
+Content Type: text/css
+
+Uri: https://influtics.temptics.com/assets/vendor/swiper/swiper-bundle.min.js
+File Name: D:\copy\influtics.temptics.com\assets\vendor\swiper\swiper-bundle.min.js
+Content Type: application/javascript
+
+Uri: https://influtics.temptics.com/blog-details.html
+File Name: D:\copy\influtics.temptics.com\blog-details.html
+Content Type: text/html
+
+Uri: https://influtics.temptics.com/blog.html
+File Name: D:\copy\influtics.temptics.com\blog.html
+Content Type: text/html
+
+Uri: https://influtics.temptics.com/checkout.html
+File Name: D:\copy\influtics.temptics.com\checkout.html
+Content Type: text/html
+
+Uri: https://influtics.temptics.com/contact.html
+File Name: D:\copy\influtics.temptics.com\contact.html
+Content Type: text/html
+
+Uri: https://influtics.temptics.com/index.html
+File Name: D:\copy\influtics.temptics.com\index.html
+Content Type: text/html
+
+Uri: https://influtics.temptics.com/login.html
+File Name: D:\copy\influtics.temptics.com\login.html
+Content Type: text/html
+
+Uri: https://influtics.temptics.com/pricing.html
+File Name: D:\copy\influtics.temptics.com\pricing.html
+Content Type: text/html
+
+Uri: https://influtics.temptics.com/register.html
+File Name: D:\copy\influtics.temptics.com\register.html
+Content Type: text/html
+
+Uri: https://influtics.temptics.com/service-details.html
+File Name: D:\copy\influtics.temptics.com\service-details.html
+Content Type: text/html
+
+Uri: https://influtics.temptics.com/service.html
+File Name: D:\copy\influtics.temptics.com\service.html
+Content Type: text/html
+
+Uri: https://influtics.temptics.com/video-details.html
+File Name: D:\copy\influtics.temptics.com\video-details.html
+Content Type: text/html
+
+Uri: https://influtics.temptics.com/video-shop-details.html
+File Name: D:\copy\influtics.temptics.com\video-shop-details.html
+Content Type: text/html
+
+Uri: https://influtics.temptics.com/video-shop.html
+File Name: D:\copy\influtics.temptics.com\video-shop.html
+Content Type: text/html
+
+Uri: https://influtics.temptics.com/videos-1.html
+File Name: D:\copy\influtics.temptics.com\videos-1.html
+Content Type: text/html
+
+Uri: https://influtics.temptics.com/videos-2.html
+File Name: D:\copy\influtics.temptics.com\videos-2.html
+Content Type: text/html
+
+Uri: https://influtics.temptics.com/videos-3.html
+File Name: D:\copy\influtics.temptics.com\videos-3.html
+Content Type: text/html
+
+Uri: https://videos.pexels.com/video-files/3402899/3402899-sd_506_960_25fps.mp4
+File Name: D:\copy\influtics.temptics.com\video-files\3402899\3402899-sd_506_960_25fps.mp4
+Content Type: 
+
