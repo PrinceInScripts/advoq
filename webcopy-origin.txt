@@ -702,8 +702,8 @@ Uri: https://influtics.temptics.com/assets/img/login-bg.jpg
 File Name: D:\copy\influtics.temptics.com\assets\img\login-bg.jpg
 Content Type: image/jpeg
 
-Uri: https://influtics.temptics.com/assets/img/logo-white.svg
-File Name: D:\copy\influtics.temptics.com\assets\img\logo-white.svg
+Uri: https://influtics.temptics.com/assets/img/logo.png
+File Name: D:\copy\influtics.temptics.com\assets\img\logo.png
 Content Type: image/svg+xml
 
 Uri: https://influtics.temptics.com/assets/img/logo.svg

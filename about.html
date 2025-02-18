@@ -20,64 +20,99 @@
         <!-- custom CSS -->
         <link rel="stylesheet" href="assets/css/style.css">
         <!-- <link rel="stylesheet" href="assets/css/style2.css"> -->
+
+        <style>
+             
+        .jo-video-card img{
+            width: 100%;
+            height: 100%;
+        }
+
+
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+            .latest-videos-slider .jo-video-card{
+                min-width: 0px;
+             
+            }
+                 .latest-videos-slider .jo-video-card img{
+                /* width: 100%; */
+                height: 500px;
+            }
+            .latest-videos-slider .jo-video-card::before{
+                display: none;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .latest-videos-slider .jo-video-card{
+                min-width: 0px;
+             
+            }
+                 .latest-videos-slider .jo-video-card img{
+                /* width: 100%; */
+                height: 500px;
+            }
+            .latest-videos-slider .jo-video-card::before{
+                display: none;
+            }
+        }
+
+
+        </style>
     </head>
 
     <body>
-        <!-- sidebar -->
-        <div class="jo-sidebar">
-            <div>
-                <!-- heading -->
-                <div
-                    class="jo-sidebar__heading d-flex justify-content-between align-items-center">
-                    <a href="#"><img src="assets/img/logo.png" alt="logo"
-                            class="logo"></a>
-                    <button type="button" class="jo-sidebar-close-btn"><i
-                            class="flaticon-add-plus-button"></i></button>
-                </div>
-
-                <!-- mobile menu -->
-                <div class="jo-header-nav-in-mobile"></div>
+         <!-- sidebar -->
+    <div class="jo-sidebar">
+        <div >
+            <!-- heading -->
+            <div class="jo-sidebar__heading d-flex flex-column justify-content-between align-items-center">
+                <a href="#"><img src="assets/img/logo.png" alt="logo" class="" width="100%" height="100%"></a>
+                <button type="button" class="jo-sidebar-close-btn"><i class="flaticon-add-plus-button"></i></button>
             </div>
 
-            <div>
-                <a href="about.html" class="jo-btn"><i
-                        class="flaticon-add-plus-button"></i>Follow Me</a>
-                <!-- socials -->
-                <div
-                    class="tt-footer-top__socials jo-footer-top__socials jo-sidebar-socials justify-content-start justify-content-sm-end">
-                    <a href="#"><i class="flaticon-facebook-1"></i></a>
-                    <a href="#"><i class="flaticon-twitter"></i></a>
-                    <a href="#"><i class="flaticon-social-media"></i></a>
-                    <a href="#"><i class="flaticon-youtube-1"></i></a>
-                </div>
-            </div>
+            <!-- mobile menu -->
+            <div class="jo-header-nav-in-mobile"></div>
         </div>
 
-        <!-- HEADER SECTION START -->
-        <header class="jo-header">
-            <a href="index.html"><img src="assets/img/logo.svg" alt="logo"></a>
-            <div class="jo-header-right">
-                <div class="jo-header-nav">
-                    <div class="to-go-to-sidebar-in-mobile">
-                        <nav>
-                            <a href="index.html">Home</a>
-                            <a href="about.html">About Me</a>
-                            <div class="has-sub-menu relative">
-                                <!-- <a role="button">Streaming Videos</a> -->
-                                <a href="videos-1.html">Streaming Videos</a>
+        <div>
+            <a href="about.html" class="jo-btn"><i class="flaticon-add-plus-button"></i>Follow Me</a>
+            <!-- socials -->
+            <!-- <div class="tt-footer-top__socials jo-footer-top__socials jo-sidebar-socials justify-content-start justify-content-sm-end">
+                <a href="#"><i class="flaticon-facebook-1"></i></a>
+                <a href="#"><i class="flaticon-twitter"></i></a>
+                <a href="#"><i class="flaticon-social-media"></i></a>
+                <a href="#"><i class="flaticon-youtube-1"></i></a>
+            </div> -->
+        </div>
+    </div>
 
-                                <!-- <ul class="jo-header-submenu">
+    <!-- HEADER SECTION START -->
+    <header class="jo-header">
+        <a href="index.html"><img src="assets/img/logo.png" alt="logo" style="width: 80px;"></a>
+        <div class="jo-header-right">
+            <div class="jo-header-nav">
+                <div class="to-go-to-sidebar-in-mobile">
+                    <nav>
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Me</a>
+                        <div class="has-sub-menu relative">
+                            <!-- <a role="button">Streaming Videos</a> -->
+                            <a href="videos-1.html">Streaming Videos</a>
+
+                            <!-- <ul class="jo-header-submenu">
                                 <li><a href="videos-1.html">Streaming Videos 1</a></li>
                                 <li><a href="videos-2.html">Streaming Videos 2</a></li>
                                 <li><a href="videos-3.html">Streaming Videos 3</a></li>
                                 <li><a href="video-details.html">Streaming Video Details</a></li>
                             </ul> -->
-                            </div>
-                            <div class="has-sub-menu relative">
-                                <!-- <a role="button">Pages</a> -->
-                                <a href="service.html">Services</a>
+                        </div>
+                        <div class="has-sub-menu relative">
+                            <!-- <a role="button">Pages</a> -->
+                            <a href="service.html">Services</a>
 
-                                <!-- <ul class="jo-header-submenu">
+                            <!-- <ul class="jo-header-submenu">
                                 <li><a href="video-shop.html">Video Shop</a></li>
                                 <li><a href="video-shop-details.html">Video Shop Details</a></li>
                                 <li><a href="service.html">Services</a></li>
@@ -87,8 +122,8 @@
                                 <li><a href="login.html">Sign in</a></li>
                                 <li><a href="pricing.html">Pricing</a></li>
                             </ul> -->
-                            </div>
-                            <!-- <div class="has-sub-menu relative">
+                        </div>
+                        <!-- <div class="has-sub-menu relative">
                             <a role="button">Blog</a>
 
                             <ul class="jo-header-submenu">
@@ -96,21 +131,18 @@
                                 <li><a href="blog-details.html">Blog Details</a></li>
                             </ul>
                         </div> -->
-                            <a href="contact.html">Contact</a>
+                        <a href="contact.html">Contact</a>
 
-                        </nav>
-                    </div>
-                </div>
-                <div class="d-flex gap-2">
-                    <a href="about.html" class="jo-btn"><i
-                            class="flaticon-add-plus-button"></i>Follow Me</a>
-                    <button
-                        class="jo-header-sidebar-open-btn jo-btn px-3 d-inline-block d-lg-none"><i
-                            class="flaticon-menu"></i></button>
+                    </nav>
                 </div>
             </div>
-        </header>
-        <!-- HEADER SECTION END -->
+            <div class="d-flex gap-2">
+                <a href="about.html" class="jo-btn"><i class="flaticon-add-plus-button"></i>Follow Me</a>
+                <button class="jo-header-sidebar-open-btn jo-btn px-3 d-inline-block d-lg-none"><i class="flaticon-menu"></i></button>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER SECTION END -->
 
         <main>
             <!-- BREADCRUMB SECTION START -->
@@ -167,26 +199,20 @@
                             <!-- txt -->
                             <div class="col-xl-7 col-lg-7">
                                 <div class="jo-inner-about-txt">
-                                    <h2 class="jo-section-title">I'm a Social
+                                    <h2 class="jo-section-title">We are Social
                                         Media influencer&nbsp;&amp; digital
                                         content creator</h2>
-                                    <p class="jo-intro__descr">consectetur
-                                        adipiscing elit. Donec non mattis nulla,
-                                        in ultrices diam. Curabitur nec pharetra
-                                        nunc. Nunc nec pellentesque nisl. Ut non
-                                        mauris bibendum nunc pharetra laoreet
-                                        sed eget mauris. Donec eget fermentum
-                                        libero, ac aliquet lectus.</p>
+                                    <p class="jo-intro__descr">At Aces Media, we specialize in creating meaningful connections between brands and their audiences through authentic influencer partnerships. Our team is passionate about crafting tailored campaigns that leverage the unique voices of influencers to drive engagement and elevate brand presence. We believe in the power of storytelling and creativity, working closely with both brands and influencers to ensure every collaboration resonates. Let us help you navigate the dynamic world of influencer marketing and unlock new opportunities for growth!</p>
 
                                     <ul class="jo-intro__list">
-                                        <li>Non mattis nulla, in ultrices
-                                            diam</li>
-                                        <li>Web design done Delightful
-                                            Visualization</li>
-                                        <li>Alienum phaedrum torquatos nec eu,
-                                            vis detraxit periculis</li>
-                                        <li>Software Makes Your Profit Double if
-                                            You Scale Properly.</li>
+                                        <li>Misson
+
+                                            <p style="font-size: x-small;">Our mission is to empower brands to connect authentically with their audiences through innovative influencer partnerships. We strive to create meaningful collaborations that inspire engagement, drive results, and elevate brand narratives, all while fostering a supportive community for influencers to thrive.</p>
+                                        </li>
+                                        <li>Vision
+                                            <p style="font-size: x-small;">Our vision is to be the leading platform for authentic influencer marketing, where brands and creators unite to shape culture and drive impactful connections. We aim to redefine the landscape of digital engagement, making influencer collaborations a cornerstone of effective marketing strategies worldwide.</p>
+                                        </li>
+                                       
                                     </ul>
 
                                     <div><img src="assets/img/signature.jpg"
@@ -195,252 +221,202 @@
                             </div>
                         </div>
                     </div>
-                    <p class="jo-inner-about-second-title">Jio helps agencies
-                        like yours operate at a much larger scale <span
-                            class="txt-gold">with a vital</span> <span
-                            class="txt-pink">Platform to Effectively
-                            Manage</span> and grow your network</p>
+                    <p class="jo-inner-about-second-title">
+                        We love what we do and therefore come up with the best possible solutions to help <span
+                        class="txt-gold">you set and grow</span> online quickly. We are <span
+                        class="txt-pink">your trusted partners</span> you can count on.
+                      
                 </div>
             </section>
             <!-- ABOUT SECTION END -->
 
             <!-- VIDEOS SECTION START -->
-            <section class="jo-videos jo-inner-videos">
-                <div class="jo-container">
-                    <!-- heading -->
-                    <div class="jo-videos__heading">
-                        <h2 class="jo-section-title">My Latest Premium
-                            Videos</h2>
-                        <a href="videos-1.html" class="jo-btn jo-videos__btn"><i
-                                class="flaticon-premium-quality"></i> View All
-                            Videos</a>
-                    </div>
+        <section class="jo-videos">
+            <div class="jo-container">
+                <!-- heading -->
+                <div class="jo-videos__heading">
+                    <h2 class="jo-section-title">My Latest Premium Gallery</h2>
+                    <a href="videos-1.html" class="jo-btn jo-videos__btn"><i class="flaticon-premium-quality"></i> View All Videos</a>
                 </div>
+            </div>
 
-                <!-- video cards -->
-                <div class="jo-videos-slider splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <div class="jo-video-card">
-                                    <img src="assets/img/jo-video-1.jpg"
-                                        alt="Video Thumbnail"
-                                        class="jo-video-card__img">
+            <!-- video cards -->
+            <div class="jo-videos-slider splide latest-videos-slider">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="jo-video-card">
+                                <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/IMG_8583.JPG" alt="Video Thumbnail" class="jo-video-card__img">
 
-                                    <div class="jo-video-card__txt">
-                                        <div
-                                            class="d-flex justify-content-between">
-                                            <a
-                                                href="https://youtu.be/vc3WCrgYpF0?si=W2iFDfdDYsh6spKg"
-                                                data-fslightbox="videos"
-                                                class="jo-video-card__btn"><i
-                                                    class="flaticon-play"></i></a>
-                                            <span
-                                                class="jo-video-card__premium-tag"><i
-                                                    class="flaticon-premium-quality"></i></span>
+                                <!-- <div class="jo-video-card__txt">
+                                    <div class="d-flex justify-content-between">
+                                        <a href="https://youtu.be/vc3WCrgYpF0?si=W2iFDfdDYsh6spKg" data-fslightbox="videos" class="jo-video-card__btn"><i class="flaticon-play"></i></a>
+                                        <span class="jo-video-card__premium-tag"><i class="flaticon-premium-quality"></i></span>
+                                    </div>
+
+                                    <div class="bottom">
+                                        <span class="price">$5.00</span>
+                                        <h5><a href="video-details.html" class="jo-video-card__title">Smiley woman pop party studio medium shot</a></h5>
+                                        <div class="tt-video__infos jo-video-card__infos">
+                                            <span>16M views</span>
+                                            <span>49 minutes ago</span>
                                         </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </li>
 
-                                        <div class="bottom">
-                                            <span class="price">$5.00</span>
-                                            <h5><a href="video-details.html"
-                                                    class="jo-video-card__title">Smiley
-                                                    woman pop party studio
-                                                    medium shot</a></h5>
-                                            <div
-                                                class="tt-video__infos jo-video-card__infos">
-                                                <span>16M views</span>
-                                                <span>49 minutes ago</span>
-                                            </div>
+                        <li class="splide__slide">
+                            <div class="jo-video-card">
+                                <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/IMG_8606.JPG" alt="Video Thumbnail" class="jo-video-card__img">
+
+                                
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="jo-video-card">
+                                <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/IMG_8697.JPG" alt="Video Thumbnail" class="jo-video-card__img">
+                            </div>
+                        </li>
+
+                        <li class="splide__slide">
+                            <div class="jo-video-card">
+                                <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/IMG_8736.JPG" alt="Video Thumbnail" class="jo-video-card__img">
+                            </div>
+                        </li>
+
+                        <li class="splide__slide">
+                            <div class="jo-video-card">
+                                <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/IMG_8738.JPG" alt="Video Thumbnail" class="jo-video-card__img">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="jo-video-card">
+                                <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/IMG_8776.JPG" alt="Video Thumbnail" class="jo-video-card__img">
+                            </div>
+                        </li>
+
+                        <!-- <li class="splide__slide">
+                            <div class="jo-video-card">
+                                <img src="assets/img/jo-video-2.jpg" alt="Video Thumbnail" class="jo-video-card__img">
+
+                                <div class="jo-video-card__txt">
+                                    <div class="d-flex justify-content-between">
+                                        <a href="https://youtu.be/vc3WCrgYpF0?si=W2iFDfdDYsh6spKg" data-fslightbox="videos" class="jo-video-card__btn"><i class="flaticon-play"></i></a>
+                                        <span class="jo-video-card__premium-tag"><i class="flaticon-premium-quality"></i></span>
+                                    </div>
+
+                                    <div class="bottom">
+                                        <span class="price">$5.00</span>
+                                        <h5><a href="video-details.html" class="jo-video-card__title">Smiley woman pop party studio medium shot</a></h5>
+                                        <div class="tt-video__infos jo-video-card__infos">
+                                            <span>16M views</span>
+                                            <span>49 minutes ago</span>
                                         </div>
                                     </div>
                                 </div>
-                            </li>
+                            </div>
+                        </li>
 
-                            <li class="splide__slide">
-                                <div class="jo-video-card">
-                                    <img src="assets/img/jo-video-2.jpg"
-                                        alt="Video Thumbnail"
-                                        class="jo-video-card__img">
+                        <li class="splide__slide">
+                            <div class="jo-video-card">
+                                <img src="assets/img/jo-video-3.jpg" alt="Video Thumbnail" class="jo-video-card__img">
 
-                                    <div class="jo-video-card__txt">
-                                        <div
-                                            class="d-flex justify-content-between">
-                                            <a
-                                                href="https://youtu.be/vc3WCrgYpF0?si=W2iFDfdDYsh6spKg"
-                                                data-fslightbox="videos"
-                                                class="jo-video-card__btn"><i
-                                                    class="flaticon-play"></i></a>
-                                            <span
-                                                class="jo-video-card__premium-tag"><i
-                                                    class="flaticon-premium-quality"></i></span>
-                                        </div>
+                                <div class="jo-video-card__txt">
+                                    <div class="d-flex justify-content-between">
+                                        <a href="https://youtu.be/vc3WCrgYpF0?si=W2iFDfdDYsh6spKg" data-fslightbox="videos" class="jo-video-card__btn"><i class="flaticon-play"></i></a>
+                                        <span class="jo-video-card__premium-tag"><i class="flaticon-premium-quality"></i></span>
+                                    </div>
 
-                                        <div class="bottom">
-                                            <span class="price">$5.00</span>
-                                            <h5><a href="video-details.html"
-                                                    class="jo-video-card__title">Smiley
-                                                    woman pop party studio
-                                                    medium shot</a></h5>
-                                            <div
-                                                class="tt-video__infos jo-video-card__infos">
-                                                <span>16M views</span>
-                                                <span>49 minutes ago</span>
-                                            </div>
+                                    <div class="bottom">
+                                        <span class="price">$5.00</span>
+                                        <h5><a href="video-details.html" class="jo-video-card__title">Smiley woman pop party studio medium shot</a></h5>
+                                        <div class="tt-video__infos jo-video-card__infos">
+                                            <span>16M views</span>
+                                            <span>49 minutes ago</span>
                                         </div>
                                     </div>
                                 </div>
-                            </li>
-
-                            <li class="splide__slide">
-                                <div class="jo-video-card">
-                                    <img src="assets/img/jo-video-3.jpg"
-                                        alt="Video Thumbnail"
-                                        class="jo-video-card__img">
-
-                                    <div class="jo-video-card__txt">
-                                        <div
-                                            class="d-flex justify-content-between">
-                                            <a
-                                                href="https://youtu.be/vc3WCrgYpF0?si=W2iFDfdDYsh6spKg"
-                                                data-fslightbox="videos"
-                                                class="jo-video-card__btn"><i
-                                                    class="flaticon-play"></i></a>
-                                            <span
-                                                class="jo-video-card__premium-tag"><i
-                                                    class="flaticon-premium-quality"></i></span>
-                                        </div>
-
-                                        <div class="bottom">
-                                            <span class="price">$5.00</span>
-                                            <h5><a href="video-details.html"
-                                                    class="jo-video-card__title">Smiley
-                                                    woman pop party studio
-                                                    medium shot</a></h5>
-                                            <div
-                                                class="tt-video__infos jo-video-card__infos">
-                                                <span>16M views</span>
-                                                <span>49 minutes ago</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+                            </div>
+                        </li> -->
+                    </ul>
                 </div>
+            </div>
 
-                <div class="jo-videos-slider-2 splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <div class="jo-video-card">
-                                    <img src="assets/img/jo-video-4.jpg"
-                                        alt="Video Thumbnail"
-                                        class="jo-video-card__img">
+            <div class="jo-videos-slider-2 splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="jo-video-card">
+                                <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/IMG_8563.JPG" alt="Video Thumbnail" class="jo-video-card__img">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="jo-video-card">
+                                <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/IMG_8608.JPG" alt="Video Thumbnail" class="jo-video-card__img">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="jo-video-card">
+                                <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/IMG_8612.JPG" alt="Video Thumbnail" class="jo-video-card__img">
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="jo-video-card">
+                                <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/IMG_8722.JPG" alt="Video Thumbnail" class="jo-video-card__img">
+                            </div>
+                        </li>
+                        
 
-                                    <div class="jo-video-card__txt">
-                                        <div
-                                            class="d-flex justify-content-between">
-                                            <a
-                                                href="https://youtu.be/vc3WCrgYpF0?si=W2iFDfdDYsh6spKg"
-                                                data-fslightbox="videos"
-                                                class="jo-video-card__btn"><i
-                                                    class="flaticon-play"></i></a>
-                                            <span
-                                                class="jo-video-card__premium-tag d-none"><i
-                                                    class="flaticon-premium-quality"></i></span>
-                                        </div>
+                        <!-- <li class="splide__slide">
+                            <div class="jo-video-card">
+                                <img src="assets/img/jo-video-5.jpg" alt="Video Thumbnail" class="jo-video-card__img">
 
-                                        <div class="bottom">
-                                            <span class="price">Free</span>
-                                            <h5><a href="video-details.html"
-                                                    class="jo-video-card__title">Smiley
-                                                    woman pop party studio
-                                                    medium shot</a></h5>
-                                            <div
-                                                class="tt-video__infos jo-video-card__infos">
-                                                <span>16M views</span>
-                                                <span>49 minutes ago</span>
-                                            </div>
+                                <div class="jo-video-card__txt">
+                                    <div class="d-flex justify-content-between">
+                                        <a href="https://youtu.be/vc3WCrgYpF0?si=W2iFDfdDYsh6spKg" data-fslightbox="videos" class="jo-video-card__btn"><i class="flaticon-play"></i></a>
+                                        <span class="jo-video-card__premium-tag"><i class="flaticon-premium-quality"></i></span>
+                                    </div>
+
+                                    <div class="bottom">
+                                        <span class="price">$5.00</span>
+                                        <h5><a href="video-details.html" class="jo-video-card__title">Smiley woman pop party studio medium shot</a></h5>
+                                        <div class="tt-video__infos jo-video-card__infos">
+                                            <span>16M views</span>
+                                            <span>49 minutes ago</span>
                                         </div>
                                     </div>
                                 </div>
-                            </li>
+                            </div>
+                        </li>
 
-                            <li class="splide__slide">
-                                <div class="jo-video-card">
-                                    <img src="assets/img/jo-video-5.jpg"
-                                        alt="Video Thumbnail"
-                                        class="jo-video-card__img">
+                        <li class="splide__slide">
+                            <div class="jo-video-card">
+                                <img src="assets/img/jo-video-6.jpg" alt="Video Thumbnail" class="jo-video-card__img">
 
-                                    <div class="jo-video-card__txt">
-                                        <div
-                                            class="d-flex justify-content-between">
-                                            <a
-                                                href="https://youtu.be/vc3WCrgYpF0?si=W2iFDfdDYsh6spKg"
-                                                data-fslightbox="videos"
-                                                class="jo-video-card__btn"><i
-                                                    class="flaticon-play"></i></a>
-                                            <span
-                                                class="jo-video-card__premium-tag"><i
-                                                    class="flaticon-premium-quality"></i></span>
-                                        </div>
+                                <div class="jo-video-card__txt">
+                                    <div class="d-flex justify-content-between">
+                                        <a href="https://youtu.be/vc3WCrgYpF0?si=W2iFDfdDYsh6spKg" data-fslightbox="videos" class="jo-video-card__btn"><i class="flaticon-play"></i></a>
+                                        <span class="jo-video-card__premium-tag"><i class="flaticon-premium-quality"></i></span>
+                                    </div>
 
-                                        <div class="bottom">
-                                            <span class="price">$5.00</span>
-                                            <h5><a href="video-details.html"
-                                                    class="jo-video-card__title">Smiley
-                                                    woman pop party studio
-                                                    medium shot</a></h5>
-                                            <div
-                                                class="tt-video__infos jo-video-card__infos">
-                                                <span>16M views</span>
-                                                <span>49 minutes ago</span>
-                                            </div>
+                                    <div class="bottom">
+                                        <span class="price">$5.00</span>
+                                        <h5><a href="video-details.html" class="jo-video-card__title">Smiley woman pop party studio medium shot</a></h5>
+                                        <div class="tt-video__infos jo-video-card__infos">
+                                            <span>16M views</span>
+                                            <span>49 minutes ago</span>
                                         </div>
                                     </div>
                                 </div>
-                            </li>
-
-                            <li class="splide__slide">
-                                <div class="jo-video-card">
-                                    <img src="assets/img/jo-video-6.jpg"
-                                        alt="Video Thumbnail"
-                                        class="jo-video-card__img">
-
-                                    <div class="jo-video-card__txt">
-                                        <div
-                                            class="d-flex justify-content-between">
-                                            <a
-                                                href="https://youtu.be/vc3WCrgYpF0?si=W2iFDfdDYsh6spKg"
-                                                data-fslightbox="videos"
-                                                class="jo-video-card__btn"><i
-                                                    class="flaticon-play"></i></a>
-                                            <span
-                                                class="jo-video-card__premium-tag"><i
-                                                    class="flaticon-premium-quality"></i></span>
-                                        </div>
-
-                                        <div class="bottom">
-                                            <span class="price">$5.00</span>
-                                            <h5><a href="video-details.html"
-                                                    class="jo-video-card__title">Smiley
-                                                    woman pop party studio
-                                                    medium shot</a></h5>
-                                            <div
-                                                class="tt-video__infos jo-video-card__infos">
-                                                <span>16M views</span>
-                                                <span>49 minutes ago</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+                            </div>
+                        </li> -->
+                    </ul>
                 </div>
-            </section>
-            <!-- VIDEOS SECTION END -->
+            </div>
+        </section>
+        <!-- VIDEOS SECTION END -->
+
 
             <!-- CONTACT SECTION START -->
             <section class="jo-contact">
@@ -454,11 +430,7 @@
                                         alt="icon" class="icon">
                                     <h2 class="jo-section-title">Let’s Work
                                         Together on your next Project</h2>
-                                    <p>consectetur adipiscing elit. Donec non
-                                        mattis nulla, in ultrices diam.
-                                        Curabitur nec pharetra nunc. Nunc nec
-                                        pellentesque nisl. Ut non mauris
-                                        bibendum</p>
+                                    <p>When connected with us, you aren’t growing your business alone. We have your back and put in our best to contribute to the growth of your entire team and organization. So, if you are looking for the right agency that’ll help you build a good online presence and bring in more conversions and revenue, we are right here!</p>
                                     <form action="#" class="jo-contact-form">
                                         <div>
                                             <label for="jo-contact-name">Your
@@ -634,7 +606,7 @@
                     <div class="row gx-4 gy-sm-5 gy-4 align-items-center">
                         <div class="col-lg-3 col-6 col-xxs-12">
                             <a href="index.html"><img
-                                    src="assets/img/logo-white.svg" alt="logo"
+                                    src="assets/img/logo.png" alt="logo"
                                     class="logo"></a>
                         </div>
                         <div class="col-lg-6 order-lg-1 order-2">
@@ -713,7 +685,7 @@
                 <!-- footer bottom -->
                 <div class="tt-footer-bottom text-center">
                     <p class="mb-0">Copyright ©2024 Developed
-                        by&nbsp;Influtics</p>
+                        by&nbsp;Advoq Entertainment</p>
                 </div>
             </div>
         </footer>
