@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "title": "Advoq Entertainment Intro (Vedhika)",
+        "brand": "Intro",
+        "Thumbnail": "https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/advoq_thumb.png",
+        "url": "https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/IMG_9687.mp4"
+    },
+    {
+        "id": 2,
+        "title": "60 Sec Teaser",
+        "brand": "null",
+        "Thumbnail": "https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/advoq_thumb.png",
+        "url": "https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/60+Sec+Teaser+4x5.mp4"
+    },
+    {
+        "id": 3,
+        "title": "Axe (Piyush Sharma)",
+        "brand": "AXE",
+        "Thumbnail": "https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/advoq_thumb.png",
+        "url": "https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/Axe+(Piyush+Sharma)_V1.mp4"
+    },
+    {
+        "id": 4,
+        "title": "Biolage DTP Story (Unboxing)_Arushi ",
+        "brand": "Biolage DTP",
+        "Thumbnail": "https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/advoq_thumb.png",
+        "url": "https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/Biolage+DTP+Story+2+(Unboxing)_Arushi_V1.mp4"
+    },
+    {
+        "id": 5,
+        "title": "Faith & patience",
+        "brand": "null",
+        "Thumbnail": "https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/advoq_thumb.png",
+        "url": "https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/Faith+%26+patience+.mp4"
+    },
+    {
+        "id": 6,
+        "title": "Coco Soul Oil (Shruti Sinha)",
+        "brand": "Coco Soul Oil",
+        "Thumbnail": "https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/advoq_thumb.png",
+        "url": "https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/Coco+Soul+Oil+(Shruti+Sinha)+V3.mp4"
+    },
+    {
+        "id": 7,
+        "title": "Jacqueline Fernandez",
+        "brand": "null",
+        "Thumbnail": "https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/advoq_thumb.png",
+        "url": "https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/jacqueline.mp4"
+    },
+    {
+        "id": 8,
+        "title": "Ponds Athleisure (Aarushi Dutta)",
+        "brand": "Ponds",
+        "Thumbnail": "https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/advoq_thumb.png",
+        "url": "https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/Ponds+Athleisure+(Aarushi+Dutta)_V4.mp4"
+    },
+    {
+        "id": 9,
+        "title": "Ponds Men Skincare (Ashish)",
+        "brand": "Ponds",
+        "Thumbnail": "https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/advoq_thumb.png",
+        "url": "https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/Ponds+Men+Skincare+(Ashish)+V4.mp4"
+    },
+    {
+        "id": 10,
+        "title": "Ponds Men Skincare (Rohit)",
+        "brand": "Ponds",
+        "Thumbnail": "https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/advoq_thumb.png",
+        "url": "https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/Ponds+Men+Skincare+(Rohit).mp4"
+    },
+    {
+        "id": 11,
+        "title": "Ponds Men Skincare (Suyyash)",
+        "brand": "Ponds",
+        "Thumbnail": "https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/advoq_thumb.png",
+        "url": "https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/Ponds+Men+Skincare+(Suyyash).mp4"
+    },
+    {
+        "id": 12,
+        "title":"Riyaz",
+        "brand":"null",
+        "Thumbnail":"https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/advoq_thumb.png",
+        "url":"https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/Riyaz+V3.mp4"
+    },
+    {
+        "id": 13,
+        "title":"SHEEVALIKA",
+        "brand":"null",
+        "Thumbnail":"https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/advoq_thumb.png",
+        "url":"https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/SHEEVALIKA+-+B-A+_V5.mp4"
+    },
+    {
+        "id": 14,
+        "title":"Trends Neon Pop",
+        "brand":"Trends",
+        "Thumbnail":"https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/advoq_thumb.png",
+        "url":"https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/Trends+Neon+Pop+4x5+.MP4"
+    }
+
+   
+]

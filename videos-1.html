@@ -52,32 +52,31 @@
             </div>
         </div>
 
-        <!-- HEADER SECTION START -->
-        <header class="jo-header">
-            <a href="index.html"><img src="assets/img/logo.png" alt="logo"
-                    style="width: 80px;"></a>
-            <div class="jo-header-right">
-                <div class="jo-header-nav">
-                    <div class="to-go-to-sidebar-in-mobile">
-                        <nav>
-                            <a href="index.html">Home</a>
-                            <a href="about.html">About Me</a>
-                            <div class="has-sub-menu relative">
-                                <!-- <a role="button">Streaming Videos</a> -->
-                                <a href="videos-1.html">Streaming Videos</a>
+       <!-- HEADER SECTION START -->
+    <header class="jo-header">
+        <a href="index.html"><img src="assets/img/logo.png" alt="logo" style="width: 80px;"></a>
+        <div class="jo-header-right">
+            <div class="jo-header-nav">
+                <div class="to-go-to-sidebar-in-mobile">
+                    <nav>
+                        <a href="index.html" class="fs-5 fw-bold">Home</a>
+                        <a href="about.html" class="fs-5 fw-bold">About</a>
+                        <!-- <div class="has-sub-menu relative"> -->
+                            <!-- <a role="button">Streaming Videos</a> -->
+                            <a href="videos-1.html" class="fs-5 fw-bold">Gallery</a>
 
-                                <!-- <ul class="jo-header-submenu">
+                            <!-- <ul class="jo-header-submenu">
                                 <li><a href="videos-1.html">Streaming Videos 1</a></li>
                                 <li><a href="videos-2.html">Streaming Videos 2</a></li>
                                 <li><a href="videos-3.html">Streaming Videos 3</a></li>
                                 <li><a href="video-details.html">Streaming Video Details</a></li>
                             </ul> -->
-                            </div>
-                            <div class="has-sub-menu relative">
-                                <!-- <a role="button">Pages</a> -->
-                                <a href="service.html">Services</a>
+                     <!-- </div>  -->
+                        <!-- <div class="has-sub-menu relative"> -->
+                            <!-- <a role="button">Pages</a> -->
+                            <!-- <a href="service.html">Services</a> -->
 
-                                <!-- <ul class="jo-header-submenu">
+                            <!-- <ul class="jo-header-submenu">
                                 <li><a href="video-shop.html">Video Shop</a></li>
                                 <li><a href="video-shop-details.html">Video Shop Details</a></li>
                                 <li><a href="service.html">Services</a></li>
@@ -87,8 +86,8 @@
                                 <li><a href="login.html">Sign in</a></li>
                                 <li><a href="pricing.html">Pricing</a></li>
                             </ul> -->
-                            </div>
-                            <!-- <div class="has-sub-menu relative">
+                        <!-- </div> -->
+                        <!-- <div class="has-sub-menu relative">
                             <a role="button">Blog</a>
 
                             <ul class="jo-header-submenu">
@@ -96,32 +95,28 @@
                                 <li><a href="blog-details.html">Blog Details</a></li>
                             </ul>
                         </div> -->
-                            <a href="contact.html">Contact</a>
+                        <a href="contact.html" class="fs-5 fw-bold">Contact</a>
 
-                        </nav>
-                    </div>
-                </div>
-                <div class="d-flex gap-2">
-                    <a href="about.html" class="jo-btn"><i
-                            class="flaticon-add-plus-button"></i>Follow Me</a>
-                    <button
-                        class="jo-header-sidebar-open-btn jo-btn px-3 d-inline-block d-lg-none"><i
-                            class="flaticon-menu"></i></button>
+                    </nav>
                 </div>
             </div>
-        </header>
-        <!-- HEADER SECTION END -->
-
+            <div class="d-flex gap-2">
+                <a href="about.html" class="jo-btn" class="fs-5 fw-bold"><i class="flaticon-add-plus-button" class="fs-5 fw-bold"></i>Follow Me</a>
+                <button class="jo-header-sidebar-open-btn jo-btn px-3 d-inline-block d-lg-none"><i class="flaticon-menu"></i></button>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER SECTION END -->
         <main>
             <!-- BREADCRUMB SECTION START -->
             <section class="jo-breadcrumb">
                 <div class="container">
-                    <h1 class="jo-page-title jo-section-title">Streaming
-                        Videos</h1>
+                    <h1 class="jo-page-title jo-section-title">Gallery
+                        </h1>
                     <ul class="jo-breadcrumb-nav">
                         <li><a href="#">Home</a></li>
                         <li><span>/</span></li>
-                        <li class="current-page">Streaming Videos</li>
+                        <li class="current-page">Gallery</li>
                     </ul>
 
                     <div class="jo-circle-box">
@@ -164,9 +159,9 @@
                         class="jo-inner-videos-filter-nav d-flex justify-content-center flex-wrap">
                         <button data-tab="all" class="tab-nav active">All
                             Videos</button>
-                        <button data-tab="lifestyle"
-                            class="tab-nav">Lifestyle</button>
-                        <button data-tab="fashion"
+                        <button data-tab="images"
+                            class="tab-nav">All Images</button>
+                        <!-- <button data-tab="fashion"
                             class="tab-nav">Fashion</button>
                         <button data-tab="beauty"
                             class="tab-nav">Beauty</button>
@@ -175,15 +170,49 @@
                         <button data-tab="recipe-videos" class="tab-nav">Recipe
                             Videos</button>
                         <button data-tab="travel"
-                            class="tab-nav">Travel</button>
+                            class="tab-nav">Travel</button> -->
                     </div>
 
                     <!-- video cards -->
                     <div class="jo-videos-tab-container">
                         <!-- single tab -->
                         <div class="jo-tab active" id="all">
-                            <div
-                                class="jo-inner-videos-row row row-cols-2 row-cols-xs-1">
+                            <div class="jo-inner-videos-row row row-cols-2 row-cols-xs-1 " id="video-container">
+
+
+                               
+                              
+
+                               
+
+                                <!-- <div class="col">
+                                    <div
+                                        class="jo-video-card jo-inner-video-card">
+                                        <img src="assets/img/jo-video-1.jpg"
+                                            alt="Video Thumbnail"
+                                            class="jo-video-card__img">
+
+                                        <div class="jo-video-card__txt">
+                                            <div class="bottom">
+                                                <a
+                                                    href="https://youtu.be/vc3WCrgYpF0?si=W2iFDfdDYsh6spKg"
+                                                    data-fslightbox="videos"
+                                                    class="jo-video-card__btn"><i
+                                                        class="flaticon-play"></i></a>
+                                                <h5 class="mb-0"><a
+                                                        href="video-details.html"
+                                                        class="jo-video-card__title">Smiley
+                                                        woman pop party studio
+                                                        medium shot</a></h5>
+                                                <div
+                                                    class="tt-video__infos jo-video-card__infos">
+                                                    <span>@facebook</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div class="col-12">
                                     <div
                                         class="jo-video-card jo-inner-video-card jo-inner-video-card--big">
@@ -210,183 +239,15 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-
-                                <div class="col">
-                                    <div
-                                        class="jo-video-card jo-inner-video-card">
-                                        <img src="assets/img/jo-video-2.jpg"
-                                            alt="Video Thumbnail"
-                                            class="jo-video-card__img">
-
-                                        <div class="jo-video-card__txt">
-                                            <div class="bottom">
-                                                <a
-                                                    href="https://youtu.be/vc3WCrgYpF0?si=W2iFDfdDYsh6spKg"
-                                                    data-fslightbox="videos"
-                                                    class="jo-video-card__btn"><i
-                                                        class="flaticon-play"></i></a>
-                                                <h5 class="mb-0"><a
-                                                        href="video-details.html"
-                                                        class="jo-video-card__title">Smiley
-                                                        woman pop party studio
-                                                        medium shot</a></h5>
-                                                <div
-                                                    class="tt-video__infos jo-video-card__infos">
-                                                    <span>@facebook</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col">
-                                    <div
-                                        class="jo-video-card jo-inner-video-card">
-                                        <img src="assets/img/jo-video-3.jpg"
-                                            alt="Video Thumbnail"
-                                            class="jo-video-card__img">
-
-                                        <div class="jo-video-card__txt">
-                                            <div class="bottom">
-                                                <a
-                                                    href="https://youtu.be/vc3WCrgYpF0?si=W2iFDfdDYsh6spKg"
-                                                    data-fslightbox="videos"
-                                                    class="jo-video-card__btn"><i
-                                                        class="flaticon-play"></i></a>
-                                                <h5 class="mb-0"><a
-                                                        href="video-details.html"
-                                                        class="jo-video-card__title">Smiley
-                                                        woman pop party studio
-                                                        medium shot</a></h5>
-                                                <div
-                                                    class="tt-video__infos jo-video-card__infos">
-                                                    <span>@facebook</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col">
-                                    <div
-                                        class="jo-video-card jo-inner-video-card">
-                                        <img src="assets/img/jo-video-4.jpg"
-                                            alt="Video Thumbnail"
-                                            class="jo-video-card__img">
-
-                                        <div class="jo-video-card__txt">
-                                            <div class="bottom">
-                                                <a
-                                                    href="https://youtu.be/vc3WCrgYpF0?si=W2iFDfdDYsh6spKg"
-                                                    data-fslightbox="videos"
-                                                    class="jo-video-card__btn"><i
-                                                        class="flaticon-play"></i></a>
-                                                <h5 class="mb-0"><a
-                                                        href="video-details.html"
-                                                        class="jo-video-card__title">Smiley
-                                                        woman pop party studio
-                                                        medium shot</a></h5>
-                                                <div
-                                                    class="tt-video__infos jo-video-card__infos">
-                                                    <span>@facebook</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col">
-                                    <div
-                                        class="jo-video-card jo-inner-video-card">
-                                        <img src="assets/img/jo-video-5.jpg"
-                                            alt="Video Thumbnail"
-                                            class="jo-video-card__img">
-
-                                        <div class="jo-video-card__txt">
-                                            <div class="bottom">
-                                                <a
-                                                    href="https://youtu.be/vc3WCrgYpF0?si=W2iFDfdDYsh6spKg"
-                                                    data-fslightbox="videos"
-                                                    class="jo-video-card__btn"><i
-                                                        class="flaticon-play"></i></a>
-                                                <h5 class="mb-0"><a
-                                                        href="video-details.html"
-                                                        class="jo-video-card__title">Smiley
-                                                        woman pop party studio
-                                                        medium shot</a></h5>
-                                                <div
-                                                    class="tt-video__infos jo-video-card__infos">
-                                                    <span>@facebook</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col">
-                                    <div
-                                        class="jo-video-card jo-inner-video-card">
-                                        <img src="assets/img/jo-video-6.jpg"
-                                            alt="Video Thumbnail"
-                                            class="jo-video-card__img">
-
-                                        <div class="jo-video-card__txt">
-                                            <div class="bottom">
-                                                <a
-                                                    href="https://youtu.be/vc3WCrgYpF0?si=W2iFDfdDYsh6spKg"
-                                                    data-fslightbox="videos"
-                                                    class="jo-video-card__btn"><i
-                                                        class="flaticon-play"></i></a>
-                                                <h5 class="mb-0"><a
-                                                        href="video-details.html"
-                                                        class="jo-video-card__title">Smiley
-                                                        woman pop party studio
-                                                        medium shot</a></h5>
-                                                <div
-                                                    class="tt-video__infos jo-video-card__infos">
-                                                    <span>@facebook</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col">
-                                    <div
-                                        class="jo-video-card jo-inner-video-card">
-                                        <img src="assets/img/jo-video-1.jpg"
-                                            alt="Video Thumbnail"
-                                            class="jo-video-card__img">
-
-                                        <div class="jo-video-card__txt">
-                                            <div class="bottom">
-                                                <a
-                                                    href="https://youtu.be/vc3WCrgYpF0?si=W2iFDfdDYsh6spKg"
-                                                    data-fslightbox="videos"
-                                                    class="jo-video-card__btn"><i
-                                                        class="flaticon-play"></i></a>
-                                                <h5 class="mb-0"><a
-                                                        href="video-details.html"
-                                                        class="jo-video-card__title">Smiley
-                                                        woman pop party studio
-                                                        medium shot</a></h5>
-                                                <div
-                                                    class="tt-video__infos jo-video-card__infos">
-                                                    <span>@facebook</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
 
                         <!-- single tab -->
-                        <div class="jo-tab" id="lifestyle">
+                        <div class="jo-tab" id="images">
                             <div
-                                class="jo-inner-videos-row row row-cols-2 row-cols-xs-1">
-                                <div class="col-12">
+                                class="jo-inner-videos-row row row-cols-2 row-cols-xs-1" id="image-container">
+                                <!-- <div class="col-12">
                                     <div
                                         class="jo-video-card jo-inner-video-card jo-inner-video-card--big">
                                         <img src="assets/img/video-big-2.png"
@@ -412,9 +273,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
 
-                                <div class="col">
+                                <!-- <div class="col">
                                     <div
                                         class="jo-video-card jo-inner-video-card">
                                         <img src="assets/img/jo-video-2.jpg"
@@ -468,9 +329,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
 
-                                <div class="col">
+                                <!-- <div class="col">
                                     <div
                                         class="jo-video-card jo-inner-video-card">
                                         <img src="assets/img/jo-video-4.jpg"
@@ -496,37 +357,11 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
 
-                                <div class="col">
-                                    <div
-                                        class="jo-video-card jo-inner-video-card">
-                                        <img src="assets/img/jo-video-5.jpg"
-                                            alt="Video Thumbnail"
-                                            class="jo-video-card__img">
+                                
 
-                                        <div class="jo-video-card__txt">
-                                            <div class="bottom">
-                                                <a
-                                                    href="https://youtu.be/vc3WCrgYpF0?si=W2iFDfdDYsh6spKg"
-                                                    data-fslightbox="videos"
-                                                    class="jo-video-card__btn"><i
-                                                        class="flaticon-play"></i></a>
-                                                <h5 class="mb-0"><a
-                                                        href="video-details.html"
-                                                        class="jo-video-card__title">Smiley
-                                                        woman pop party studio
-                                                        medium shot</a></h5>
-                                                <div
-                                                    class="tt-video__infos jo-video-card__infos">
-                                                    <span>@facebook</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col">
+                                <!-- <div class="col">
                                     <div
                                         class="jo-video-card jo-inner-video-card">
                                         <img src="assets/img/jo-video-6.jpg"
@@ -537,7 +372,7 @@
                                             <div class="bottom">
                                                 <a
                                                     href="https://youtu.be/vc3WCrgYpF0?si=W2iFDfdDYsh6spKg"
-                                                    data-fslightbox="videos"
+                                                   
                                                     class="jo-video-card__btn"><i
                                                         class="flaticon-play"></i></a>
                                                 <h5 class="mb-0"><a
@@ -552,9 +387,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
 
-                                <div class="col">
+                                <!-- <div class="col">
                                     <div
                                         class="jo-video-card jo-inner-video-card">
                                         <img src="assets/img/jo-video-1.jpg"
@@ -580,12 +415,12 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
 
                         <!-- single tab -->
-                        <div class="jo-tab" id="fashion">
+                        <!-- <div class="jo-tab" id="fashion">
                             <div
                                 class="jo-inner-videos-row row row-cols-2 row-cols-xs-1">
                                 <div class="col-12">
@@ -784,10 +619,10 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                         <!-- single tab -->
-                        <div class="jo-tab" id="beauty">
+                        <!-- <div class="jo-tab" id="beauty">
                             <div
                                 class="jo-inner-videos-row row row-cols-2 row-cols-xs-1">
                                 <div class="col-12">
@@ -986,10 +821,10 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                         <!-- single tab -->
-                        <div class="jo-tab" id="fitness-health">
+                        <!-- <div class="jo-tab" id="fitness-health">
                             <div
                                 class="jo-inner-videos-row row row-cols-2 row-cols-xs-1">
                                 <div class="col-12">
@@ -1188,10 +1023,10 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                         <!-- single tab -->
-                        <div class="jo-tab" id="recipe-videos">
+                        <!-- <div class="jo-tab" id="recipe-videos">
                             <div
                                 class="jo-inner-videos-row row row-cols-2 row-cols-xs-1">
                                 <div class="col-12">
@@ -1390,10 +1225,10 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                         <!-- single tab -->
-                        <div class="jo-tab" id="travel">
+                        <!-- <div class="jo-tab" id="travel">
                             <div
                                 class="jo-inner-videos-row row row-cols-2 row-cols-xs-1">
                                 <div class="col-12">
@@ -1592,7 +1427,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
 
                     <!-- pagination -->
@@ -1705,6 +1540,85 @@
             </div>
         </footer>
         <!-- FOOTER SECTION END -->
+
+        <script>
+              fetch('video.json')
+              .then(response=>response.json())
+                .then(data=>{
+                    let videoContainer = document.getElementById("video-container");
+
+                    
+                    console.log(videoContainer);
+                    console.log(data);
+                    
+                    data.forEach(video => {
+                        let videoCard=`<div class="col">
+                                    <div
+                                        class="jo-video-card jo-inner-video-card">
+                                        <img src="${video.Thumbnail}"
+                                            alt="Video Thumbnail"
+                                            class="jo-video-card__img">
+
+                                        <div class="jo-video-card__txt">
+                                            <div class="bottom">
+                                                <a
+                                                    href="${video.url}"
+                                                    data-fslightbox="videos"
+                                                    class="jo-video-card__btn"><i
+                                                        class="flaticon-play"></i></a>
+                                                <h5 class="mb-0"><a
+                                                        href="video-details.html"
+                                                        class="jo-video-card__title">${video.title}</a></h5>
+                                                <div
+                                                    class="tt-video__infos jo-video-card__infos">
+                                                    <span>${video.brand!=="null"?video.brand:""}</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>`
+
+                        videoContainer.innerHTML += videoCard;
+                    });
+            })
+            .catch(error => console.error('Error fetching data:', error));
+
+
+
+            fetch("images.json")
+            .then(response=>response.json())
+            .then(data=>{
+                let galleryContainer = document.getElementById("image-container");
+                console.log(galleryContainer);
+                console.log(data);
+                data.forEach(image => {
+                    let galleryCard=`
+                    <div class="col-6 col-md-4 col-lg-3">
+                    <div class="jo-gallery card">
+                        <a data-fslightbox href="${image.url}"
+                            class="jo-gallery__img">
+                            <img src="${image.url}"
+                                alt="Gallery Image">
+                        </a>
+                    </div>
+                </div>
+                    `
+                    galleryContainer.innerHTML += galleryCard;
+                });
+            })
+            .catch(error => console.error('Error fetching data:', error));
+        </script>
+
+        <!-- Include fslightbox -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.4.1/index.min.js"></script> -->
+<!-- Add the library (only one file) -->
+<!-- <script src="fslightbox.js"></script> -->
+
+<script>
+    // Refresh fslightbox to detect new elements
+    // fslightboxInstances = {};
+    // refreshFsLightbox();
+</script>
 
         <!-- libraries JS -->
         <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
