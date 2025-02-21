@@ -266,7 +266,7 @@
                         <div class="swiper-slide">
                             <div class="jo-reel">
                                 <div class="jo-reel-video position-relative">
-                                    <video controls playsinline webkit-playsinline poster="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/advoq_thumb.png" src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/60 Sec Teaser 4x5.mp4"></video>
+                                    <video id="myVideo" controls poster="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/advoq_thumb.png" src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/60 Sec Teaser 4x5.mp4"></video>
                                      <!-- <a href="#" class="link"><img src="assets/img/social-icon-1.png" alt="platform logo">Facebook Reel</a> --> 
                                 </div>
                                 <div class="jo-reel-txt">
@@ -347,8 +347,8 @@
                         <div class="swiper-slide">
                             <div class="jo-reel">
                                 <div class="jo-reel-video position-relative">
-                                    <video controls  poster="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/advoq_thumb.png" src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/Ponds Men Skincare (Suyyash).mp4"></video>
-                                    <!-- <a href="#" class="link"><img src="assets/img/social-icon-1.png" alt="platform logo">Facebook Reel</a> -->
+                                    <video controls  src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/Ponds Men Skincare (Suyyash).mp4"></video>
+                                    <!-- <a href="#" class="link"><img src="assets/img/social-icon-1.png" alt="platform logo">Facebook Reel</a> -->poster="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/advoq_thumb.png" 
                                 </div>
                                 <div class="jo-reel-txt">
                                     <h5 class="jo-reel-title"><a href="#">Ponds Men Skincare (Suyyash)</a></h5>
@@ -1238,6 +1238,24 @@
 
     <!-- custom js -->
     <script src="assets/js/main.js"></script>
+
+    <script>
+        const selec = document.querySelector(".jo-reel");
+        const video = document.getElementById("myVideo");
+
+        selec.addEventListener("touchend", togglePlay);
+        selec.addEventListener("click", togglePlay);
+
+        function togglePlay(event) {
+            console.log("touched");
+    event.preventDefault(); // Prevents double triggering on mobile
+    if (video.paused) {
+        video.play();
+    } else {
+        video.pause();
+    }
+}
+    </script>
 </body>
 
 </html>
