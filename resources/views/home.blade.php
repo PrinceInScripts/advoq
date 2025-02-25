@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-     <style>
-        .jo-video-card img{
+    <style>
+        .jo-video-card img {
             width: 100%;
             height: 100%;
         }
@@ -15,41 +15,42 @@
 
 
         @media (min-width: 992px) and (max-width: 1199px) {
-            .latest-videos-slider .jo-video-card{
+            .latest-videos-slider .jo-video-card {
                 min-width: 0px;
-             
+
             }
-                 .latest-videos-slider .jo-video-card img{
+
+            .latest-videos-slider .jo-video-card img {
                 /* width: 100%; */
                 height: 500px;
             }
-            .latest-videos-slider .jo-video-card::before{
+
+            .latest-videos-slider .jo-video-card::before {
                 display: none;
             }
         }
 
         @media (min-width: 1200px) {
-            .latest-videos-slider .jo-video-card{
+            .latest-videos-slider .jo-video-card {
                 min-width: 0px;
-             
+
             }
-                 .latest-videos-slider .jo-video-card img{
+
+            .latest-videos-slider .jo-video-card img {
                 /* width: 100%; */
                 height: 500px;
             }
-            .latest-videos-slider .jo-video-card::before{
+
+            .latest-videos-slider .jo-video-card::before {
                 display: none;
             }
         }
 
-        .img{
+        .img {
             display: block;
             margin: auto;
         }
-        
-
-
-    </style> 
+    </style>
 
     <!-- libraries CSS -->
     <link rel="stylesheet" href="assets/font/flaticon_jio_-_influencer.css">
@@ -62,7 +63,7 @@
 
     {{-- import csrf token --}}
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    
+
 
     <!-- custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -70,7 +71,7 @@
 </head>
 
 <body>
-      <x-header />
+    <x-header />
     <main>
         <!-- BANNER SECTION START -->
         <section class="jo-banner">
@@ -82,16 +83,19 @@
                                 <img src="assets/img/user-dp-2.png" alt="img">
                                 <span>Bryan has liked</span>
                                 <span class="icon"><img src="assets/img/love.svg" alt="icon"></span>
-                            </div>  --}}
-                            <h4 class="jo-banner__title"><span><span class="styled">Crafting</span> your story</span><span>  Elevating your Brand</span></h1>
+                            </div> --}}
+                            <h4 class="jo-banner__title"><span><span class="styled">Crafting</span> your
+                                    story</span><span> Elevating your Brand</span></h1>
                                 <!-- <p class="">If you are looking for an agency to help you create a remarkable presence online, you’ve come to the right place. We can help you take your business to the next level.</p> -->
-                            <div class="jo-banner__btns">
-                                <a href="#" onclick="window.location.href='{{ route('about') }}'" class="jo-btn">About</a>
-                                <a href="#" onclick="window.location.href='{{ route('contact') }}'" class="jo-btn">Contact</a>
-                            </div>
+                                <div class="jo-banner__btns">
+                                    <a href="#" onclick="window.location.href='{{ route('about') }}'"
+                                        class="jo-btn">About</a>
+                                    <a href="#" onclick="window.location.href='{{ route('contact') }}'"
+                                        class="jo-btn">Contact</a>
+                                </div>
 
-                            <!-- vector -->
-                            <img src="assets/img/jo-banner-vector-1.svg" alt="vector" class="vector">
+                                <!-- vector -->
+                                <img src="assets/img/jo-banner-vector-1.svg" alt="vector" class="vector">
                         </div>
                     </div>
 
@@ -131,33 +135,33 @@
             <div class="jo-reels-container">
                 <div class="jo-reels-slider swiper">
                     <div class="swiper-wrapper">
-                           @php
-                            $videos=DB::table('videos')->get();
-                           @endphp
+                        @php
+                        $videos=DB::table('videos')->where(status,1)->get();
+                        @endphp
 
-                           @foreach ($videos as $video)
-                           <div class="swiper-slide">
+                        @foreach ($videos as $video)
+                        <div class="swiper-slide">
                             <div class="jo-reel">
                                 <div class="jo-reel-video position-relative">
                                     <video id="myVideo" controls poster="" src="{{ $video->url }}"></video>
-                                     <!-- <a href="#" class="link"><img src="assets/img/social-icon-1.png" alt="platform logo">Facebook Reel</a> --> 
+                                    <!-- <a href="#" class="link"><img src="assets/img/social-icon-1.png" alt="platform logo">Facebook Reel</a> -->
                                 </div>
                                 <div class="jo-reel-txt">
                                     <h5 class="jo-reel-title"><a href="#">{{ $video->title }}</a></h5>
                                     <div class="jo-reel-info">
                                         <span><i class="flaticon-bell"></i></span>
-                                         <span>{{ $video->brand!=null?$video->brand:"" }}</span>
+                                        <span>{{ $video->brand!=null?$video->brand:"" }}</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                               
-                           @endforeach
+
+                        @endforeach
                     </div>
                 </div>
             </div>
         </section>
-       
+
 
 
         <!-- SERVICES SECTION START -->
@@ -175,10 +179,10 @@
                             <button class="tab-nav" data-tab="service-2">CELEBRITY MANAGEMENT</button>
                             <button class="tab-nav" data-tab="service-3">EVENTS</button>
                             <button class="tab-nav" data-tab="service-4">AWARDS</button>
-                            <button class="tab-nav" data-tab="service-5">PUBLIC RELATIONS</button> 
-                            <button class="tab-nav" data-tab="service-6">ADS MAKING</button> 
-                            <button class="tab-nav" data-tab="service-7">BRAND ENDORSEMENTS</button> 
-                            <button class="tab-nav" data-tab="service-8">⁠VENUE MANAGEMENT</button> 
+                            <button class="tab-nav" data-tab="service-5">PUBLIC RELATIONS</button>
+                            <button class="tab-nav" data-tab="service-6">ADS MAKING</button>
+                            <button class="tab-nav" data-tab="service-7">BRAND ENDORSEMENTS</button>
+                            <button class="tab-nav" data-tab="service-8">⁠VENUE MANAGEMENT</button>
 
                         </div>
 
@@ -194,13 +198,19 @@
                                     <!-- txt -->
                                     <div class="txt">
                                         <h5 class="title">🎯 Influencer Marketing: Create Real Connections</h5>
-                                        <p class=""  style="font-size: 14px;">It’s not about numbers—it’s about influence. We connect your brand with the right voices that drive <strong>real engagement, trust, and conversions.</strong></p>
-                                        <div class="list" >
-                                            <p >✅ <strong>Strategic Influencer Pairing –</strong> Matching you with influencers who actually connect with your audience.</p>
-                                            <p>✅ <strong>Viral Campaign Execution –</strong> From reels to YouTube collabs, we craft content that sticks.</p>
-                                            <p>✅ <strong>Data-Driven Growth –</strong> We don’t just launch campaigns—we track, optimize, and scale them.</p>
+                                        <p class="" style="font-size: 14px;">It’s not about numbers—it’s about
+                                            influence. We connect your brand with the right voices that drive
+                                            <strong>real engagement, trust, and conversions.</strong></p>
+                                        <div class="list">
+                                            <p>✅ <strong>Strategic Influencer Pairing –</strong> Matching you with
+                                                influencers who actually connect with your audience.</p>
+                                            <p>✅ <strong>Viral Campaign Execution –</strong> From reels to YouTube
+                                                collabs, we craft content that sticks.</p>
+                                            <p>✅ <strong>Data-Driven Growth –</strong> We don’t just launch campaigns—we
+                                                track, optimize, and scale them.</p>
                                         </div>
-                                        <p class="" style="font-size: 14px;">📢 <strong>Your brand deserves more than ads—it needs a movement. Let’s build it together.</strong></p>
+                                        <p class="" style="font-size: 14px;">📢 <strong>Your brand deserves more than
+                                                ads—it needs a movement. Let’s build it together.</strong></p>
                                     </div>
                                 </div>
                             </div>
@@ -216,13 +226,19 @@
                                     <!-- txt -->
                                     <div class="txt">
                                         <h5 class="title">🌟 Celebrity Management: Where Talent Meets Opportunity</h5>
-                                        <p class="" style="font-size: 14px;">we manage <strong>top-tier talent</strong>, helping celebrities <strong>grow their personal brand</strong> while delivering maximum value for businesses. </p>
+                                        <p class="" style="font-size: 14px;">we manage <strong>top-tier talent</strong>,
+                                            helping celebrities <strong>grow their personal brand</strong> while
+                                            delivering maximum value for businesses. </p>
                                         <div class="list">
-                                            <p> <strong>🎤 Endorsements & Brand Deals – </strong> Get A-list stars to represent your brand.</p>
-                                            <p><strong>🎬 Event & Media Appearances – </strong> Red carpets, talk shows, major events—we make it happen.</p>
-                                            <p><strong>⚡ Reputation & Image Management –</strong> We handle PR, digital presence, and media narratives.</p>
+                                            <p> <strong>🎤 Endorsements & Brand Deals – </strong> Get A-list stars to
+                                                represent your brand.</p>
+                                            <p><strong>🎬 Event & Media Appearances – </strong> Red carpets, talk shows,
+                                                major events—we make it happen.</p>
+                                            <p><strong>⚡ Reputation & Image Management –</strong> We handle PR, digital
+                                                presence, and media narratives.</p>
                                         </div>
-                                        <p class="" style="font-size: 14px;"><strong>🔥 We don’t just manage stars—we create legends.</strong></p>
+                                        <p class="" style="font-size: 14px;"><strong>🔥 We don’t just manage stars—we
+                                                create legends.</strong></p>
                                     </div>
                                 </div>
                             </div>
@@ -239,13 +255,19 @@
                                     <!-- txt -->
                                     <div class="txt">
                                         <h5 class="title">📢 Public Relations: Make Headlines, Not Noise</h5>
-                                        <p class="" style="font-size: 14px;">Your brand’s story deserves to be <strong>told—and heard</strong>. We craft compelling narratives that put you in the spotlight.</p>
+                                        <p class="" style="font-size: 14px;">Your brand’s story deserves to be
+                                            <strong>told—and heard</strong>. We craft compelling narratives that put you
+                                            in the spotlight.</p>
                                         <div class="list">
-                                            <p> <strong>📰 Premium Media Coverage – </strong> Get featured in top publications, TV, and digital media.</p>
-                                            <p><strong>💡 Crisis Management – </strong> If things go south, we turn setbacks into comebacks.</p>
-                                            <p><strong>📣 Brand Storytelling –</strong> Because facts tell, but stories sell.</p>
+                                            <p> <strong>📰 Premium Media Coverage – </strong> Get featured in top
+                                                publications, TV, and digital media.</p>
+                                            <p><strong>💡 Crisis Management – </strong> If things go south, we turn
+                                                setbacks into comebacks.</p>
+                                            <p><strong>📣 Brand Storytelling –</strong> Because facts tell, but stories
+                                                sell.</p>
                                         </div>
-                                        <p class="" style="font-size: 14px;"><strong>🚀 Let’s make your brand impossible to ignore.</strong></p>
+                                        <p class="" style="font-size: 14px;"><strong>🚀 Let’s make your brand impossible
+                                                to ignore.</strong></p>
                                     </div>
                                 </div>
                             </div>
@@ -262,13 +284,20 @@
                                     <!-- txt -->
                                     <div class="txt">
                                         <h5 class="title">🎭 Events: We Create Experiences, Not Just Events</h5>
-                                        <p class="" style="font-size: 14px;">From <strong>glamorous award nights</strong> to <strong>high-impact corporate events</strong>, we design, plan, and execute seamless experiences.<strong>real engagement, trust, and conversions.</strong></p>
+                                        <p class="" style="font-size: 14px;">From <strong>glamorous award
+                                                nights</strong> to <strong>high-impact corporate events</strong>, we
+                                            design, plan, and execute seamless experiences.<strong>real engagement,
+                                                trust, and conversions.</strong></p>
                                         <div class="list">
-                                            <p> <strong>🎤 Product Launches & Activations – </strong> Get people talking about your brand—before, during, and after.</p>
-                                            <p><strong>🎟️ Celebrity Concerts & Private Events – </strong> Exclusive gigs, private parties, and high-profile gatherings.</p>
-                                            <p><strong>🎨 Themed Experiences & Luxury Weddings –</strong>Unique, unforgettable, and trendsetting.</p>
+                                            <p> <strong>🎤 Product Launches & Activations – </strong> Get people talking
+                                                about your brand—before, during, and after.</p>
+                                            <p><strong>🎟️ Celebrity Concerts & Private Events – </strong> Exclusive
+                                                gigs, private parties, and high-profile gatherings.</p>
+                                            <p><strong>🎨 Themed Experiences & Luxury Weddings –</strong>Unique,
+                                                unforgettable, and trendsetting.</p>
                                         </div>
-                                        <p class="" style="font-size: 14px;"><strong>✨ Whatever you dream, we bring it to life.</strong></p>
+                                        <p class="" style="font-size: 14px;"><strong>✨ Whatever you dream, we bring it
+                                                to life.</strong></p>
                                     </div>
                                 </div>
                             </div>
@@ -285,13 +314,19 @@
                                     <!-- txt -->
                                     <div class="txt">
                                         <h5 class="title">🏆 Awards: Honor, Celebrate, Inspire</h5>
-                                        <p class="" style="font-size: 14px;">Greatness deserves recognition. Whether it’s a <strong>corporate excellence award</strong> or a <strong>star-studded</strong> industry gala, we handle everything.</p>
+                                        <p class="" style="font-size: 14px;">Greatness deserves recognition. Whether
+                                            it’s a <strong>corporate excellence award</strong> or a
+                                            <strong>star-studded</strong> industry gala, we handle everything.</p>
                                         <div class="list">
-                                            <p> <strong>🥇 Award Show Planning – </strong> From red carpet to after-party, we take care of it all.</p>
-                                            <p><strong>🎥 High-Impact Production – </strong> Stunning visuals, top-tier entertainment, and seamless execution.</p>
-                                            <p><strong>🌟 Maximum Media Buzz –</strong> Press, influencers, and social media—your event will be everywhere.</p>
+                                            <p> <strong>🥇 Award Show Planning – </strong> From red carpet to
+                                                after-party, we take care of it all.</p>
+                                            <p><strong>🎥 High-Impact Production – </strong> Stunning visuals, top-tier
+                                                entertainment, and seamless execution.</p>
+                                            <p><strong>🌟 Maximum Media Buzz –</strong> Press, influencers, and social
+                                                media—your event will be everywhere.</p>
                                         </div>
-                                        <p class="" style="font-size: 14px;"><strong>🌟 We don’t just give awards, we create iconic moments.</strong></p>
+                                        <p class="" style="font-size: 14px;"><strong>🌟 We don’t just give awards, we
+                                                create iconic moments.</strong></p>
                                     </div>
                                 </div>
                             </div>
@@ -307,13 +342,19 @@
                                     <!-- txt -->
                                     <div class="txt">
                                         <h5 class="title">🎬 Ad Making: Ads That Sell & Stick</h5>
-                                        <p class="" style="font-size: 14px;">Forget boring ads. We make <strong>cinematic, attention-grabbing, and high-converting content.</strong></p>
+                                        <p class="" style="font-size: 14px;">Forget boring ads. We make
+                                            <strong>cinematic, attention-grabbing, and high-converting content.</strong>
+                                        </p>
                                         <div class="list">
-                                            <p> <strong>📺 TV Commercials & Digital Campaigns – </strong> High-quality, high-impact, high-engagement.</p>
-                                            <p><strong>🎭 Storytelling That Sells  – </strong> Every frame matters. We create stories that connect.</p>
-                                            <p><strong>🚀 Data-Driven Ad Targeting  –</strong> Your ads, reaching the right people, at the right time.</p>
+                                            <p> <strong>📺 TV Commercials & Digital Campaigns – </strong> High-quality,
+                                                high-impact, high-engagement.</p>
+                                            <p><strong>🎭 Storytelling That Sells – </strong> Every frame matters. We
+                                                create stories that connect.</p>
+                                            <p><strong>🚀 Data-Driven Ad Targeting –</strong> Your ads, reaching the
+                                                right people, at the right time.</p>
                                         </div>
-                                        <p class="" style="font-size: 14px;"><strong>🎥 Lights, camera, action—let’s create magic.</strong></p>
+                                        <p class="" style="font-size: 14px;"><strong>🎥 Lights, camera, action—let’s
+                                                create magic.</strong></p>
                                     </div>
                                 </div>
                             </div>
@@ -329,13 +370,18 @@
                                     <!-- txt -->
                                     <div class="txt">
                                         <h5 class="title">🤝 Brand Endorsements: Influence That Converts</h5>
-                                        <p class="" style="font-size: 14px;">Leverage <strong>star power</strong> to take your brand to the next level.</strong></p>
+                                        <p class="" style="font-size: 14px;">Leverage <strong>star power</strong> to
+                                            take your brand to the next level.</strong></p>
                                         <div class="list">
-                                            <p> <strong>🎯 Strategic Partnerships  – </strong> Hand-picked celebrities & influencers that fit your brand.</p>
-                                            <p><strong>🔥 Social Media Domination  – </strong> Instagram, Facebook, YouTube—we make sure your brand is trending.</p>
-                                            <p><strong>📈 ROI-Focused Execution –</strong> We don’t do “hype.” We do results.</p>
+                                            <p> <strong>🎯 Strategic Partnerships – </strong> Hand-picked celebrities &
+                                                influencers that fit your brand.</p>
+                                            <p><strong>🔥 Social Media Domination – </strong> Instagram, Facebook,
+                                                YouTube—we make sure your brand is trending.</p>
+                                            <p><strong>📈 ROI-Focused Execution –</strong> We don’t do “hype.” We do
+                                                results.</p>
                                         </div>
-                                        <p class="" style="font-size: 14px;"><strong>🚀 Turn influence into impact. Let’s make it happen.</strong></p>
+                                        <p class="" style="font-size: 14px;"><strong>🚀 Turn influence into impact.
+                                                Let’s make it happen.</strong></p>
                                     </div>
                                 </div>
                             </div>
@@ -351,15 +397,20 @@
                                     <!-- txt -->
                                     <div class="txt">
                                         <h5 class="title">🎪 Venue Management: Perfect Space, Perfect Experience</h5>
-                                        <p class="" style="font-size: 14px;">A great event starts with <strong>the right venue</strong>. We handle:</p>
+                                        <p class="" style="font-size: 14px;">A great event starts with <strong>the right
+                                                venue</strong>. We handle:</p>
                                         <div class="list">
-                                            <p><strong>🏛 Venue Selection & Booking – </strong> Finding and securing the best locations.</p>
-                                            <p><strong>⚙️ On-Site Coordination  – </strong>  Every detail, from seating to sound, handled flawlessly.</p>
-                                            <p><strong>🔒 Security & VIP Management –</strong>  Because exclusivity demands precision.</p>
+                                            <p><strong>🏛 Venue Selection & Booking – </strong> Finding and securing the
+                                                best locations.</p>
+                                            <p><strong>⚙️ On-Site Coordination – </strong> Every detail, from seating to
+                                                sound, handled flawlessly.</p>
+                                            <p><strong>🔒 Security & VIP Management –</strong> Because exclusivity
+                                                demands precision.</p>
                                         </div>
-                                        <p class="" style="font-size: 14px;"><strong>🏟 From grand ballrooms to exclusive rooftops—we find the perfect spot.
+                                        <p class="" style="font-size: 14px;"><strong>🏟 From grand ballrooms to
+                                                exclusive rooftops—we find the perfect spot.
 
-                                        </strong></p>
+                                            </strong></p>
                                     </div>
                                 </div>
                             </div>
@@ -380,20 +431,37 @@
                         <!-- txt -->
                         <div class="col-xl-12">
                             <div class="jo-intro__txt">
-                                <h2 class="jo-section-title" style="font-size: xx-large;">Connecting Brands with Influencers for Maximum Impact</h2>
-                                <p class="jo-intro__descr" style="font-size: medium;">At AdvoQ Entertainments, we specialize in creating meaningful connections between brands and their audiences through authentic influencer partnerships. Our team is passionate about crafting tailored campaigns that leverage the unique voices of influencers to drive engagement and elevate brand presence. We believe in the power of storytelling and creativity, working closely with both brands and influencers to ensure every collaboration resonates. Let us help you navigate the dynamic world of influencer marketing and unlock new opportunities for growth!</p>
+                                <h2 class="jo-section-title" style="font-size: xx-large;">Connecting Brands with
+                                    Influencers for Maximum Impact</h2>
+                                <p class="jo-intro__descr" style="font-size: medium;">At AdvoQ Entertainments, we
+                                    specialize in creating meaningful connections between brands and their audiences
+                                    through authentic influencer partnerships. Our team is passionate about crafting
+                                    tailored campaigns that leverage the unique voices of influencers to drive
+                                    engagement and elevate brand presence. We believe in the power of storytelling and
+                                    creativity, working closely with both brands and influencers to ensure every
+                                    collaboration resonates. Let us help you navigate the dynamic world of influencer
+                                    marketing and unlock new opportunities for growth!</p>
 
                                 <ul class="jo-intro__list">
                                     <li>Misson
 
-                                        <p style="font-size: small;">Our mission is to empower brands to connect authentically with their audiences through innovative influencer partnerships. We strive to create meaningful collaborations that inspire engagement, drive results, and elevate brand narratives, all while fostering a supportive community for influencers to thrive.</p>
+                                        <p style="font-size: small;">Our mission is to empower brands to connect
+                                            authentically with their audiences through innovative influencer
+                                            partnerships. We strive to create meaningful collaborations that inspire
+                                            engagement, drive results, and elevate brand narratives, all while fostering
+                                            a supportive community for influencers to thrive.</p>
                                     </li>
                                     <li>Vision
-                                        <p style="font-size: small;">Our vision is to be the leading platform for authentic influencer marketing, where brands and creators unite to shape culture and drive impactful connections. We aim to redefine the landscape of digital engagement, making influencer collaborations a cornerstone of effective marketing strategies worldwide.</p>
+                                        <p style="font-size: small;">Our vision is to be the leading platform for
+                                            authentic influencer marketing, where brands and creators unite to shape
+                                            culture and drive impactful connections. We aim to redefine the landscape of
+                                            digital engagement, making influencer collaborations a cornerstone of
+                                            effective marketing strategies worldwide.</p>
                                     </li>
-                                   
+
                                 </ul>
-                                <a href="#" onclick="window.location.href='{{ route('contact') }}'" class="jo-btn">Contact Me</a>
+                                <a href="#" onclick="window.location.href='{{ route('contact') }}'"
+                                    class="jo-btn">Contact Me</a>
                             </div>
                         </div>
 
@@ -413,7 +481,7 @@
             <!-- INTRO SECTION END -->
 
 
-      
+
         </div>
 
 
@@ -423,7 +491,8 @@
                 <!-- heading -->
                 <div class="jo-videos__heading">
                     <h2 class="jo-section-title">Latest Gallery</h2>
-                     <a href="#" onclick="window.location.href='{{ route('gallery') }}'" class="jo-btn jo-videos__btn"><i class="flaticon-premium-quality"></i> View Gallery</a> 
+                    <a href="#" onclick="window.location.href='{{ route('gallery') }}'" class="jo-btn jo-videos__btn"><i
+                            class="flaticon-premium-quality"></i> View Gallery</a>
                 </div>
             </div>
 
@@ -433,7 +502,8 @@
                     <ul class="splide__list">
                         <li class="splide__slide">
                             <div class="jo-video-card">
-                                <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/IMG_8583.JPG" alt="Video Thumbnail" class="jo-video-card__img">
+                                <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/IMG_8583.JPG"
+                                    alt="Video Thumbnail" class="jo-video-card__img">
 
                                 <!-- <div class="jo-video-card__txt">
                                     <div class="d-flex justify-content-between">
@@ -455,33 +525,38 @@
 
                         <li class="splide__slide">
                             <div class="jo-video-card">
-                                <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/IMG_8736.JPG" alt="Video Thumbnail" class="jo-video-card__img">
+                                <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/IMG_8736.JPG"
+                                    alt="Video Thumbnail" class="jo-video-card__img">
                             </div>
                         </li>
 
                         <li class="splide__slide">
                             <div class="jo-video-card">
-                                <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/IMG_8606.JPG" alt="Video Thumbnail" class="jo-video-card__img">
+                                <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/IMG_8606.JPG"
+                                    alt="Video Thumbnail" class="jo-video-card__img">
 
-                                
+
                             </div>
                         </li>
                         <li class="splide__slide">
                             <div class="jo-video-card">
-                                <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/IMG_8697.JPG" alt="Video Thumbnail" class="jo-video-card__img">
+                                <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/IMG_8697.JPG"
+                                    alt="Video Thumbnail" class="jo-video-card__img">
                             </div>
                         </li>
 
-                        
+
 
                         <li class="splide__slide">
                             <div class="jo-video-card">
-                                <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/IMG_8738.JPG" alt="Video Thumbnail" class="jo-video-card__img">
+                                <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/IMG_8738.JPG"
+                                    alt="Video Thumbnail" class="jo-video-card__img">
                             </div>
                         </li>
                         <li class="splide__slide">
                             <div class="jo-video-card">
-                                <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/IMG_8776.JPG" alt="Video Thumbnail" class="jo-video-card__img">
+                                <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/IMG_8776.JPG"
+                                    alt="Video Thumbnail" class="jo-video-card__img">
                             </div>
                         </li>
 
@@ -537,25 +612,29 @@
                     <ul class="splide__list">
                         <li class="splide__slide">
                             <div class="jo-video-card">
-                                <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/IMG_8563.JPG" alt="Video Thumbnail" class="jo-video-card__img">
+                                <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/IMG_8563.JPG"
+                                    alt="Video Thumbnail" class="jo-video-card__img">
                             </div>
                         </li>
                         <li class="splide__slide">
                             <div class="jo-video-card">
-                                <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/IMG_8608.JPG" alt="Video Thumbnail" class="jo-video-card__img">
+                                <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/IMG_8608.JPG"
+                                    alt="Video Thumbnail" class="jo-video-card__img">
                             </div>
                         </li>
                         <li class="splide__slide">
                             <div class="jo-video-card">
-                                <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/IMG_8612.JPG" alt="Video Thumbnail" class="jo-video-card__img">
+                                <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/IMG_8612.JPG"
+                                    alt="Video Thumbnail" class="jo-video-card__img">
                             </div>
                         </li>
                         <li class="splide__slide">
                             <div class="jo-video-card">
-                                <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/IMG_8722.JPG" alt="Video Thumbnail" class="jo-video-card__img">
+                                <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/IMG_8722.JPG"
+                                    alt="Video Thumbnail" class="jo-video-card__img">
                             </div>
                         </li>
-                        
+
 
                         <!-- <li class="splide__slide">
                             <div class="jo-video-card">
@@ -606,8 +685,8 @@
         </section>
         <!-- VIDEOS SECTION END -->
 
-          <!-- ARTICLES SECTION START -->
-          <section class="jo-articles">
+        <!-- ARTICLES SECTION START -->
+        <section class="jo-articles">
             <div class="jo-container">
                 <div class="text-center">
                     <h2 class="jo-section-title">INTERNATIONAL ICON AWARDS</h2>
@@ -617,13 +696,8 @@
                     <div class="col-12">
                         <div class="jo-article">
                             <div class="jo-article__img">
-                                <iframe
-    src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/IIA.pdf"
-    frameBorder="0"
-    scrolling="auto"
-    height="800px"
-    width="100%"
-></iframe>
+                                <iframe src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/IIA.pdf"
+                                    frameBorder="0" scrolling="auto" height="800px" width="100%"></iframe>
 
                                 <div class="date">
                                     <span class="number">IIA</span>
@@ -656,18 +730,18 @@
         <!-- ARTICLES SECTION END -->
 
 
-        
 
-       <x-contact/>
-      
+
+        <x-contact />
+
     </main>
 
 
-    <x-footer/>
+    <x-footer />
 
 
-    
-      
+
+
 
 
     <!-- libraries JS -->
@@ -702,42 +776,46 @@
     </script> --}}
 
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const reels = document.querySelectorAll(".jo-reel");
-    
-            reels.forEach(reel => {
-                const video = reel.querySelector("video");
-    
-                reel.addEventListener("touchend", function (event) {
-                    togglePlay(event, video);
-                });
-    
-                reel.addEventListener("click", function (event) {
-                    togglePlay(event, video);
-                });
-            });
-    
-            function togglePlay(event, video) {
-                console.log("touched");
-                event.preventDefault(); // Prevents double triggering on mobile
-                
-                if (video.paused) {
-                    video.play();
-                } else {
-                    video.pause();
-                }
-            }
+    document.addEventListener("DOMContentLoaded", function () {
+    const reels = document.querySelectorAll(".jo-reel");
+
+    reels.forEach(reel => {
+        const video = reel.querySelector("video");
+
+        // Toggle play/pause on click
+        reel.addEventListener("click", function (event) {
+            event.preventDefault();  // Prevents unintended default behavior
+            togglePlay(video);
         });
+
+        // Toggle play/pause on touch
+        reel.addEventListener("touchend", function (event) {
+            event.preventDefault();
+            togglePlay(video);
+        });
+    });
+
+    function togglePlay(video) {
+        if (video.paused) {
+            video.play();
+        } else {
+            video.pause();
+        }
+    }
+});
+
+
+
     </script>
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 
 
-<script>
-    function submitForm() {
+    <script>
+        function submitForm() {
         let form = $(".jo-contact-form");
         let formData = form.serialize(); // Serialize form data
 
@@ -766,7 +844,7 @@
             }
         });
     }
-</script>
+    </script>
 
 </body>
 
