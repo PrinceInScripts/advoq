@@ -136,7 +136,7 @@
                 <div class="jo-reels-slider swiper">
                     <div class="swiper-wrapper">
                         @php
-                        $videos=DB::table('videos')->where(status,1)->get();
+                        $videos=DB::table('videos')->where("status",1)->get();
                         @endphp
 
                         @foreach ($videos as $video)
@@ -780,18 +780,22 @@
     const reels = document.querySelectorAll(".jo-reel");
 
     reels.forEach(reel => {
-        const video = reel.querySelector("video");
+        const video1 = reel.querySelector(".plyr");
+        const video2=reel.querySelector("video");
+        console.log(reel);
+        
+        
 
         // Toggle play/pause on click
         reel.addEventListener("click", function (event) {
             event.preventDefault();  // Prevents unintended default behavior
-            togglePlay(video);
+            togglePlay(video1);
         });
 
         // Toggle play/pause on touch
         reel.addEventListener("touchend", function (event) {
             event.preventDefault();
-            togglePlay(video);
+            togglePlay(video2);
         });
     });
 
