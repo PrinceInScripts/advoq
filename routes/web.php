@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use App\Models\Contact;
+use App\Http\Controllers\AdminController;
 
 Route::get('/', function () {
     return view('home');
@@ -35,3 +36,8 @@ Route::post('/contact/submit', function (Request $request) {
 
     return response()->json(['success' => 'Your message has been sent successfully!']);
 })->name('contact.submit');
+
+
+
+// Admin Routes
+Route::get('/admin/addIIA', [AdminController::class, 'addIIA'])->name('admin.addIIA');
