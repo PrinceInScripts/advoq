@@ -136,26 +136,25 @@
                 <div class="jo-reels-slider swiper">
                     <div class="swiper-wrapper">
                         @php
-                        $videos=DB::table('videos')->where("status",1)->get();
+                            $videos = DB::table('videos')->where('status', 1)->get();
                         @endphp
 
                         @foreach ($videos as $video)
-                        <div class="swiper-slide">
-                            <div class="jo-reel">
-                                <div class="jo-reel-video position-relative">
-                                    <video id="myVideo" controls poster="" src="{{ $video->url }}"></video>
-                                    <!-- <a href="#" class="link"><img src="assets/img/social-icon-1.png" alt="platform logo">Facebook Reel</a> -->
-                                </div>
-                                <div class="jo-reel-txt">
-                                    <h5 class="jo-reel-title"><a href="#">{{ $video->title }}</a></h5>
-                                    <div class="jo-reel-info">
-                                        <span><i class="flaticon-bell"></i></span>
-                                        <span>{{ $video->brand!=null?$video->brand:"" }}</span>
+                            <div class="swiper-slide">
+                                <div class="jo-reel">
+                                    <div class="jo-reel-video position-relative">
+                                        <video id="myVideo" controls poster="" src="{{ $video->url }}"></video>
+                                        <!-- <a href="#" class="link"><img src="assets/img/social-icon-1.png" alt="platform logo">Facebook Reel</a> -->
+                                    </div>
+                                    <div class="jo-reel-txt">
+                                        <h5 class="jo-reel-title"><a href="#">{{ $video->title }}</a></h5>
+                                        <div class="jo-reel-info">
+                                            <span><i class="flaticon-bell"></i></span>
+                                            <span>{{ $video->brand != null ? $video->brand : '' }}</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
                         @endforeach
                     </div>
                 </div>
@@ -200,7 +199,8 @@
                                         <h5 class="title">🎯 Influencer Marketing: Create Real Connections</h5>
                                         <p class="" style="font-size: 14px;">It’s not about numbers—it’s about
                                             influence. We connect your brand with the right voices that drive
-                                            <strong>real engagement, trust, and conversions.</strong></p>
+                                            <strong>real engagement, trust, and conversions.</strong>
+                                        </p>
                                         <div class="list">
                                             <p>✅ <strong>Strategic Influencer Pairing –</strong> Matching you with
                                                 influencers who actually connect with your audience.</p>
@@ -209,7 +209,8 @@
                                             <p>✅ <strong>Data-Driven Growth –</strong> We don’t just launch campaigns—we
                                                 track, optimize, and scale them.</p>
                                         </div>
-                                        <p class="" style="font-size: 14px;">📢 <strong>Your brand deserves more than
+                                        <p class="" style="font-size: 14px;">📢 <strong>Your brand deserves more
+                                                than
                                                 ads—it needs a movement. Let’s build it together.</strong></p>
                                     </div>
                                 </div>
@@ -226,7 +227,8 @@
                                     <!-- txt -->
                                     <div class="txt">
                                         <h5 class="title">🌟 Celebrity Management: Where Talent Meets Opportunity</h5>
-                                        <p class="" style="font-size: 14px;">we manage <strong>top-tier talent</strong>,
+                                        <p class="" style="font-size: 14px;">we manage <strong>top-tier
+                                                talent</strong>,
                                             helping celebrities <strong>grow their personal brand</strong> while
                                             delivering maximum value for businesses. </p>
                                         <div class="list">
@@ -237,7 +239,8 @@
                                             <p><strong>⚡ Reputation & Image Management –</strong> We handle PR, digital
                                                 presence, and media narratives.</p>
                                         </div>
-                                        <p class="" style="font-size: 14px;"><strong>🔥 We don’t just manage stars—we
+                                        <p class="" style="font-size: 14px;"><strong>🔥 We don’t just manage
+                                                stars—we
                                                 create legends.</strong></p>
                                     </div>
                                 </div>
@@ -257,7 +260,8 @@
                                         <h5 class="title">📢 Public Relations: Make Headlines, Not Noise</h5>
                                         <p class="" style="font-size: 14px;">Your brand’s story deserves to be
                                             <strong>told—and heard</strong>. We craft compelling narratives that put you
-                                            in the spotlight.</p>
+                                            in the spotlight.
+                                        </p>
                                         <div class="list">
                                             <p> <strong>📰 Premium Media Coverage – </strong> Get featured in top
                                                 publications, TV, and digital media.</p>
@@ -266,7 +270,8 @@
                                             <p><strong>📣 Brand Storytelling –</strong> Because facts tell, but stories
                                                 sell.</p>
                                         </div>
-                                        <p class="" style="font-size: 14px;"><strong>🚀 Let’s make your brand impossible
+                                        <p class="" style="font-size: 14px;"><strong>🚀 Let’s make your brand
+                                                impossible
                                                 to ignore.</strong></p>
                                     </div>
                                 </div>
@@ -296,7 +301,8 @@
                                             <p><strong>🎨 Themed Experiences & Luxury Weddings –</strong>Unique,
                                                 unforgettable, and trendsetting.</p>
                                         </div>
-                                        <p class="" style="font-size: 14px;"><strong>✨ Whatever you dream, we bring it
+                                        <p class="" style="font-size: 14px;"><strong>✨ Whatever you dream, we
+                                                bring it
                                                 to life.</strong></p>
                                     </div>
                                 </div>
@@ -314,9 +320,11 @@
                                     <!-- txt -->
                                     <div class="txt">
                                         <h5 class="title">🏆 Awards: Honor, Celebrate, Inspire</h5>
-                                        <p class="" style="font-size: 14px;">Greatness deserves recognition. Whether
+                                        <p class="" style="font-size: 14px;">Greatness deserves recognition.
+                                            Whether
                                             it’s a <strong>corporate excellence award</strong> or a
-                                            <strong>star-studded</strong> industry gala, we handle everything.</p>
+                                            <strong>star-studded</strong> industry gala, we handle everything.
+                                        </p>
                                         <div class="list">
                                             <p> <strong>🥇 Award Show Planning – </strong> From red carpet to
                                                 after-party, we take care of it all.</p>
@@ -325,7 +333,8 @@
                                             <p><strong>🌟 Maximum Media Buzz –</strong> Press, influencers, and social
                                                 media—your event will be everywhere.</p>
                                         </div>
-                                        <p class="" style="font-size: 14px;"><strong>🌟 We don’t just give awards, we
+                                        <p class="" style="font-size: 14px;"><strong>🌟 We don’t just give
+                                                awards, we
                                                 create iconic moments.</strong></p>
                                     </div>
                                 </div>
@@ -352,8 +361,10 @@
                                                 create stories that connect.</p>
                                             <p><strong>🚀 Data-Driven Ad Targeting –</strong> Your ads, reaching the
                                                 right people, at the right time.</p>
+
                                         </div>
-                                        <p class="" style="font-size: 14px;"><strong>🎥 Lights, camera, action—let’s
+                                        <p class="" style="font-size: 14px;"><strong>🎥 Lights, camera,
+                                                action—let’s
                                                 create magic.</strong></p>
                                     </div>
                                 </div>
@@ -370,7 +381,8 @@
                                     <!-- txt -->
                                     <div class="txt">
                                         <h5 class="title">🤝 Brand Endorsements: Influence That Converts</h5>
-                                        <p class="" style="font-size: 14px;">Leverage <strong>star power</strong> to
+                                        <p class="" style="font-size: 14px;">Leverage <strong>star
+                                                power</strong> to
                                             take your brand to the next level.</strong></p>
                                         <div class="list">
                                             <p> <strong>🎯 Strategic Partnerships – </strong> Hand-picked celebrities &
@@ -380,7 +392,8 @@
                                             <p><strong>📈 ROI-Focused Execution –</strong> We don’t do “hype.” We do
                                                 results.</p>
                                         </div>
-                                        <p class="" style="font-size: 14px;"><strong>🚀 Turn influence into impact.
+                                        <p class="" style="font-size: 14px;"><strong>🚀 Turn influence into
+                                                impact.
                                                 Let’s make it happen.</strong></p>
                                     </div>
                                 </div>
@@ -397,7 +410,8 @@
                                     <!-- txt -->
                                     <div class="txt">
                                         <h5 class="title">🎪 Venue Management: Perfect Space, Perfect Experience</h5>
-                                        <p class="" style="font-size: 14px;">A great event starts with <strong>the right
+                                        <p class="" style="font-size: 14px;">A great event starts with
+                                            <strong>the right
                                                 venue</strong>. We handle:</p>
                                         <div class="list">
                                             <p><strong>🏛 Venue Selection & Booking – </strong> Finding and securing the
@@ -491,8 +505,8 @@
                 <!-- heading -->
                 <div class="jo-videos__heading">
                     <h2 class="jo-section-title">Latest Gallery</h2>
-                    <a href="#" onclick="window.location.href='{{ route('gallery') }}'" class="jo-btn jo-videos__btn"><i
-                            class="flaticon-premium-quality"></i> View Gallery</a>
+                    <a href="#" onclick="window.location.href='{{ route('gallery') }}'"
+                        class="jo-btn jo-videos__btn"><i class="flaticon-premium-quality"></i> View Gallery</a>
                 </div>
             </div>
 
@@ -776,40 +790,37 @@
     </script> --}}
 
     <script>
-    document.addEventListener("DOMContentLoaded", function () {
-    const reels = document.querySelectorAll(".jo-reel");
+        document.addEventListener("DOMContentLoaded", function() {
+            const reels = document.querySelectorAll(".jo-reel");
 
-    reels.forEach(reel => {
-        const video1 = reel.querySelector(".plyr");
-        const video2=reel.querySelector("video");
-        console.log(reel);
-        
-        
+            reels.forEach(reel => {
+                const video1 = reel.querySelector(".plyr");
+                const video2 = reel.querySelector("video");
+                console.log(reel);
 
-        // Toggle play/pause on click
-        reel.addEventListener("click", function (event) {
-            event.preventDefault();  // Prevents unintended default behavior
-            togglePlay(video1);
+
+
+                // Toggle play/pause on click
+                reel.addEventListener("click", function(event) {
+                    event.preventDefault(); // Prevents unintended default behavior
+                    togglePlay(video1);
+                });
+
+                // Toggle play/pause on touch
+                reel.addEventListener("touchend", function(event) {
+                    event.preventDefault();
+                    togglePlay(video2);
+                });
+            });
+
+            function togglePlay(video) {
+                if (video.paused) {
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            }
         });
-
-        // Toggle play/pause on touch
-        reel.addEventListener("touchend", function (event) {
-            event.preventDefault();
-            togglePlay(video2);
-        });
-    });
-
-    function togglePlay(video) {
-        if (video.paused) {
-            video.play();
-        } else {
-            video.pause();
-        }
-    }
-});
-
-
-
     </script>
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
@@ -820,34 +831,34 @@
 
     <script>
         function submitForm() {
-        let form = $(".jo-contact-form");
-        let formData = form.serialize(); // Serialize form data
+            let form = $(".jo-contact-form");
+            let formData = form.serialize(); // Serialize form data
 
-        $.ajax({
-            url: "{{ route('contact.submit') }}",
-            type: "POST",
-            data: formData,
-            headers: {
-                "X-CSRF-TOKEN": $('input[name="_token"]').val()
-            },
-            success: function(response) {
-                if (response.success) {
-                    Toastify({
-                        text: response.success,
-                        duration: 3000,
-                        gravity: "top",
-                        position: "right",
-                        backgroundColor: "green",
-                    }).showToast();
+            $.ajax({
+                url: "{{ route('contact.submit') }}",
+                type: "POST",
+                data: formData,
+                headers: {
+                    "X-CSRF-TOKEN": $('input[name="_token"]').val()
+                },
+                success: function(response) {
+                    if (response.success) {
+                        Toastify({
+                            text: response.success,
+                            duration: 3000,
+                            gravity: "top",
+                            position: "right",
+                            backgroundColor: "green",
+                        }).showToast();
 
-                    form[0].reset(); // Clear the form after submission
+                        form[0].reset(); // Clear the form after submission
+                    }
+                },
+                error: function(xhr) {
+                    console.log("Error:", xhr.responseText);
                 }
-            },
-            error: function(xhr) {
-                console.log("Error:", xhr.responseText);
-            }
-        });
-    }
+            });
+        }
     </script>
 
 </body>
