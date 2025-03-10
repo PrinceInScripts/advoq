@@ -46,36 +46,71 @@ class UploadController extends Controller
         return response()->json(['message' => 'No files received'], 400);
     }
 
-    public function storeVideo(Request $request)
-    {
-        return $request;
-        $request->validate([
-            'video' => 'required|file|mimes:mp4,mov,avi,wmv,flv,3gp|max:51200',
-        ]);
+    // public function storeVideo(Request $request)
+    // {
+       
+    //     $request->validate([
+    //         'file' => 'required|file|mimes:mp4,mov,avi,wmv,flv,3gp|max:51200',
+    //     ]);
     
-        if ($request->hasFile('video')) {
-            $uploadedFile = $request->file('video');
+    //     if ($request->hasFile('file')) {
+    //         $uploadedFile = $request->file('file');
     
-            // Generate unique file name
-            $fileName = time() . '_' . $uploadedFile->getClientOriginalName();
+    //         // Generate unique file name
+    //         $fileName = time() . '_' . $uploadedFile->getClientOriginalName();
     
-            // Upload file to S3
-            $path = Storage::disk('s3')->putFileAs('cdn/advoq', $uploadedFile, $fileName, 's3');
+    //         // Upload file to S3
+    //         $path = Storage::disk('s3')->putFileAs('cdn/advoq', $uploadedFile, $fileName, 's3');
     
-            // Get the public URL of the uploaded file
-            $url = Storage::disk('s3')->url($path);
+    //         // Get the public URL of the uploaded file
+    //         $url = Storage::disk('s3')->url($path);
 
-            // store url in database on videos table url and title and type
-            $videos=DB::table('videos')->insert([
-                'url' => $url,
-                'title' => $request->title,
-                'type' => $request->type,
-            ]);
+    //         // store url in database on videos table url and title and type
+    //         // $videos=DB::table('videos')->insert([
+    //         //     'url' => $url,
+    //         //     'title' => $request->title,
+    //         //     'brand' => $request->brand,
+    //         // ]);
     
-            return response()->json(['message' => 'File uploaded successfully', 'path' => $url], 200);
-        }
+    //         return response()->json(['message' => 'File uploaded successfully', 'path' => $url], 200);
+    //     }
     
-        return response()->json(['message' => 'No file received'], 400);
+    //     return response()->json(['message' => 'No file received'], 400);
+    // }
+
+    public function storeVideo(Request $request)
+{
+    $request->validate([
+        'file' => 'required|file|mimes:mp4,mov,avi,wmv,flv,3gp|max:51200', // Max 50MB
+        'title' => 'required|string|max:255',
+        'brand' => 'nullable|string|max:255',
+    ]);
+
+    if ($request->hasFile('file')) {
+        $uploadedFile = $request->file('file');
+
+        // Generate a unique filename
+        $fileName = time() . '_' . preg_replace('/\s+/', '_', $uploadedFile->getClientOriginalName());
+
+        // Upload file to S3 with public access
+        $path = Storage::disk('s3')->putFileAs('cdn/advoq', $uploadedFile, $fileName, 'public');
+
+        // Get the file URL
+        $url = Storage::disk('s3')->url($path);
+
+        // Store in Database
+        // DB::table('videos')->insert([
+        //     'url' => $url,
+        //     'title' => $request->title,
+        //     'brand' => $request->brand,
+        //     'created_at' => now(),
+        //     'updated_at' => now(),
+        // ]);
+
+        return response()->json(['message' => 'File uploaded successfully', 'url' => $url], 200);
     }
+
+    return response()->json(['message' => 'No file received'], 400);
+}
     
 }
