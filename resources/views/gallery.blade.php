@@ -65,7 +65,7 @@
                             @foreach ($videos as $video)
                             <div class="col">
                                 <div class="jo-video-card jo-inner-video-card">
-                                    <img src="{{ $video->thumbnail }}" alt="Video Thumbnail" class="jo-video-card__img">
+                                    <img src="{{ $video->thumb_url }}" alt="Video Thumbnail" class="jo-video-card__img">
 
                                     <div class="jo-video-card__txt">
                                         <div class="bottom">

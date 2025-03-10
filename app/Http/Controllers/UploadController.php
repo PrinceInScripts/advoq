@@ -99,13 +99,12 @@ class UploadController extends Controller
         $url = Storage::disk('s3')->url($path);
 
         // Store in Database
-        // DB::table('videos')->insert([
-        //     'url' => $url,
-        //     'title' => $request->title,
-        //     'brand' => $request->brand,
-        //     'created_at' => now(),
-        //     'updated_at' => now(),
-        // ]);
+        DB::table('videos')->insert([
+            'url' => $url,
+            'title' => $request->title,
+            'brand' => $request->brand,
+           
+        ]);
 
         return response()->json(['message' => 'File uploaded successfully', 'url' => $url], 200);
     }
