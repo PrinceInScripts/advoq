@@ -137,8 +137,17 @@
         <!-- VIDEOS SECTION START -->
         <div class="jo-inner-main-content">
             <div class="jo-container">
-                <div class="jo-inner-videos-filter-nav d-flex justify-content-center flex-wrap">
+                <div class="jo-inner-videos-filter-nav d-flex flex-column align-items-center justify-content-center flex-wrap">
                     <h1 href="" class="">Upload More Files</h1>
+                    <div class="jo-inner-videos-filter-nav d-flex justify-content-center flex-wrap">
+                            <button class="btn" id="land_images">Landscape Images</button>
+                            <button class="btn" id="port_images">Portrait Imagr</button>
+                            <button class="btn" id="iia_images">IIA Images</button>
+                            <button class="btn" id="videos">Videos</button>
+
+                    </div>
+                    
+
                 </div>
 
 
@@ -169,6 +178,8 @@
 
 
                 </div>
+
+                
 
                 <!-- video cards -->
                 <div class="jo-videos-tab-container mt-4">
