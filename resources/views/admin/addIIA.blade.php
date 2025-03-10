@@ -137,22 +137,23 @@
         <!-- VIDEOS SECTION START -->
         <div class="jo-inner-main-content">
             <div class="jo-container">
-                <div class="jo-inner-videos-filter-nav d-flex flex-column align-items-center justify-content-center flex-wrap">
+                <div
+                    class="jo-inner-videos-filter-nav d-flex flex-column align-items-center justify-content-center flex-wrap">
                     <h1 href="" class="">Upload More Files</h1>
                     <div class="jo-inner-videos-filter-nav d-flex justify-content-center flex-wrap">
-                            <button class="btn" id="land_images">Landscape Images</button>
-                            <button class="btn" id="port_images">Portrait Imagr</button>
-                            <button class="btn" id="iia_images">IIA Images</button>
-                            <button class="btn" id="videos">Videos</button>
+                        <button class="btn" id="land_images">Landscape Images</button>
+                        <button class="btn" id="port_images">Portrait Imagr</button>
+                        <button class="btn" id="iia_images">IIA Images</button>
+                        <button class="btn" id="videos">Videos</button>
 
                     </div>
-                    
+
 
                 </div>
 
 
 
-                {{-- make a div for uploading image files  --}}
+                {{-- make a div for uploading image files --}}
                 <div class="jo-inner-videos-filter-nav d-flex justify-content-center flex-wrap">
 
                     {{-- <button type="button" class="btn btn-primary modalTrigger" data-toggle="modal"
@@ -179,7 +180,7 @@
 
                 </div>
 
-                
+
 
                 <!-- video cards -->
                 <div class="jo-videos-tab-container mt-4">
@@ -191,18 +192,18 @@
 
                             @php
 
-                                $images = DB::table('images')->get();
+                            $images = DB::table('images')->get();
 
                             @endphp
 
                             @foreach ($images as $image)
-                                <div class="col-6 col-md-4 col-lg-3">
-                                    <div class="jo-gallery card">
-                                        <a data-fslightbox="images" href="{{ $image->url }}" class="jo-gallery__img">
-                                            <img src="{{ $image->url }}" alt="Gallery Image">
-                                        </a>
-                                    </div>
+                            <div class="col-6 col-md-4 col-lg-3">
+                                <div class="jo-gallery card">
+                                    <a data-fslightbox="images" href="{{ $image->url }}" class="jo-gallery__img">
+                                        <img loading="lazy" src="{{ $image->url }}" alt="Gallery Image">
+                                    </a>
                                 </div>
+                            </div>
                             @endforeach
 
 
@@ -317,8 +318,43 @@
             return;
         }
 
-        console.log("Files Ready for Upload:", allFiles);
-        uploadFiles(allFiles);
+        // ajax request  
+
+        let formData = new FormData();
+allFiles.forEach((file) => {
+    formData.append("files[]", file); // Append all files to the same request
+});
+
+$.ajax({
+    url: "{{ route('uploadFiles') }}",
+    method: "POST",
+    data: formData,
+    contentType: false,
+    processData: false,
+    cache: false,
+    headers: {
+        "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content") // Ensure CSRF token is included
+    },
+    success: function (response) {
+        console.log(response);
+        allFiles = [];
+        filePreview.empty();
+        iziToast.success({
+            title: 'Success',
+            message: 'Files uploaded successfully',
+            position: 'topRight'
+        });
+    },
+    error: function (error) {
+        console.log(error);
+        iziToast.error({
+            title: 'Error',
+            message: 'An error occurred while uploading files',
+            position: 'topRight'
+        });
+    }
+});
+    
     });
 
             // fileInput.change(function(event) {
