@@ -10,4 +10,11 @@ class AdminController extends Controller
     {
         return view('admin.addIIA');
     }
+
+    public function addVideo()
+    {
+        return view('admin.addVideo');
+    }
 }
+
+

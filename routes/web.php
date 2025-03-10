@@ -40,4 +40,5 @@ Route::post('/contact/submit', function (Request $request) {
 
 
 // Admin Routes
-Route::get('/admin/addIIA', [AdminController::class, 'addIIA'])->name('admin.addIIA');
+Route::get('/admin/add-images', [AdminController::class, 'addIIA'])->name('admin.add-images');
+Route::get('/admin/add-video', [AdminController::class, 'addVideo'])->name('admin.add-video');

@@ -9,3 +9,4 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 Route::post('/upload', [App\Http\Controllers\UploadController::class, 'store'])->name('uploadFiles');
+Route::post('/uploadVideo', [App\Http\Controllers\UploadController::class, 'storeVideo'])->name('uploadVideo');

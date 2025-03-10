@@ -139,15 +139,7 @@
             <div class="jo-container">
                 <div
                     class="jo-inner-videos-filter-nav d-flex flex-column align-items-center justify-content-center flex-wrap">
-                    <h1 href="" class="">Upload More Files</h1>
-                    <div class="jo-inner-videos-filter-nav d-flex justify-content-center flex-wrap">
-                        <button class="btn active" id="landscape" onclick="activeBtn(this)">Landscape Images</button>
-                        <button class="btn" id="portrait" onclick="activeBtn(this)">Portrait Image</button>
-                        <button class="btn" id="iia" onclick="activeBtn(this)">IIA Images</button>
-
-                    </div>
-
-
+                    <h1 href="" class="">Upload Video</h1>
                 </div>
 
 
@@ -155,22 +147,20 @@
                 {{-- make a div for uploading image files --}}
                 <div class="jo-inner-videos-filter-nav d-flex justify-content-center flex-wrap">
 
-                    {{-- <button type="button" class="btn btn-primary modalTrigger" data-toggle="modal"
-                        data-target="#exampleModal">Upload Files</button> --}}
-                    {{-- <form action="" method="POST" enctype="multipart/form-data">
-                        @csrf
-                        <input type="file" name="file" id="file" class="form-control">
-                        <button type="submit" class="btn btn-primary">Upload</button>
-                    </form> --}}
 
                     <div class="upload-container">
                         <div class="upload-box" id="drop-area">
-                            <input type="file" id="fileInput" multiple>
-                            <img src="https://cdn-icons-png.flaticon.com/512/1829/1829586.png" width="50"
+                            {{-- <input type="file" id="fileInput" multiple> --}}
+                            <input id="fileInput" type="file" accept="video/*">
+                            <img src="https://cdn-icons-png.flaticon.com/128/1179/1179069.png" width="50"
                                 alt="Upload Icon">
                             <p>Drag & drop any file here<br>or <span class="browse">browse file</span> from device</p>
                         </div>
                         <div class="file-preview jo-inner-videos-row row row-cols-2 row-cols-xs-1" id="file-preview">
+                        </div>
+                        <div class="d-flex justify-content-center gap-2 mt-2">
+                            <input type="text" placeholder="Enter video title" id="title" class="form-control">
+                            <input type="text" placeholder="Enter video brand" id="brand" class="form-control">
                         </div>
                         <button class="upload-btn" id="uploadBtn">Upload</button>
                         {{-- <button onclick="uploadFiles()" class="upload-btn" id="uploadBtn">Upload</button> --}}
@@ -264,165 +254,152 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>
 
     <script>
-        $(document).ready(function() {
-            let allFiles = [];
-            const fileInput = $("#fileInput");
-            const filePreview = $("#file-preview");
+       $(document).ready(function() {
+    let allFiles = [];
+    const fileInput = $("#fileInput");
+    const filePreview = $("#file-preview");
 
-            $(".browse").click(function() {
-                fileInput.click();
+    // 📌 Browse Button Click to Open File Input
+    $(".browse").click(function() {
+        fileInput.click();
+    });
+
+    // 📌 Drag & Drop File Handling
+    $("#drop-area").on("dragover", function(e) {
+        e.preventDefault();
+        $(this).css("background", "rgba(106, 27, 154, 0.2)");
+    });
+
+    $("#drop-area").on("dragleave", function() {
+        $(this).css("background", "white");
+    });
+
+    $("#drop-area").on("drop", function(e) {
+        e.preventDefault();
+        $(this).css("background", "white");
+
+        let droppedFiles = Array.from(e.originalEvent.dataTransfer.files);
+        let videoFile = droppedFiles.find(file => file.type.startsWith("video/"));
+
+        if (videoFile) {
+            allFiles = [videoFile]; // Only one video allowed
+            displayFiles(allFiles);
+        } else {
+            alert("Please drop a valid video file.");
+        }
+    });
+
+    // 📌 File Input Change Event (Select File)
+    fileInput.on("change", function() {
+        let selectedFiles = Array.from(this.files);
+        let videoFile = selectedFiles.find(file => file.type.startsWith("video/"));
+
+        if (videoFile) {
+            allFiles = [videoFile]; // Only one video allowed
+            displayFiles(allFiles);
+        } else {
+            alert("Please select a valid video file.");
+        }
+
+        // Reset input to allow re-selecting the same file
+        fileInput.val("");
+    });
+
+    // 📌 Upload Button Click with AJAX Request
+    $("#uploadBtn").click(function(e) {
+        if (allFiles.length === 0) {
+            iziToast.error({
+                title: 'Error',
+                message: 'Please select or drop a video before uploading.',
+                position: 'topRight'
             });
-
-            $("#drop-area").on("dragover", function(e) {
-                e.preventDefault();
-                $(this).css("background", "rgba(106, 27, 154, 0.2)");
+            return;
+        }else if($("#title").val() === ""){
+            iziToast.error({
+                title: 'Error',
+                message: 'Please enter video title',
+                position: 'topRight'
             });
-
-            $("#drop-area").on("dragleave", function(e) {
-                $(this).css("background", "white");
+            return;
+        }else if($("#brand").val() === ""){
+            iziToast.error({
+                title: 'Error',
+                message: 'Please enter video brand',
+                position: 'topRight'
             });
+            return;
+        }
 
-            $("#drop-area").on("drop", function(e) {
-                e.preventDefault();
-                $(this).css("background", "white");
-                console.log(e);
+        console.log("budsh",allFiles[0]);
+        
 
-                let droppedFiles = Array.from(e.originalEvent.dataTransfer.files);
-                allFiles = [...allFiles, ...droppedFiles]; // Append new files
-                console.log("All Files After Drop:", allFiles);
-                displayFiles(allFiles);
+        let formData = new FormData();
+        formData.append("file", allFiles[0]); // Only one file allowed
+        formData.append("title", $("#title").val());
+        formData.append("brand", $("#brand").val());
 
-                // let files = e.originalEvent.dataTransfer.files;
-                // console.log(files);
-                // displayFiles(files);
-            });
-
-            $("#uploadBtn").click(function(e) {
-                let files = fileInput[0].files;
-                uploadFiles(files);
-            });
-
-            fileInput.on("change", function() {
-                let selectedFiles = Array.from(this.files);
-                allFiles = [...allFiles, ...selectedFiles]; // Append new files
-                // console.log("All Files After Browse:", allFiles);
-                displayFiles(allFiles);
-            });
-
-
-            // 📌 Upload Button Click
-            $("#uploadBtn").click(function(e) {
-                if (allFiles.length === 0) {
-                    alert("Please select or drop files before uploading.");
-                    return;
-                }
-
-                // ajax request  
-
-                let formData = new FormData();
-                allFiles.forEach((file) => {
-                    formData.append("files[]", file); // Append all files to the same request
+        $.ajax({
+            url: "{{ route('uploadVideo') }}",
+            method: "POST",
+            data: formData,
+            contentType: false,
+            processData: false,
+            cache: false,
+            headers: {
+                "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content")
+            },
+            beforeSend: function() {
+                iziToast.info({
+                    title: 'Info',
+                    message: 'Uploading video...',
+                    position: 'topRight'
                 });
-                formData.append("type", $(".btn.active").attr("id"));
+            },
+            success: function(response) {
+                console.log(response);
 
-                $.ajax({
-                    url: "{{ route('uploadFiles') }}",
-                    method: "POST",
-                    data: formData,
-                    contentType: false,
-                    processData: false,
-                    cache: false,
-                    headers: {
-                        "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr(
-                            "content") // Ensure CSRF token is included
-                    },
-                    beforeSend: function() { // ✅ Corrected from onbeforeSend to beforeSend
-                        iziToast.info({
-                            title: 'Info',
-                            message: 'Uploading files...',
-                            position: 'topRight'
-                        });
-                    },
-                    success: function(response) {
-                        console.log(response);
-                        allFiles = [];
-                        filePreview.empty();
-                        iziToast.success({
-                            title: 'Success',
-                            message: 'Files uploaded successfully',
-                            position: 'topRight'
-                        });
-                    },
-                    error: function(error) {
-                        console.log(error);
-                        iziToast.error({
-                            title: 'Error',
-                            message: 'An error occurred while uploading files',
-                            position: 'topRight'
-                        });
-                    }
+                allFiles = [];
+                filePreview.empty();
+                $("#title").val("");
+                $("#brand").val("");
+                iziToast.success({
+                    title: 'Success',
+                    message: 'Video uploaded successfully',
+                    position: 'topRight'
                 });
+            },
+            error: function(error) {
+                console.log(error);
+                iziToast.error({
+                    title: 'Error',
+                    message: 'An error occurred while uploading the video',
+                    position: 'topRight'
+                });
+            }
+        });
+    });
 
-            });
+    // 📌 Display File Preview
+    function displayFiles(files) {
+        filePreview.empty(); // Clear previous files
+        files.forEach(file => {
+            let fileType = file.type.split("/")[0];
 
-            // fileInput.change(function(event) {
-            //     let files = event.target.files;
-            //     console.log(files);
+            let fileContainer = $("<div>").addClass("file-container jo-gallery card col-12 col-md-6 col-lg-3");
+            let fileElement = $("<p>").text(file.name);
+            let size = $("<p>").text((file.size / (1024 * 1024)).toFixed(2) + "MB");
 
-            //     displayFiles(files);
-            // });
-
-            function displayFiles(files) {
-                filePreview.empty(); // Clear previous files
-
-                for (let i = 0; i < files.length; i++) {
-                    let file = files[i];
-                    let fileType = file.type.split("/")[0];
-
-                    let fileContainer = $("<div>").addClass(
-                        "file-container jo-gallery card col-12 col-md-6 col-lg-3");
-
-                    let fileElement = $("<p>").text(file.name);
-                    let size = $("<p>").text((file.size / (1024 * 1024)).toFixed(2) + "MB");
-
-                    if (fileType === "image") {
-                        let imgPreview = $("<img>").attr("src", URL.createObjectURL(file));
-                        fileContainer.append(imgPreview);
-                    } else if (fileType === "video") {
-                        let videoPreview = $("<video controls>").attr("src", URL.createObjectURL(file));
-                        fileContainer.append(videoPreview);
-                    }
-
-                    fileContainer.append(fileElement);
-                    fileContainer.append(size);
-                    filePreview.append(fileContainer);
-                }
+            if (fileType === "video") {
+                let videoPreview = $("<video controls>").attr("src", URL.createObjectURL(file));
+                fileContainer.append(videoPreview);
             }
 
+            fileContainer.append(fileElement, size);
+            filePreview.append(fileContainer);
         });
+    }
+});
 
-        function uploadFiles(files) {
-            // let files = $("#fileInput")[0].files;
-            console.log(files);
-
-            // let formData = new FormData();
-
-            // for (let i = 0; i < files.length; i++) {
-            //     formData.append("files[]", files[i]);
-            // }
-
-
-        }
-
-
-        function activeBtn(clickedBtn) {
-            let btns = document.querySelectorAll('.btn');
-            btns.forEach(btn => {
-                btn.classList.remove('active');
-            });
-
-            clickedBtn.classList.add('active');
-        }
     </script>
 </body>
 
