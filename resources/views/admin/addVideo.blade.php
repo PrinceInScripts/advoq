@@ -337,6 +337,7 @@
         formData.append("file", allFiles[0]); // Only one file allowed
         formData.append("title", $("#title").val());
         formData.append("brand", $("#brand").val());
+        let uploadingToast;
 
         $.ajax({
             url: "{{ route('uploadVideo') }}",
@@ -349,10 +350,12 @@
                 "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content")
             },
             beforeSend: function() {
-                iziToast.info({
-                    title: 'Info',
-                    message: 'Uploading video...',
-                    position: 'topRight'
+                uploadingToast = iziToast.info({
+                            title: 'Info',
+                            message: 'Uploading files...',
+                            position: 'topRight',
+                            timeout: false, // Keep toast visible until manually closed
+                            close: false
                 });
             },
             success: function(response) {
@@ -362,6 +365,7 @@
                 filePreview.empty();
                 $("#title").val("");
                 $("#brand").val("");
+                iziToast.destroy(uploadingToast); // Remove loading toast
                 iziToast.success({
                     title: 'Success',
                     message: 'Video uploaded successfully',
@@ -370,6 +374,7 @@
             },
             error: function(error) {
                 console.log(error);
+                iziToast.destroy(uploadingToast); // Remove loading toast
                 iziToast.error({
                     title: 'Error',
                     message: 'An error occurred while uploading the video',

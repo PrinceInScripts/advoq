@@ -115,8 +115,7 @@
 
         .file-container img,
         .file-container video {
-            max-width: 600px;
-            max-height: 100px;
+            
             border-radius: 6px;
             width: 100%;
             object-fit: cover;
@@ -127,6 +126,7 @@
             margin-top: 5px;
             word-wrap: break-word;
         }
+
     </style>
 </head>
 
@@ -188,10 +188,10 @@
                     <!-- single tab -->
                     <div class="" id="images">
                         <div class="jo-inner-videos-row row row-cols-2 row-cols-xs-1">
-                            {{-- 
+                            
                             @php
 
-                            $images = DB::table('images')->get();
+                            $images = DB::table('images')->where('type','landscape')->orwhere('type','portrait')->get();
 
                             @endphp
 
@@ -203,7 +203,7 @@
                                     </a>
                                 </div>
                             </div>
-                            @endforeach --}}
+                            @endforeach
 
 
                         </div>
@@ -324,6 +324,8 @@
                     formData.append("files[]", file); // Append all files to the same request
                 });
                 formData.append("type", $(".btn.active").attr("id"));
+                // Store toast reference
+                let uploadingToast;
 
                 $.ajax({
                     url: "{{ route('uploadFiles') }}",
@@ -337,29 +339,34 @@
                             "content") // Ensure CSRF token is included
                     },
                     beforeSend: function() { // ✅ Corrected from onbeforeSend to beforeSend
-                        iziToast.info({
+                        uploadingToast = iziToast.info({
                             title: 'Info',
                             message: 'Uploading files...',
-                            position: 'topRight'
+                            position: 'topRight',
+                            timeout: false, // Keep toast visible until manually closed
+                            close: false
                         });
                     },
                     success: function(response) {
                         console.log(response);
+                        
                         allFiles = [];
                         filePreview.empty();
-                        iziToast.success({
-                            title: 'Success',
-                            message: 'Files uploaded successfully',
-                            position: 'topRight'
-                        });
+                        iziToast.destroy(uploadingToast); // Remove loading toast
+                            iziToast.success({
+                                title: 'Success',
+                                message: 'Files uploaded successfully',
+                                position: 'topRight'
+                            });
                     },
                     error: function(error) {
                         console.log(error);
-                        iziToast.error({
-                            title: 'Error',
-                            message: 'An error occurred while uploading files',
-                            position: 'topRight'
-                        });
+                        iziToast.destroy(uploadingToast); // Remove loading toast
+                            iziToast.error({
+                                title: 'Error',
+                                message: 'An error occurred while uploading files',
+                                position: 'topRight'
+                            });
                     }
                 });
 
