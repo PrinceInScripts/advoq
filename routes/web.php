@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use App\Models\Contact;
 use App\Http\Controllers\AdminController;
+use Illuminate\Support\Facades\DB;
 
 Route::get('/', function () {
     return view('home');
@@ -46,3 +47,10 @@ Route::get('/get-all-images', [AdminController::class, 'getAllImages'])->name('g
 Route::delete('/delete-image/{id}', [AdminController::class, 'destroyImages'])->name('deleteImage');
 Route::delete('/delete-video/{id}', [AdminController::class, 'destroyVideos'])->name('deleteVideo');
 Route::get('/get-all-videos', [AdminController::class, 'getAllVideos'])->name('getAllVideos');
+Route::get('/admin', function () {
+    $contacts=DB::table('contacts')->get();
+    return view('admin.dashboard', compact('contacts'));
+})->name('admin.dashboard');
+Route::get('/admin/login', function () {
+    return view('admin.login');
+})->name('admin.login');

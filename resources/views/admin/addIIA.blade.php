@@ -134,7 +134,48 @@
 </head>
 
 <body>
-    <x-header />
+       <!-- sidebar -->
+<div class="jo-sidebar">
+    <div>
+        <!-- heading -->
+
+        <!-- heading -->
+        <div class="jo-sidebar__heading d-flex justify-content-between align-items-center">
+            {{-- <a href="#" onclick="window.location.href='{{ route('home') }}'"><img src="assets/img/logo.png" alt="logo"
+                    class="logo"></a> --}}
+            <button type="button" class="jo-sidebar-close-btn"><i class="flaticon-add-plus-button"></i></button>
+        </div>
+
+
+
+        <!-- mobile menu -->
+        <div class="jo-header-nav-in-mobile"></div>
+    </div>
+
+   
+</div>
+
+<!-- HEADER SECTION START -->
+<header class="jo-header">
+    <a href="#" onclick="window.location.href='{{ route('home') }}'"><img src="../assets/img/logo.png" alt="logo" style="width: 80px;"></a>
+    <div class="jo-header-right">
+        <div class="jo-header-nav">
+            <div class="to-go-to-sidebar-in-mobile">
+                <nav>
+                    <a href="#" onclick="window.location.href='{{ route('admin.dashboard') }}'" class="fs-5 fw-bold">Home</a>
+                    <a href="#" onclick="window.location.href='{{ route('admin.add-images') }}'" class="fs-5 fw-bold">Add Images</a>
+                    <a href="#" onclick="window.location.href='{{ route('admin.add-video') }}'" class="fs-5 fw-bold">Add Videos</a>
+
+                </nav>
+            </div>
+        </div>
+        <div class="d-flex gap-2">
+       
+            <button class="jo-header-sidebar-open-btn jo-btn px-3 d-inline-block d-lg-none"><i
+                    class="flaticon-menu"></i></button>
+        </div>
+    </div>
+</header>
     <main>
 
         <!-- VIDEOS SECTION START -->
