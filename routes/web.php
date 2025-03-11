@@ -42,3 +42,7 @@ Route::post('/contact/submit', function (Request $request) {
 // Admin Routes
 Route::get('/admin/add-images', [AdminController::class, 'addIIA'])->name('admin.add-images');
 Route::get('/admin/add-video', [AdminController::class, 'addVideo'])->name('admin.add-video');
+Route::get('/get-all-images', [AdminController::class, 'getAllImages'])->name('getAllImages');
+Route::delete('/delete-image/{id}', [AdminController::class, 'destroyImages'])->name('deleteImage');
+Route::delete('/delete-video/{id}', [AdminController::class, 'destroyVideos'])->name('deleteVideo');
+Route::get('/get-all-videos', [AdminController::class, 'getAllVideos'])->name('getAllVideos');

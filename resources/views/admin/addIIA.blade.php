@@ -31,6 +31,9 @@
 
     {{-- tippy css --}}
 
+    {{-- csrf  --}}
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
 
 
     <style>
@@ -189,7 +192,7 @@
                     <div class="" id="images">
                         <div class="jo-inner-videos-row row row-cols-2 row-cols-xs-1">
                             
-                            @php
+                            {{-- @php
 
                             $images = DB::table('images')->where('type','landscape')->orwhere('type','portrait')->get();
 
@@ -203,7 +206,7 @@
                                     </a>
                                 </div>
                             </div>
-                            @endforeach
+                            @endforeach --}}
 
 
                         </div>
@@ -358,6 +361,28 @@
                                 message: 'Files uploaded successfully',
                                 position: 'topRight'
                             });
+
+                        
+                        // Refresh images
+                        $.ajax({
+                            url: "{{ route('getAllImages') }}",
+                            method: "GET",
+                            success: function(response) {
+                                allImages = response; // Store all images
+                                let btns = document.querySelectorAll('.btn');
+                                btns.forEach(btn => {
+                                    btn.classList.remove('active');
+                                });
+                                document.getElementById("landscape").classList.add('active');
+                                renderImages("landscape"); // Show default category
+
+                            },
+                            error: function(error) {
+                                console.log("Error fetching images:", error);
+                            }
+                        });
+                            
+                         
                     },
                     error: function(error) {
                         console.log(error);
@@ -422,14 +447,86 @@
         }
 
 
-        function activeBtn(clickedBtn) {
-            let btns = document.querySelectorAll('.btn');
-            btns.forEach(btn => {
-                btn.classList.remove('active');
-            });
 
-            clickedBtn.classList.add('active');
+        let allImages = []; // Store all images
+
+// Fetch images once on page load
+$(document).ready(function() {
+    $.ajax({
+        url: "{{ route('getAllImages') }}",
+        method: "GET",
+        success: function(response) {
+            allImages = response; // Store all images
+            renderImages("landscape"); // Show default category
+        },
+        error: function(error) {
+            console.log("Error fetching images:", error);
         }
+    });
+});
+
+function activeBtn(clickedBtn) {
+    let btns = document.querySelectorAll('.btn');
+
+    btns.forEach(btn => {
+        btn.classList.remove('active');
+    });
+
+    clickedBtn.classList.add('active');
+
+    let category = clickedBtn.id; // Get selected category
+    renderImages(category); // Show filtered images
+}
+// Function to filter, display, and allow removal of images
+function renderImages(category) {
+    console.log("Category:", category);
+    
+    let filteredImages = allImages.filter(image => image.type === category);
+
+    let html = "";
+    filteredImages.forEach((image, index) => {
+        html += `
+        <div class="col-6 col-md-4 col-lg-3" id="image-${image.id}">
+            <div class="jo-gallery card">
+                <a data-fslightbox="images" href="${image.url}" class="jo-gallery__img">
+                    <img loading="lazy" src="${image.url}" alt="Gallery Image">
+                </a>
+                <button class="btn btn-danger btn-sm mt-2" onclick="deleteImage('${image.id}')">Delete</button>
+            </div>
+        </div>`;
+    });
+
+    $("#images .jo-inner-videos-row").html(html); // Update UI
+}
+function deleteImage(imageId) {
+    $.ajax({
+        url: `/delete-image/${imageId}`,  // Laravel route
+        type: "DELETE",
+        headers: {
+            "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content"), // CSRF protection
+        },
+        success: function (response) {
+            $("#image-" + imageId).remove(); // Remove image from UI
+
+            iziToast.success({
+                title: "Deleted",
+                message: "Image removed successfully",
+                position: "topRight",
+            });
+        },
+        error: function () {
+            iziToast.error({
+                title: "Error",
+                message: "Failed to delete image",
+                position: "topRight",
+            });
+        },
+    });
+}
+
+
+
+
     </script>
 </body>
 

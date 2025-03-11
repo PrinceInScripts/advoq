@@ -31,6 +31,9 @@
 
     {{-- tippy css --}}
 
+    {{-- csrf --}}
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
 
 
     <style>
@@ -113,10 +116,8 @@
             /* Restrict width on larger screens */
         }
 
-        .file-container img,
         .file-container video {
-            max-width: 600px;
-            max-height: 100px;
+
             border-radius: 6px;
             width: 100%;
             object-fit: cover;
@@ -172,32 +173,38 @@
 
 
                 <!-- video cards -->
-                <div class="jo-videos-tab-container mt-4">
-
-
+                <div class="jo-videos-tab-container">
                     <!-- single tab -->
-                    <div class="" id="images">
-                        <div class="jo-inner-videos-row row row-cols-2 row-cols-xs-1">
-                            {{-- 
-                            @php
-
-                            $images = DB::table('images')->get();
-
+                    <div class="" id="videos">
+                        <div class="jo-inner-videos-row row row-cols-2 row-cols-xs-1 ">
+                            {{-- @php
+                                $videos = DB::table('videos')->get();
                             @endphp
 
-                            @foreach ($images as $image)
-                            <div class="col-6 col-md-4 col-lg-3">
-                                <div class="jo-gallery card">
-                                    <a data-fslightbox="images" href="{{ $image->url }}" class="jo-gallery__img">
-                                        <img loading="lazy" src="{{ $image->url }}" alt="Gallery Image">
-                                    </a>
+                            @foreach ($videos as $video)
+                                <div class="col">
+                                    <div class="jo-video-card jo-inner-video-card">
+                                        <img src="{{ $video->thumb_url }}" alt="Video Thumbnail"
+                                            class="jo-video-card__img">
+
+                                        <div class="jo-video-card__txt">
+                                            <div class="bottom">
+                                                <a href="{{ $video->url }}" data-fslightbox="videos"
+                                                    class="jo-video-card__btn"><i class="flaticon-play"></i></a>
+                                                <h5 class="mb-0"><a href="#0"
+                                                        class="jo-video-card__title">{{ $video->title }}</a></h5>
+                                                <div class="tt-video__infos jo-video-card__infos">
+                                                    <span>{{ $video->brand != null ? $video->brand : '' }}</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
                             @endforeach --}}
-
-
                         </div>
                     </div>
+
+
                 </div>
 
                 <!-- pagination -->
@@ -254,158 +261,242 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>
 
     <script>
-       $(document).ready(function() {
-    let allFiles = [];
-    const fileInput = $("#fileInput");
-    const filePreview = $("#file-preview");
-
-    // 📌 Browse Button Click to Open File Input
-    $(".browse").click(function() {
-        fileInput.click();
-    });
-
-    // 📌 Drag & Drop File Handling
-    $("#drop-area").on("dragover", function(e) {
-        e.preventDefault();
-        $(this).css("background", "rgba(106, 27, 154, 0.2)");
-    });
-
-    $("#drop-area").on("dragleave", function() {
-        $(this).css("background", "white");
-    });
-
-    $("#drop-area").on("drop", function(e) {
-        e.preventDefault();
-        $(this).css("background", "white");
-
-        let droppedFiles = Array.from(e.originalEvent.dataTransfer.files);
-        let videoFile = droppedFiles.find(file => file.type.startsWith("video/"));
-
-        if (videoFile) {
-            allFiles = [videoFile]; // Only one video allowed
-            displayFiles(allFiles);
-        } else {
-            alert("Please drop a valid video file.");
-        }
-    });
-
-    // 📌 File Input Change Event (Select File)
-    fileInput.on("change", function() {
-        let selectedFiles = Array.from(this.files);
-        let videoFile = selectedFiles.find(file => file.type.startsWith("video/"));
-
-        if (videoFile) {
-            allFiles = [videoFile]; // Only one video allowed
-            displayFiles(allFiles);
-        } else {
-            alert("Please select a valid video file.");
-        }
-
-        // Reset input to allow re-selecting the same file
-        fileInput.val("");
-    });
-
-    // 📌 Upload Button Click with AJAX Request
-    $("#uploadBtn").click(function(e) {
-        if (allFiles.length === 0) {
-            iziToast.error({
-                title: 'Error',
-                message: 'Please select or drop a video before uploading.',
-                position: 'topRight'
+        $(document).ready(function() {
+            let allFiles = [];
+            const fileInput = $("#fileInput");
+            const filePreview = $("#file-preview");
+    
+            // 📌 Browse Button Click to Open File Input
+            $(".browse").click(function() {
+                fileInput.click();
             });
-            return;
-        }else if($("#title").val() === ""){
-            iziToast.error({
-                title: 'Error',
-                message: 'Please enter video title',
-                position: 'topRight'
+    
+            // 📌 Drag & Drop File Handling
+            $("#drop-area").on("dragover", function(e) {
+                e.preventDefault();
+                $(this).css("background", "rgba(106, 27, 154, 0.2)");
             });
-            return;
-        }else if($("#brand").val() === ""){
-            iziToast.error({
-                title: 'Error',
-                message: 'Please enter video brand',
-                position: 'topRight'
+    
+            $("#drop-area").on("dragleave", function() {
+                $(this).css("background", "white");
             });
-            return;
-        }
-
-        console.log("budsh",allFiles[0]);
-        
-
-        let formData = new FormData();
-        formData.append("file", allFiles[0]); // Only one file allowed
-        formData.append("title", $("#title").val());
-        formData.append("brand", $("#brand").val());
-        let uploadingToast;
-
-        $.ajax({
-            url: "{{ route('uploadVideo') }}",
-            method: "POST",
-            data: formData,
-            contentType: false,
-            processData: false,
-            cache: false,
-            headers: {
-                "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content")
-            },
-            beforeSend: function() {
-                uploadingToast = iziToast.info({
+    
+            $("#drop-area").on("drop", function(e) {
+                e.preventDefault();
+                $(this).css("background", "white");
+    
+                let droppedFiles = Array.from(e.originalEvent.dataTransfer.files);
+                let videoFile = droppedFiles.find(file => file.type.startsWith("video/"));
+    
+                if (videoFile) {
+                    allFiles = [videoFile]; // Only one video allowed
+                    displayFiles(allFiles);
+                } else {
+                    alert("Please drop a valid video file.");
+                }
+            });
+    
+            // 📌 File Input Change Event (Select File)
+            fileInput.on("change", function() {
+                let selectedFiles = Array.from(this.files);
+                let videoFile = selectedFiles.find(file => file.type.startsWith("video/"));
+    
+                if (videoFile) {
+                    allFiles = [videoFile]; // Only one video allowed
+                    displayFiles(allFiles);
+                } else {
+                    alert("Please select a valid video file.");
+                }
+    
+                // Reset input to allow re-selecting the same file
+                fileInput.val("");
+            });
+    
+            // 📌 Upload Button Click with AJAX Request
+            $("#uploadBtn").click(function(e) {
+                if (allFiles.length === 0) {
+                    iziToast.error({
+                        title: 'Error',
+                        message: 'Please select or drop a video before uploading.',
+                        position: 'topRight'
+                    });
+                    return;
+                } else if ($("#title").val() === "") {
+                    iziToast.error({
+                        title: 'Error',
+                        message: 'Please enter video title',
+                        position: 'topRight'
+                    });
+                    return;
+                } else if ($("#brand").val() === "") {
+                    iziToast.error({
+                        title: 'Error',
+                        message: 'Please enter video brand',
+                        position: 'topRight'
+                    });
+                    return;
+                }
+    
+                let formData = new FormData();
+                formData.append("file", allFiles[0]); // Only one file allowed
+                formData.append("title", $("#title").val());
+                formData.append("brand", $("#brand").val());
+    
+                let uploadingToast;
+    
+                $.ajax({
+                    url: "{{ route('uploadVideo') }}",
+                    method: "POST",
+                    data: formData,
+                    contentType: false,
+                    processData: false,
+                    cache: false,
+                    headers: {
+                        "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content")
+                    },
+                    beforeSend: function() { 
+                        uploadingToast = iziToast.info({
                             title: 'Info',
                             message: 'Uploading files...',
                             position: 'topRight',
-                            timeout: false, // Keep toast visible until manually closed
+                            timeout: false, 
                             close: false
+                        });
+                    },
+                    success: function(response) {
+                        allFiles = [];
+                        filePreview.empty();
+                        $("#title").val("");
+                        $("#brand").val("");
+                        iziToast.destroy(uploadingToast); 
+                        iziToast.success({
+                            title: 'Success',
+                            message: 'Video uploaded successfully',
+                            position: 'topRight'
+                        });
+    
+                        // Refresh videos
+                        $.ajax({
+                            url: "{{ route('getAllVideos') }}",
+                            method: "GET",
+                            success: function(response) {
+                                allVideos = response; 
+                                renderVideos(); 
+                            },
+                            error: function(error) {
+                                console.log("Error fetching videos:", error);
+                            }
+                        });
+                    },
+                    error: function(error) {
+                        iziToast.destroy(uploadingToast);
+                        iziToast.error({
+                            title: 'Error',
+                            message: 'An error occurred while uploading the video',
+                            position: 'topRight'
+                        });
+                    }
                 });
-            },
-            success: function(response) {
-                console.log(response);
-
-                allFiles = [];
-                filePreview.empty();
-                $("#title").val("");
-                $("#brand").val("");
-                iziToast.destroy(uploadingToast); // Remove loading toast
-                iziToast.success({
-                    title: 'Success',
-                    message: 'Video uploaded successfully',
-                    position: 'topRight'
-                });
-            },
-            error: function(error) {
-                console.log(error);
-                iziToast.destroy(uploadingToast); // Remove loading toast
-                iziToast.error({
-                    title: 'Error',
-                    message: 'An error occurred while uploading the video',
-                    position: 'topRight'
+            });
+    
+            // 📌 Display File Preview
+            function displayFiles(files) {
+                filePreview.empty(); 
+                files.forEach(file => {
+                    let fileType = file.type.split("/")[0];
+    
+                    let fileContainer = $("<div>").addClass("file-container jo-gallery card col-12 col-md-6 col-lg-3");
+                    let fileElement = $("<p>").text(file.name);
+                    let size = $("<p>").text((file.size / (1024 * 1024)).toFixed(2) + "MB");
+    
+                    if (fileType === "video") {
+                        let videoPreview = $("<video controls>").attr("src", URL.createObjectURL(file));
+                        fileContainer.append(videoPreview);
+                    }
+    
+                    fileContainer.append(fileElement, size);
+                    filePreview.append(fileContainer);
                 });
             }
-        });
-    });
+    
+            let allVideos = []; 
+    
+            // Fetch videos once on page load
+            $.ajax({
+                url: "{{ route('getAllVideos') }}",
+                method: "GET",
+                success: function(response) {
+                    allVideos = response; 
+                    renderVideos();
+                },
+                error: function(error) {
+                    console.log("Error fetching videos:", error);
+                }
+            });
 
-    // 📌 Display File Preview
-    function displayFiles(files) {
-        filePreview.empty(); // Clear previous files
-        files.forEach(file => {
-            let fileType = file.type.split("/")[0];
-
-            let fileContainer = $("<div>").addClass("file-container jo-gallery card col-12 col-md-6 col-lg-3");
-            let fileElement = $("<p>").text(file.name);
-            let size = $("<p>").text((file.size / (1024 * 1024)).toFixed(2) + "MB");
-
-            if (fileType === "video") {
-                let videoPreview = $("<video controls>").attr("src", URL.createObjectURL(file));
-                fileContainer.append(videoPreview);
+            
+    
+            // Function to filter, display, and allow removal of videos
+            function renderVideos() {
+                let html = "";
+                allVideos.forEach((video) => {
+                    html += `
+                    <div class="col" id="video-${video.id}">
+                        <div class="jo-video-card jo-inner-video-card">
+                            <img src="${video.thumb_url}" alt="Video Thumbnail" class="jo-video-card__img">
+                            <div class="jo-video-card__txt">
+                                <div class="bottom">
+                                    <a href="${video.url}" data-fslightbox="videos" class="jo-video-card__btn"><i class="flaticon-play"></i></a>
+                                    <h5 class="mb-0"><a href="#0" class="jo-video-card__title">${video.title}</a></h5>
+                                    <div class="tt-video__infos jo-video-card__infos">
+                                        <span>${video.brand != null ? video.brand : ""}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       <button class="btn btn-danger btn-sm mt-2" onclick="deleteVideo(${video.id})" >Delete</button>
+                    </div>`;
+                });
+    
+                // Update UI
+                $("#videos .jo-inner-videos-row").html(html);
             }
+    
 
-            fileContainer.append(fileElement, size);
-            filePreview.append(fileContainer);
+          
+          
         });
-    }
-});
 
+          // 📌 Delete Video Function
+          function deleteVideo(videoId) {
+                $.ajax({
+                    url: `/delete-video/${videoId}`, 
+                    type: "DELETE",
+                    headers: {
+                        "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content"), 
+                    },
+                    success: function(response) {
+                        $("#video-" + videoId).remove(); 
+    
+                        iziToast.success({
+                            title: "Deleted",
+                            message: "Video removed successfully",
+                            position: "topRight",
+                        });
+                    },
+                    error: function(error) {
+                        console.log("Error deleting video:", error);
+                        iziToast.error({
+                            title: "Error",
+                            message: "Failed to delete the video",
+                            position: "topRight",
+                        });
+                    }
+                });
+            }
     </script>
+    
+    
 </body>
 
 </html>
