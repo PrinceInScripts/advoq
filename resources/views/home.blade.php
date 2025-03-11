@@ -706,7 +706,7 @@
                     <h2 class="jo-section-title">INTERNATIONAL ICON AWARDS</h2>
                 </div>
 
-                <div class="row g-sm-4 g-3">
+                <div class="row g-sm-4 g-3 d-none d-md-block">
                     <div class="col-12">
                         <div class="jo-article">
                             <div class="jo-article__img">
@@ -738,6 +738,9 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="row g-sm-4 g-3 d-md-none">
+                    <img style="" src="/assets/img/iiaAwards.jpg" width="70%" alt="sfdsd">
                 </div>
             </div>
         </section>

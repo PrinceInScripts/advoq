@@ -123,7 +123,7 @@
                             <div class="col-xl-7 col-lg-7">
                                 <div class="jo-inner-about-txt">
                                     <h2 class="jo-section-title">Connecting Brands with Influencers for Maximum Impact</h2>
-                                    <p class="jo-intro__descr">At Aces Media, we specialize in creating meaningful connections between brands and their audiences through authentic influencer partnerships. Our team is passionate about crafting tailored campaigns that leverage the unique voices of influencers to drive engagement and elevate brand presence. We believe in the power of storytelling and creativity, working closely with both brands and influencers to ensure every collaboration resonates. Let us help you navigate the dynamic world of influencer marketing and unlock new opportunities for growth!</p>
+                                    <p class="jo-intro__descr">At AdvoQ Entertainment, we specialize in creating meaningful connections between brands and their audiences through authentic influencer partnerships. Our team is passionate about crafting tailored campaigns that leverage the unique voices of influencers to drive engagement and elevate brand presence. We believe in the power of storytelling and creativity, working closely with both brands and influencers to ensure every collaboration resonates. Let us help you navigate the dynamic world of influencer marketing and unlock new opportunities for growth!</p>
 
                                     <ul class="jo-intro__list">
                                         <li>Misson
