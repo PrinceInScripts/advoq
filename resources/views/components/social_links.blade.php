@@ -3,7 +3,7 @@
     <div class="jo-container">
         <div class="row g-sm-4 g-3">
             <!-- single social -->
-            <div class="col-md-3 col-6 col-xxs-12">
+            <div class="col-md-4 col-6 col-xxs-12">
                 <div class="jo-social-link">
                     <div class="icon"><img src="assets/img/social-icon-1.png" alt="Social Media Icon"></div>
                     <div class="txt">
@@ -15,7 +15,7 @@
             </div>
 
             <!-- single social -->
-            <div class="col-md-3 col-6 col-xxs-12">
+            <div class="col-md-4 col-6 col-xxs-12">
                 <div class="jo-social-link">
                     <div class="icon"><img src="assets/img/social-icon-2.png" alt="Social Media Icon"></div>
                     <div class="txt">
@@ -27,7 +27,7 @@
             </div>
 
             <!-- single social -->
-            <div class="col-md-3 col-6 col-xxs-12">
+            <div class="col-md-4 col-6 col-xxs-12">
                 <div class="jo-social-link">
                     <div class="icon"><img src="assets/img/social-icon-3.png" alt="Social Media Icon" style="border-radius: 5px"></div>
                     <div class="txt">
@@ -39,7 +39,7 @@
             </div>
 
             <!-- single social -->
-            <div class="col-md-3 col-6 col-xxs-12">
+            {{-- <div class="col-md-3 col-6 col-xxs-12">
                 <div class="jo-social-link">
                     <div class="icon"><img src="assets/img/social-icon-4.png" alt="Social Media Icon"></div>
                     <div class="txt">
@@ -48,7 +48,7 @@
                     </div>
                     <a href="#" class="jo-btn">Subscribe</a>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 </section>

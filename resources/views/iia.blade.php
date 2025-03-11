@@ -26,12 +26,14 @@
         <!-- BREADCRUMB SECTION START -->
         <section class="jo-breadcrumb">
             <div class="container">
-                <h1 class="jo-page-title jo-section-title">Gallery
+                <h1 class="jo-page-title jo-section-title">INTERNATIONAL 
+                    ICON AWARDS 
                 </h1>
                 <ul class="jo-breadcrumb-nav">
                     <li><a href="#">Home</a></li>
                     <li><span>/</span></li>
-                    <li class="current-page">Gallery</li>
+                    <li class="current-page">INTERNATIONAL 
+                        ICON AWARDS </li>
                 </ul>
 
                 <div class="jo-circle-box">
@@ -47,50 +49,19 @@
         <!-- VIDEOS SECTION START -->
         <div class="jo-inner-main-content">
             <div class="jo-container">
-                <div class="jo-inner-videos-filter-nav d-flex justify-content-center flex-wrap">
-                    <button data-tab="videos" class="tab-nav active">All
-                        Videos</button>
-                    <button data-tab="images" class="tab-nav">All Images</button>
-                </div>
+             
 
                 <!-- video cards -->
                 <div class="jo-videos-tab-container">
-                    <!-- single tab -->
-                    <div class="jo-tab active" id="videos">
-                        <div class="jo-inner-videos-row row row-cols-2 row-cols-xs-1 ">
-                            @php
-                            $videos=DB::table('videos')->get();
-                            @endphp
-
-                            @foreach ($videos as $video)
-                            <div class="col">
-                                <div class="jo-video-card jo-inner-video-card">
-                                    <img src="{{ $video->thumb_url }}" alt="Video Thumbnail" class="jo-video-card__img">
-
-                                    <div class="jo-video-card__txt">
-                                        <div class="bottom">
-                                            <a href="{{ $video->url }}" data-fslightbox="videos"
-                                                class="jo-video-card__btn"><i class="flaticon-play"></i></a>
-                                            <h5 class="mb-0"><a href="#0"
-                                                    class="jo-video-card__title">{{ $video->title }}</a></h5>
-                                            <div class="tt-video__infos jo-video-card__infos">
-                                                <span>{{ $video->brand!=null?$video->brand:"" }}</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            @endforeach
-                        </div>
-                    </div>
+                   
 
                     <!-- single tab -->
-                    <div class="jo-tab" id="images">
+                    <div class="jo-tab active" id="images">
                         <div class="jo-inner-videos-row row row-cols-2 row-cols-xs-1">
 
                             @php
 
-                            $images=DB::table('images')->get();
+                            $images=DB::table('images')->where('type','iia')->get();
                             
                             @endphp
 
@@ -109,21 +80,55 @@
                     </div>
                 </div>
 
-                <!-- pagination -->
-                <div class="tt-channel-content-pagination d-flex justify-content-center align-items-center gap-2 mt-5">
-                    <button><i class="flaticon-left-arrow"></i></button>
-                    <div class="pages">
-                        <a href="#" class="active">1</a>
-                        <a href="#">2</a>
-                        <a href="#">3</a>
-                        <a href="#">4</a>
-                        <a href="#">5</a>
-                    </div>
-                    <button><i class="flaticon-right-arrow"></i></button>
-                </div>
+               
             </div>
         </div>
         <!-- VIDEOS SECTION END -->
+
+         <!-- ARTICLES SECTION START -->
+         <section class="jo-articles">
+            <div class="jo-container">
+                <div class="text-center">
+                    <h2 class="jo-section-title">INTERNATIONAL ICON AWARDS</h2>
+                </div>
+
+                <div class="row g-sm-4 g-3">
+                    <div class="col-12">
+                        <div class="jo-article">
+                            <div class="jo-article__img">
+                                <iframe src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/IIA.pdf"
+                                    frameBorder="0" scrolling="auto" height="800px" width="100%"></iframe>
+
+                                <div class="date">
+                                    <span class="number">IIA</span>
+                                    <span class="txt">2025</span>
+                                </div>
+                            </div>
+
+                            <div class="jo-article__txt">
+                                <div class="jo-article__infos flex gap-x-[30px] mb-[16px]">
+                                    <!-- <div class="jo-article__info">
+                                        <span class="icon"><i class="flaticon-user"></i></span>
+                                        <span class="text font-normal text-[14px] text-etGray">By Admin</span>
+                                    </div>
+
+                                    <div class="jo-article__info">
+                                        <span class="icon"><i class="flaticon-price-tag"></i></span>
+                                        <span class="text font-normal text-[14px] text-etGray">Music</span>
+                                    </div> -->
+                                </div>
+
+                                <h4 class="jo-article__title"><a href="#0">ADVOQ ENTERTAINMENTS PVT LTD</a></h4>
+
+                                <!-- <a href="blog-details.html" class="jo-article__btn">Read More <span class="icon"><i class="flaticon-arrow-right-1"></i></span></a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ARTICLES SECTION END -->
+
     </main>
 
     <x-footer />

@@ -47,9 +47,9 @@
                         <span class="circle-3"><img
                                 src="assets/img/social-icon-3.png"
                                 alt="Social Media Icon"></span>
-                        <span class="circle-4"><img
+                        {{-- <span class="circle-4"><img
                                 src="assets/img/social-icon-4.png"
-                                alt="Social Media Icon"></span>
+                                alt="Social Media Icon"></span> --}}
                     </div>
                 </div>
             </section>
@@ -65,9 +65,19 @@
                             <div class="jo-contact-info">
                                 <div class="icon"><i
                                         class="flaticon-location-pin"></i></div>
-                                <h3 class="title">Our Address</h3>
-                                <p class="descr">4517 Washington Ave.
-                                    Manchester, Kentucky 39495</p>
+                                <h3 class="title">OUR REGISTERED ADRRESS</h3>
+                                <p class="descr">S-145, UPPER GROUND FLOOR, SCHOOL BLOCK, SHAKARPUR, EAST DELHI, EAST DELHI-110092</p>
+                            </div>
+                        </div>
+                         <!-- single contact info -->
+                         <div class="col">
+                            <div class="jo-contact-info">
+                                <div class="icon"><i
+                                        class="flaticon-clock"></i></div>
+                                <h3 class="title">OUR CORPORATE ADDRESS </h3>
+                                <p class="descr">
+                                    The Zora, Delhi Convention Center, Lodhi Road, Pragati Vihar, New Delhi, 110003
+                                </p>
                             </div>
                         </div>
                         <!-- single contact info -->
@@ -93,7 +103,7 @@
                             </div>
                         </div>
                         <!-- single contact info -->
-                        <div class="col">
+                        {{-- <div class="col">
                             <div class="jo-contact-info">
                                 <div class="icon"><i
                                         class="flaticon-clock"></i></div>
@@ -103,7 +113,7 @@
                                     <span>Saturday: 9 AM – 4 PM</span>
                                 </p>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </section>

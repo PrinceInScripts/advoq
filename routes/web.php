@@ -22,6 +22,10 @@ Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
 
+Route::get('iia', function () {
+    return view('iia');
+})->name('iia');
+
 Route::post('/contact/submit', function (Request $request) {
     $request->validate([
         'name' => 'required',
@@ -37,6 +41,8 @@ Route::post('/contact/submit', function (Request $request) {
 
     return response()->json(['success' => 'Your message has been sent successfully!']);
 })->name('contact.submit');
+
+
 
 
 

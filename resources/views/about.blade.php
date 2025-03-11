@@ -88,9 +88,9 @@
                         <span class="circle-3"><img
                                 src="assets/img/social-icon-3.png"
                                 alt="Social Media Icon"></span>
-                        <span class="circle-4"><img
+                        {{-- <span class="circle-4"><img
                                 src="assets/img/social-icon-4.png"
-                                alt="Social Media Icon"></span>
+                                alt="Social Media Icon"></span> --}}
                     </div>
                 </div>
             </section>

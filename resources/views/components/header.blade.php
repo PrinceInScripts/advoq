@@ -39,6 +39,7 @@
                     <a href="#" onclick="window.location.href='{{ route('home') }}'" class="fs-5 fw-bold">Home</a>
                     <a href="#" onclick="window.location.href='{{ route('about') }}'" class="fs-5 fw-bold">About</a>
                     <a href="#" onclick="window.location.href='{{ route('gallery') }}'" class="fs-5 fw-bold">Gallery</a>
+                    <a href="#" onclick="window.location.href='{{ route('iia') }}'" class="fs-5 fw-bold">IIA</a>
                     <a href="#" onclick="window.location.href='{{ route('contact') }}'" class="fs-5 fw-bold">Contact</a>
 
                 </nav>
