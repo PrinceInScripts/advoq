@@ -55,10 +55,64 @@
                     <div class="jo-partners-slider swiper">
                         <div class="swiper-wrapper d-flex align-items-center gap-4">
                             <!-- single partner -->
-                            <div class="swiper-slide" style="background-color: red">
+                            <div class="swiper-slide" >
                                 {{-- <img src="assets/img/axe.png" alt="Partner Image"> --}}
-                                <p class="fw-bold fs-2 text-uppercase px-4 py-2 rounded ">
+                                <p class="fw-bold text-uppercase px-2 py-2 rounded ">
                                     POND'S
+                                </p>
+                            </div>
+                            <div class="swiper-slide" >
+                                {{-- <img src="assets/img/axe.png" alt="Partner Image"> --}}
+                                <p class="fw-bold text-uppercase px-2 py-2 rounded ">
+                                    Simple
+                                </p>
+                            </div>
+                            <div class="swiper-slide" >
+                                {{-- <img src="assets/img/axe.png" alt="Partner Image"> --}}
+                                <p class="fw-bold text-uppercase px-2 py-2 rounded ">
+                                    Vaseline
+                                </p>
+                            </div>
+                            <div class="swiper-slide" >
+                                {{-- <img src="assets/img/axe.png" alt="Partner Image"> --}}
+                                <p class="fw-bold text-uppercase px-2 py-2 rounded ">
+                                    Lifebuy
+                                </p>
+                            </div>
+                            <div class="swiper-slide" >
+                                {{-- <img src="assets/img/axe.png" alt="Partner Image"> --}}
+                                <p class="fw-bold text-uppercase px-2 py-2 rounded ">
+                                    Trends
+                                </p>
+                            </div>
+                            <div class="swiper-slide" >
+                                {{-- <img src="assets/img/axe.png" alt="Partner Image"> --}}
+                                <p class="fw-bold text-uppercase px-2 py-2 rounded ">
+                                    Caffeine
+                                </p>
+                            </div>
+                            <div class="swiper-slide" >
+                                {{-- <img src="assets/img/axe.png" alt="Partner Image"> --}}
+                                <p class="fw-bold text-uppercase px-2 py-2 rounded ">
+                                    Monster Energy
+                                </p>
+                            </div>
+                            <div class="swiper-slide" >
+                                {{-- <img src="assets/img/axe.png" alt="Partner Image"> --}}
+                                <p class="fw-bold text-uppercase px-2 py-2 rounded ">
+                                    COCO soul
+                                </p>
+                            </div>
+                            <div class="swiper-slide" >
+                                {{-- <img src="assets/img/axe.png" alt="Partner Image"> --}}
+                                <p class="fw-bold text-uppercase px-2 py-2 rounded ">
+                                    livon
+                                </p>
+                            </div>
+                            <div class="swiper-slide" >
+                                {{-- <img src="assets/img/axe.png" alt="Partner Image"> --}}
+                                <p class="fw-bold text-uppercase px-2 py-2 rounded ">
+                                    Oneplus
                                 </p>
                             </div>
 
