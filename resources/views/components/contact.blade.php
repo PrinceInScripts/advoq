@@ -9,7 +9,10 @@
                         <img src="assets/img/contact-form-icon.svg" alt="icon" class="icon">
                         <h2 class="jo-section-title">Let’s Work
                             Together on your next Project</h2>
-                        <p>When connected with us, you aren’t growing your business alone. We have your back and put in our best to contribute to the growth of your entire team and organization. So, if you are looking for the right agency that’ll help you build a good online presence and bring in more conversions and revenue, we are right here!</p>
+                        <p>When connected with us, you aren’t growing your business alone. We have your back and put in
+                            our best to contribute to the growth of your entire team and organization. So, if you are
+                            looking for the right agency that’ll help you build a good online presence and bring in more
+                            conversions and revenue, we are right here!</p>
                         <form action="#" class="jo-contact-form">
                             @csrf
                             <div>
@@ -50,23 +53,16 @@
                 <div class="col-lg-6">
                     <h5 class="jo-partners-title">Trusted Partners</h5>
                     <div class="jo-partners-slider swiper">
-                        <div class="swiper-wrapper">
+                        <div class="swiper-wrapper d-flex align-items-center gap-4">
                             <!-- single partner -->
-                            <div class="swiper-slide">
-                                <img src="assets/img/axe.png" alt="Partner Image">
+                            <div class="swiper-slide" style="background-color: red">
+                                {{-- <img src="assets/img/axe.png" alt="Partner Image"> --}}
+                                <p class="fw-bold fs-2 text-uppercase px-4 py-2 rounded ">
+                                    POND'S
+                                </p>
                             </div>
 
-                            <!-- single partner -->
-                            <div class="swiper-slide">
-                                <img src="assets/img/ponds.png" alt="Partner Image">
-                            </div>
 
-                            <!-- single partner -->
-                            <div class="swiper-slide">
-                                <img src="assets/img/trends.png" alt="Partner Image">
-                            </div>
-
-                            
 
                         </div>
 
