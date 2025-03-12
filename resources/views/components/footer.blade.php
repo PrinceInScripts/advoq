@@ -68,7 +68,7 @@
 
         <!-- footer bottom -->
         <div class="tt-footer-bottom text-center">
-            <p class="mb-0">Copyright ©2025 by&nbsp;ADVOQ ENTERTAINMENTS PVT LTD</p>
+            <p class="mb-0">Copyright ©2025 &nbsp;ADVOQ ENTERTAINMENTS PVT LTD</p>
         </div>
     </div>
 </footer>
