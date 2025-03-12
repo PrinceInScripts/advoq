@@ -5,6 +5,7 @@ use Illuminate\Http\Request;
 use App\Models\Contact;
 use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\DB;
+use App\Http\Middleware\AdminAuthenticate;
 
 Route::get('/', function () {
     return view('home');
@@ -47,8 +48,8 @@ Route::post('/contact/submit', function (Request $request) {
 
 
 // Admin Routes
-// Grouping admin routes under auth middleware
-Route::middleware(['auth'])->group(function () {
+// Protect admin routes with custom middleware
+Route::middleware([AdminAuthenticate::class])->group(function () {
     Route::get('/admin/add-images', [AdminController::class, 'addIIA'])->name('admin.add-images');
     Route::get('/admin/add-video', [AdminController::class, 'addVideo'])->name('admin.add-video');
     Route::get('/get-all-images', [AdminController::class, 'getAllImages'])->name('getAllImages');
