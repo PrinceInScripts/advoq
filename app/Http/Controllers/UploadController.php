@@ -12,7 +12,7 @@ class UploadController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'files.*' => 'required|file|mimes:jpeg,png,jpg,gif,pdf|max:5120',
+            'files.*' => 'required|file|mimes:jpeg,png,jpg,gif,pdf|max:10120',
         ]);
     
         if ($request->hasFile('files')) {
@@ -81,7 +81,7 @@ class UploadController extends Controller
     public function storeVideo(Request $request)
 {
     $request->validate([
-        'file' => 'required|file|mimes:mp4,mov,avi,wmv,flv,3gp|max:51200', // Max 50MB
+        'file' => 'required|file|mimes:mp4,mov,avi,wmv,flv,3gp|max:101200', // Max 50MB
         'title' => 'required|string|max:255',
         'brand' => 'nullable|string|max:255',
     ]);

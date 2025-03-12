@@ -151,194 +151,54 @@
             </section>
             <!-- ABOUT SECTION END -->
 
-            <!-- VIDEOS SECTION START -->
-        <section class="jo-videos">
-            <div class="jo-container">
-                <!-- heading -->
-                <div class="jo-videos__heading">
-                    <h2 class="jo-section-title">Latest Gallery</h2>
-                    <a href="#" onclick="window.locaion.href='{{ route('gallery') }}'" class="jo-btn jo-videos__btn"><i class="flaticon-premium-quality"></i> View All Videos</a>
-                </div>
-            </div>
+ <!-- VIDEOS SECTION START -->
+ <section class="jo-videos">
+    <div class="jo-container">
+        <!-- heading -->
+        <div class="jo-videos__heading">
+            <h2 class="jo-section-title">Latest Gallery</h2>
+            <a href="#" onclick="window.location.href='{{ route('gallery') }}'" class="jo-btn jo-videos__btn"><i
+                    class="flaticon-premium-quality"></i> View Gallery</a>
+        </div>
+    </div>
 
-            <!-- video cards -->
-            <div class="jo-videos-slider splide latest-videos-slider">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide">
-                            <div class="jo-video-card">
-                                <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/IMG_8583.JPG" alt="Video Thumbnail" class="jo-video-card__img">
+    <!-- video cards -->
+    <div class="jo-videos-slider splide latest-videos-slider">
+        <div class="splide__track">
+            <ul class="splide__list">
+                @php
+                $images = DB::table('images')->where('status', 1)->where('type','portrait')->get();
+                foreach($images as $image) {
+                echo '<li class="splide__slide">
+                    <div class="jo-video-card">
+                        <img src="'.$image->url.'" alt="Portrait Image" class="jo-video-card__img">
+                    </div>
+                </li>';
+                }
+                @endphp
+                 </ul>
+        </div>
+    </div>
 
-                                <!-- <div class="jo-video-card__txt">
-                                    <div class="d-flex justify-content-between">
-                                        <a href="https://youtu.be/vc3WCrgYpF0?si=W2iFDfdDYsh6spKg" data-fslightbox="videos" class="jo-video-card__btn"><i class="flaticon-play"></i></a>
-                                        <span class="jo-video-card__premium-tag"><i class="flaticon-premium-quality"></i></span>
-                                    </div>
-
-                                    <div class="bottom">
-                                        <span class="price">$5.00</span>
-                                        <h5><a href="video-details.html" class="jo-video-card__title">Smiley woman pop party studio medium shot</a></h5>
-                                        <div class="tt-video__infos jo-video-card__infos">
-                                            <span>16M views</span>
-                                            <span>49 minutes ago</span>
-                                        </div>
-                                    </div>
-                                </div> -->
-                            </div>
-                        </li>
-
-                        <li class="splide__slide">
-                            <div class="jo-video-card">
-                                <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/IMG_8736.JPG" alt="Video Thumbnail" class="jo-video-card__img">
-                            </div>
-                        </li>
-
-                        <li class="splide__slide">
-                            <div class="jo-video-card">
-                                <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/IMG_8606.JPG" alt="Video Thumbnail" class="jo-video-card__img">
-
-                                
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="jo-video-card">
-                                <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/IMG_8697.JPG" alt="Video Thumbnail" class="jo-video-card__img">
-                            </div>
-                        </li>
-
-                        
-
-                        <li class="splide__slide">
-                            <div class="jo-video-card">
-                                <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/IMG_8738.JPG" alt="Video Thumbnail" class="jo-video-card__img">
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="jo-video-card">
-                                <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/IMG_8776.JPG" alt="Video Thumbnail" class="jo-video-card__img">
-                            </div>
-                        </li>
-
-                        <!-- <li class="splide__slide">
-                            <div class="jo-video-card">
-                                <img src="assets/img/jo-video-2.jpg" alt="Video Thumbnail" class="jo-video-card__img">
-
-                                <div class="jo-video-card__txt">
-                                    <div class="d-flex justify-content-between">
-                                        <a href="https://youtu.be/vc3WCrgYpF0?si=W2iFDfdDYsh6spKg" data-fslightbox="videos" class="jo-video-card__btn"><i class="flaticon-play"></i></a>
-                                        <span class="jo-video-card__premium-tag"><i class="flaticon-premium-quality"></i></span>
-                                    </div>
-
-                                    <div class="bottom">
-                                        <span class="price">$5.00</span>
-                                        <h5><a href="video-details.html" class="jo-video-card__title">Smiley woman pop party studio medium shot</a></h5>
-                                        <div class="tt-video__infos jo-video-card__infos">
-                                            <span>16M views</span>
-                                            <span>49 minutes ago</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="splide__slide">
-                            <div class="jo-video-card">
-                                <img src="assets/img/jo-video-3.jpg" alt="Video Thumbnail" class="jo-video-card__img">
-
-                                <div class="jo-video-card__txt">
-                                    <div class="d-flex justify-content-between">
-                                        <a href="https://youtu.be/vc3WCrgYpF0?si=W2iFDfdDYsh6spKg" data-fslightbox="videos" class="jo-video-card__btn"><i class="flaticon-play"></i></a>
-                                        <span class="jo-video-card__premium-tag"><i class="flaticon-premium-quality"></i></span>
-                                    </div>
-
-                                    <div class="bottom">
-                                        <span class="price">$5.00</span>
-                                        <h5><a href="video-details.html" class="jo-video-card__title">Smiley woman pop party studio medium shot</a></h5>
-                                        <div class="tt-video__infos jo-video-card__infos">
-                                            <span>16M views</span>
-                                            <span>49 minutes ago</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li> -->
-                    </ul>
-                </div>
-            </div>
-
-            <div class="jo-videos-slider-2 splide">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide">
-                            <div class="jo-video-card">
-                                <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/IMG_8563.JPG" alt="Video Thumbnail" class="jo-video-card__img">
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="jo-video-card">
-                                <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/IMG_8608.JPG" alt="Video Thumbnail" class="jo-video-card__img">
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="jo-video-card">
-                                <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/IMG_8612.JPG" alt="Video Thumbnail" class="jo-video-card__img">
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <div class="jo-video-card">
-                                <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/IMG_8722.JPG" alt="Video Thumbnail" class="jo-video-card__img">
-                            </div>
-                        </li>
-                        
-
-                        <!-- <li class="splide__slide">
-                            <div class="jo-video-card">
-                                <img src="assets/img/jo-video-5.jpg" alt="Video Thumbnail" class="jo-video-card__img">
-
-                                <div class="jo-video-card__txt">
-                                    <div class="d-flex justify-content-between">
-                                        <a href="https://youtu.be/vc3WCrgYpF0?si=W2iFDfdDYsh6spKg" data-fslightbox="videos" class="jo-video-card__btn"><i class="flaticon-play"></i></a>
-                                        <span class="jo-video-card__premium-tag"><i class="flaticon-premium-quality"></i></span>
-                                    </div>
-
-                                    <div class="bottom">
-                                        <span class="price">$5.00</span>
-                                        <h5><a href="video-details.html" class="jo-video-card__title">Smiley woman pop party studio medium shot</a></h5>
-                                        <div class="tt-video__infos jo-video-card__infos">
-                                            <span>16M views</span>
-                                            <span>49 minutes ago</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="splide__slide">
-                            <div class="jo-video-card">
-                                <img src="assets/img/jo-video-6.jpg" alt="Video Thumbnail" class="jo-video-card__img">
-
-                                <div class="jo-video-card__txt">
-                                    <div class="d-flex justify-content-between">
-                                        <a href="https://youtu.be/vc3WCrgYpF0?si=W2iFDfdDYsh6spKg" data-fslightbox="videos" class="jo-video-card__btn"><i class="flaticon-play"></i></a>
-                                        <span class="jo-video-card__premium-tag"><i class="flaticon-premium-quality"></i></span>
-                                    </div>
-
-                                    <div class="bottom">
-                                        <span class="price">$5.00</span>
-                                        <h5><a href="video-details.html" class="jo-video-card__title">Smiley woman pop party studio medium shot</a></h5>
-                                        <div class="tt-video__infos jo-video-card__infos">
-                                            <span>16M views</span>
-                                            <span>49 minutes ago</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li> -->
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <!-- VIDEOS SECTION END -->
+    <div class="jo-videos-slider-2 splide">
+        <div class="splide__track">
+            <ul class="splide__list">
+                @php
+                $images = DB::table('images')->where('status', 1)->where('type','landscape')->get();
+                foreach($images as $image) {
+                echo '<li class="splide__slide">
+                    <div class="jo-video-card">
+                        <img src="'.$image->url.'" alt="Landscape Image" class="jo-video-card__img">
+                    </div>
+                </li>';
+                }
+                @endphp
+                
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- VIDEOS SECTION END -->
 
 
            <x-contact />
