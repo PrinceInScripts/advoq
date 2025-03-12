@@ -110,7 +110,7 @@
                 </div>
 
                 <!-- pagination -->
-                <div class="tt-channel-content-pagination d-flex justify-content-center align-items-center gap-2 mt-5">
+                {{-- <div class="tt-channel-content-pagination d-flex justify-content-center align-items-center gap-2 mt-5">
                     <button><i class="flaticon-left-arrow"></i></button>
                     <div class="pages">
                         <a href="#" class="active">1</a>
@@ -120,7 +120,7 @@
                         <a href="#">5</a>
                     </div>
                     <button><i class="flaticon-right-arrow"></i></button>
-                </div>
+                </div> --}}
             </div>
         </div>
         <!-- VIDEOS SECTION END -->
