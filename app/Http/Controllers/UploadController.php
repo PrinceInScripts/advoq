@@ -2,9 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use Intervention\Image\ImageManager;
+use Intervention\Image\Drivers\Gd\Driver;
+use Intervention\Image\Encoders\JpegEncoder;
+use Intervention\Image\Encoders\PngEncoder;
+use Intervention\Image\Encoders\GifEncoder;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\DB;
+
 
 
 class UploadController extends Controller
@@ -18,24 +24,40 @@ class UploadController extends Controller
         if ($request->hasFile('files')) {
             $uploadedFiles = $request->file('files');
             $filePaths = [];
+            $manager = new ImageManager(new Driver()); // ✅ Use GD Driver
     
             foreach ($uploadedFiles as $file) {
                 // Generate unique file name
                 $fileName = time() . '_' . $file->getClientOriginalName();
+    
+                // Reduce image quality (only for images)
+                $extension = strtolower($file->getClientOriginalExtension());
+                if (in_array($extension, ['jpg', 'jpeg', 'png', 'gif'])) {
+                    // Select the correct encoder
+                    $encoder = match ($extension) {
+                        'jpg', 'jpeg' => new JpegEncoder(quality: 70),
+                        'png' => new PngEncoder(compressionLevel: 9),
+                        'gif' => new GifEncoder(),
+                        default => null,
+                    };
+    
+                    if ($encoder) {
+                        $image = $manager->read($file)->encode($encoder);
+                        file_put_contents($file->getPathname(), (string) $image); // ✅ Overwrite file
+                    }
+                }
     
                 // Upload file to S3
                 $path = Storage::disk('s3')->putFileAs('cdn/advoq', $file, $fileName, 's3');
     
                 // Get the public URL of the uploaded file
                 $url = Storage::disk('s3')->url($path);
-
-                // store url in database on images table url and type
-                $images=DB::table('images')->insert([
+    
+                // Store URL in database
+                DB::table('images')->insert([
                     'url' => $url,
                     'type' => $request->type,
                 ]);
-
-              
     
                 $filePaths[] = $url;
             }

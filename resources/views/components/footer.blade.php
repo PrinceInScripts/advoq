@@ -40,12 +40,14 @@
                     <div class="jo-footer-widget jo-footer-links">
                         <h5 class="jo-footer-widget__title">Browse Categories</h5>
                         <div class="links">
-                            <a href="#">Music</a>
-                            <a href="#">Sports</a>
-                            <a href="#">Gaming</a>
-                            <a href="#">Fashion</a>
-                            <a href="#">Art</a>
-                            <a href="#">Photography</a>
+                            <a href="#">INFLUENCER MARKETING</a>
+                            <a href="#">CELEBRITY MANAGEMENT</a>
+                            <a href="#">EVENTS</a>
+                            <a href="#">AWARDS</a>
+                            <a href="#">PUBLIC RELATIONS</a>
+                            <a href="#">ADS MAKING</a>
+                            <a href="#">BRAND ENDORSEMENTS</a>
+                            <a href="#">VENUE MANAGEMENT</a>
                         </div>
                     </div>
                 </div>
