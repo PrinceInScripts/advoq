@@ -6,6 +6,7 @@ use App\Models\Contact;
 use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\DB;
 use App\Http\Middleware\AdminAuthenticate;
+use Illuminate\Support\Facades\Auth;
 
 Route::get('/', function () {
     return view('home');
@@ -65,6 +66,9 @@ Route::middleware([AdminAuthenticate::class])->group(function () {
 
 
 Route::get('/admin/login', function () {
+    if (Auth::check()) {
+        return redirect()->route('admin.dashboard'); // Redirect to admin panel
+    }
     return view('admin.login');
 })->name('admin.login');
 
