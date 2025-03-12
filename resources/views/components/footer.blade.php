@@ -52,7 +52,7 @@
                     </div>
                 </div>
 
-                <div class="col-xl-4 col-md-6">
+                {{-- <div class="col-xl-4 col-md-6">
                     <div class="jo-footer-widget jo-footer-gallery">
                         <h5 class="jo-footer-widget__title">Instagram feed</h5>
                         <div class="imgs flex-wrap">
@@ -62,7 +62,7 @@
                             <img src="assets/img/footer-img-4.jpg" alt="Footer Image">
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
 
