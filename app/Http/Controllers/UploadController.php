@@ -11,6 +11,11 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\DB;
 
+use FFMpeg\FFMpeg;
+use FFMpeg\Format\Video\X264;
+use FFMpeg\Coordinate\Dimension;
+use FFMpeg\Coordinate\FrameRate;
+
 
 
 class UploadController extends Controller
@@ -101,37 +106,63 @@ class UploadController extends Controller
     // }
 
     public function storeVideo(Request $request)
-{
-    $request->validate([
-        'file' => 'required|file|mimes:mp4,mov,avi,wmv,flv,3gp|max:101200', // Max 50MB
-        'title' => 'required|string|max:255',
-        'brand' => 'nullable|string|max:255',
-    ]);
-
-    if ($request->hasFile('file')) {
-        $uploadedFile = $request->file('file');
-
-        // Generate a unique filename
-        $fileName = time() . '_' . preg_replace('/\s+/', '_', $uploadedFile->getClientOriginalName());
-
-        // Upload file to S3 with public access
-        $path = Storage::disk('s3')->putFileAs('cdn/advoq', $uploadedFile, $fileName, 'public');
-
-        // Get the file URL
-        $url = Storage::disk('s3')->url($path);
-
-        // Store in Database
-        DB::table('videos')->insert([
-            'url' => $url,
-            'title' => $request->title,
-            'brand' => $request->brand,
-           
+    {
+        $request->validate([
+            'file' => 'required|file|mimes:mp4,mov,avi,wmv,flv,3gp|max:101200', // Max 100MB
+            'title' => 'required|string|max:255',
+            'brand' => 'nullable|string|max:255',
         ]);
-
-        return response()->json(['message' => 'File uploaded successfully', 'url' => $url], 200);
+    
+        if ($request->hasFile('file')) {
+            $uploadedFile = $request->file('file');
+            
+            // Generate a unique filename
+            $originalName = pathinfo($uploadedFile->getClientOriginalName(), PATHINFO_FILENAME);
+            $fileName = time() . '_' . preg_replace('/\s+/', '_', $originalName) . '.mp4';
+    
+            // Define paths
+            $originalPath = storage_path('app/temp/' . $fileName);
+            $compressedPath = storage_path('app/temp/compressed_' . $fileName);
+    
+            // Move file to a temporary directory
+            $uploadedFile->move(storage_path('app/temp'), $fileName);
+    
+            // Compress Video
+            $ffmpeg = FFMpeg::create();
+            $video = $ffmpeg->open($originalPath);
+            
+            $format = new X264('aac', 'libx264');
+            $format->setAudioKiloBitrate(128);
+            $format->setKiloBitrate(1000); // Adjust bitrate for compression
+            
+            // Resize and reduce quality
+            $video->filters()
+                ->resize(new Dimension(1280, 720))
+                ->synchronize();
+            
+            $video->save($format, $compressedPath);
+    
+            // Upload compressed video to S3
+            $path = Storage::disk('s3')->putFileAs('cdn/advoq', new \Illuminate\Http\File($compressedPath), $fileName, 'public');
+    
+            // Get the file URL
+            $url = Storage::disk('s3')->url($path);
+    
+            // Store in Database
+            DB::table('videos')->insert([
+                'url' => $url,
+                'title' => $request->title,
+                'brand' => $request->brand,
+            ]);
+    
+            // Clean up temporary files
+            unlink($originalPath);
+            unlink($compressedPath);
+    
+            return response()->json(['message' => 'Video uploaded successfully', 'url' => $url], 200);
+        }
+    
+        return response()->json(['message' => 'No file received'], 400);
     }
-
-    return response()->json(['message' => 'No file received'], 400);
-}
     
 }
