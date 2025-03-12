@@ -90,11 +90,21 @@
 
                             @php
 
-                            $images=DB::table('images')->get();
+                            $landscapeImages=DB::table('images')->where('type','landscape')->get();
+                            $portraitImages=DB::table('images')->where('type','portrait')->get();
                             
                             @endphp
 
-                            @foreach ($images as $image)
+                            @foreach ($landscapeImages as $image)
+                            <div class="col-6 col-md-4 col-lg-3">
+                                <div class="jo-gallery card">
+                                    <a data-fslightbox="images" href="{{ $image->url }}" class="jo-gallery__img">
+                                        <img src="{{ $image->url }}" alt="Gallery Image">
+                                    </a>
+                                </div>
+                            </div>
+                            @endforeach
+                            @foreach ($portraitImages as $image)
                             <div class="col-6 col-md-4 col-lg-3">
                                 <div class="jo-gallery card">
                                     <a data-fslightbox="images" href="{{ $image->url }}" class="jo-gallery__img">
