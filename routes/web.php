@@ -60,3 +60,6 @@ Route::get('/admin', function () {
 Route::get('/admin/login', function () {
     return view('admin.login');
 })->name('admin.login');
+
+
+require __DIR__.'/auth.php';

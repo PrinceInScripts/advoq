@@ -5,7 +5,7 @@
 
         <!-- heading -->
         <div class="jo-sidebar__heading d-flex justify-content-between align-items-center">
-            <a href="#" onclick="window.location.href='{{ route('home') }}'"><img src="assets/img/logo.png" alt="logo"
+            <a href="#" onclick="window.location.href='{{ route('home') }}'"><img src="/assets/img/logo.png" alt="logo"
                     class="logo"></a>
             <button type="button" class="jo-sidebar-close-btn"><i class="flaticon-add-plus-button"></i></button>
         </div>
@@ -31,7 +31,7 @@
 
 <!-- HEADER SECTION START -->
 <header class="jo-header">
-    <a href="#" onclick="window.location.href='{{ route('home') }}'"><img src="assets/img/logo.png" alt="logo" style="width: 80px;"></a>
+    <a href="#" onclick="window.location.href='{{ route('home') }}'"><img src="/assets/img/logo.png" alt="logo" style="width: 80px;"></a>
     <div class="jo-header-right">
         <div class="jo-header-nav">
             <div class="to-go-to-sidebar-in-mobile">
