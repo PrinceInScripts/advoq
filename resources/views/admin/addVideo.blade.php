@@ -482,21 +482,26 @@
                 let html = "";
                 allVideos.forEach((video) => {
                     html += `
-                    <div class="col" id="video-${video.id}">
-                        <div class="jo-video-card jo-inner-video-card">
-                            <img src="${video.thumb_url}" alt="Video Thumbnail" class="jo-video-card__img">
-                            <div class="jo-video-card__txt">
-                                <div class="bottom">
-                                    <a href="${video.url}" data-fslightbox="videos" class="jo-video-card__btn"><i class="flaticon-play"></i></a>
-                                    <h5 class="mb-0"><a href="#0" class="jo-video-card__title">${video.title}</a></h5>
-                                    <div class="tt-video__infos jo-video-card__infos">
-                                        <span>${video.brand != null ? video.brand : ""}</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                       <button class="btn btn-danger btn-sm mt-2" onclick="deleteVideo(${video.id})" >Delete</button>
-                    </div>`;
+                   <div class="col" id="video-${video.id}">
+    <div class="card shadow-sm border-0">
+        <div class="card-body text-center">
+            <!-- Simple Video Player -->
+            <video controls class="w-100 rounded" >
+                <source src="${video.url}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+            <!-- Video Title -->
+            <h5 class="mt-3 text-primary fw-bold">${video.title}</h5>
+
+            <!-- Brand Name -->
+            <p class="text-muted">${video.brand ? video.brand : ""}</p>
+
+            <!-- Delete Button -->
+            <button class="btn btn-danger btn-sm mt-2" onclick="deleteVideo(${video.id})">Delete</button>
+        </div>
+    </div>
+</div>`;
                 });
     
                 // Update UI
