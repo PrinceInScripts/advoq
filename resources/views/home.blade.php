@@ -136,7 +136,7 @@
                 <div class="jo-reels-slider swiper">
                     <div class="swiper-wrapper">
                         @php
-                        $videos = DB::table('videos')->where('status', 1)->get();
+                         $videos= DB::table('videos')->where('status', 1)->orderBy('id','asc')->get();
                         @endphp
 
                         @foreach ($videos as $video)
