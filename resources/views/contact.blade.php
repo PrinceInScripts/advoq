@@ -129,7 +129,7 @@
                                     a Consultation</h3>
 
                                 <div class="jo-inner-contact-img text-center">
-                                    <img src="assets/img/inner-contact-img.png"
+                                    <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/inner-contact-img.png"
                                         alt="Image">
                                 </div>
                             </div>

@@ -101,7 +101,7 @@
 
                     <div class="col-lg-5">
                         <div class="jo-banner__img jo-contact__img">
-                            <img src="assets/img/banner-2-img.png" alt="Image">
+                            <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/banner-2-img.png" alt="Image">
 
                             <div class="jo-banner__followers">
                                 <span class="number">74K</span>
@@ -191,7 +191,7 @@
                                 <div class="tt-service-tab d-flex flex-column ">
                                     <!-- img -->
                                     <div class="img">
-                                        <img src="assets/img/service1.jpg" alt="service image">
+                                        <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/service1.jpg" alt="service image">
                                     </div>
 
                                     <!-- txt -->
@@ -221,7 +221,7 @@
                                 <div class="tt-service-tab d-flex flex-column ">
                                     <!-- img -->
                                     <div class="img">
-                                        <img src="assets/img/service2.jpg" alt="service image">
+                                        <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/service2.jpg" alt="service image">
                                     </div>
 
                                     <!-- txt -->
@@ -251,7 +251,7 @@
                                 <div class="tt-service-tab d-flex flex-column ">
                                     <!-- img -->
                                     <div class="img">
-                                        <img src="assets/img/service3.jpg" alt="service image">
+                                        <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/service3.jpg" alt="service image">
                                     </div>
 
                                     <!-- txt -->
@@ -282,7 +282,7 @@
                                 <div class="tt-service-tab d-flex flex-column ">
                                     <!-- img -->
                                     <div class="img">
-                                        <img src="assets/img/service4.jpg" alt="service image">
+                                        <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/iiaAwards.jpg" alt="service image">
                                     </div>
 
                                     <!-- txt -->
@@ -313,7 +313,7 @@
                                 <div class="tt-service-tab d-flex flex-column ">
                                     <!-- img -->
                                     <div class="img">
-                                        <img src="assets/img/service5.jpg" alt="service image">
+                                        <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/service4.jpg" alt="service image">
                                     </div>
 
                                     <!-- txt -->
@@ -344,7 +344,7 @@
                                 <div class="tt-service-tab d-flex flex-column ">
                                     <!-- img -->
                                     <div class="img">
-                                        <img src="assets/img/service5.jpg" alt="service image">
+                                        <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/service5.jpg" alt="service image">
                                     </div>
 
                                     <!-- txt -->
@@ -374,7 +374,7 @@
                                 <div class="tt-service-tab d-flex flex-column ">
                                     <!-- img -->
                                     <div class="img">
-                                        <img src="assets/img/service5.jpg" alt="service image">
+                                        <img src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/service5.jpg" alt="service image">
                                     </div>
 
                                     <!-- txt -->
@@ -590,7 +590,7 @@
                     </div>
                 </div>
                 <div class="row g-sm-4 g-3 d-md-none">
-                    <img style="" src="/assets/img/iiaAwards.jpg" width="70%" alt="sfdsd">
+                    <img style="" src="https://mobflix.s3.ap-south-1.amazonaws.com/cdn/advoq/iiaAwards.jpg" width="70%" alt="sfdsd">
                 </div>
             </div>
         </section>
